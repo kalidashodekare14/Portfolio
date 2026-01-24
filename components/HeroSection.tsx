@@ -4,15 +4,15 @@ import { motion } from "motion/react"
 
 const HeroSection = () => {
     return (
-        <div className='min-h-screen bg-[#161f2d] font-roboto flex flex-col items-center justify-center h-full'>
-            <div className='flex flex-col items-center gap-6'>
+        <div className='relative lg:min-h-screen h-screen bg-[#161f2d] font-roboto flex flex-col items-center lg:justify-center'>
+            <div className='z-20 flex flex-col items-center gap-6 mt-14 lg:mt-0'>
                 <p className='text-[#f7f6f6bb] text-[22px] bg-[#411f80] p-3 py-1 rounded-3xl'>Frontend Developer</p>
-                <h1 className='text-white text-8xl font-bold leading-tight'>
+                <h1 className='text-white text-[94px] lg:text-8xl text-center font-bold leading-tight'>
                     <span className='bg-linear-to-r from-violet-400 via-violet-400 to-violet-400 bg-clip-text text-transparent animate-linear'>Kalidash Odekare</span>
                 </h1>
                 {/* text-[#f95738] */}
-                <h3 className='text-[#bbbbbb] text-[23px]'>Building Beautiful & Functional Web Interfaces</h3>
-                <div className='flex items-center gap-4'>
+                <h3 className='text-[#bbbbbb] text-[23px] text-center'>Building Beautiful & Functional Web Interfaces</h3>
+                <div className='flex flex-wrap lg:flex-row justify-center items-center gap-4'>
                     <motion.div
                         whileHover={{
                             scale: 1.1,
@@ -20,7 +20,8 @@ const HeroSection = () => {
                             cursor: "pointer"
                         }}
                         transition={{
-                            duration: 0.1
+                            duration: 0.2,
+                            ease: "easeInOut"
                         }}
                         className='font-semibold flex items-center gap-1 text-[#d4d4d4] bg-[#411f80] rounded-2xl p-2'>
                         <IoCodeSlashSharp />
@@ -33,7 +34,7 @@ const HeroSection = () => {
                             cursor: "pointer"
                         }}
                         transition={{
-                            duration: 0.1
+                            duration: 0.2
                         }}
                         className='font-semibold flex items-center gap-1 text-[#d4d4d4] bg-[#411f80] rounded-2xl p-2'>
                         <IoCodeSlashSharp />
@@ -46,7 +47,7 @@ const HeroSection = () => {
                             cursor: "pointer"
                         }}
                         transition={{
-                            duration: 0.1
+                            duration: 0.2
                         }}
                         className='font-semibold flex items-center gap-1 text-[#d4d4d4] bg-[#411f80] rounded-2xl p-2'>
                         <IoCodeSlashSharp />
@@ -63,7 +64,18 @@ const HeroSection = () => {
                         transition={{
                             duration: 0.2
                         }}
-                        className='bg-violet-600 px-7 py-3 rounded-3xl font-semibold cursor-pointer text-[#f3f3f3]'>Show Project</motion.button>
+                        className='bg-violet-600 px-9 py-4 rounded-3xl font-semibold cursor-pointer text-[#f3f3f3]'>
+                        <span>Show Project</span>
+                        <motion.span
+                            initial={{ x: 0 }}
+                            whileHover={{
+                                x: 5
+                            }}
+                            transition={{
+                                duration: 0.5,
+                            }}
+                            className='ml-2' >→</motion.span>
+                    </motion.button>
                     <motion.button
                         whileHover={{
                             scale: 1.05,
@@ -73,10 +85,62 @@ const HeroSection = () => {
                         transition={{
                             duration: 0.2
                         }}
-                        className='ml-4 border border-violet-600 px-7 py-3 rounded-3xl font-semibold cursor-pointer text-[#f3f3f3]'>Contact Us</motion.button>
+                        className='ml-4 border border-violet-600 px-9 py-4 rounded-3xl font-semibold cursor-pointer text-[#f3f3f3]'>Contact Us</motion.button>
                 </div>
             </div>
-        </div>
+            {/* <motion.div
+                initial={{
+                    opacity: 0,
+                }}
+                animate={{
+                    opacity: 0.35,
+                }}
+                transition={{
+                    duration: 2,
+                }}
+                className='z-10 absolute top-0 w-125 h-125 rounded-full bg-purple-400 opacity-35 blur-[140px]'>
+
+            </motion.div> */}
+            <motion.div
+                initial={{
+                    opacity: 0,
+                }}
+                animate={{
+                    opacity: 0.20,
+                }}
+                transition={{
+                    duration: 2,
+                }}
+                className='z-10 absolute top-0 w-100 h-100 rounded-full bg-purple-400 opacity-35 blur-[140px]'>
+
+            </motion.div>
+            <motion.div
+                initial={{
+                    opacity: 0,
+                }}
+                animate={{
+                    opacity: 0.35,
+                }}
+                transition={{
+                    duration: 2,
+                }}
+                className='z-10 absolute -bottom-20 right-0 w-50 h-50 rounded-full bg-purple-400 opacity-35 blur-[140px]'>
+
+            </motion.div>
+            <motion.div
+                initial={{
+                    opacity: 0,
+                }}
+                animate={{
+                    opacity: 0.20,
+                }}
+                transition={{
+                    duration: 2,
+                }}
+                className='z-10 absolute -bottom-20 left-0 w-50 h-50 rounded-full bg-purple-400 opacity-35 blur-[140px]'>
+
+            </motion.div>
+        </div >
     );
 };
 
