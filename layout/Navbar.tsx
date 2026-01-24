@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { IoSearchOutline } from 'react-icons/io5';
 
+
 const Navbar = () => {
 
     const [toggle, setToggle] = useState<boolean>(false)
@@ -64,7 +65,7 @@ const Navbar = () => {
                     <ul className='hidden lg:flex items-center gap-5 text-[16px] font-normal'>
                         {
                             navgicaton.map((navi) => (
-                                <li className='font-rubik'>{navi.name}</li>
+                                <li key={navi.id} className='font-rubik'>{navi.name}</li>
                             ))
                         }
                     </ul>
@@ -75,7 +76,7 @@ const Navbar = () => {
                 <ul className={`z-50 absolute left-0 p-5 lg:hidden  bg-[#307bc4] text-white w-full flex flex-col  gap-5 text-[19px] font-light translate-y-14 duration-700  ${toggle ? "translate-x-0" : "-translate-x-full"}`}>
                     {
                         navgicaton.map((navi) => (
-                            <li className='font-rubik'>{navi.name}</li>
+                            <li key={navi.id} className='font-rubik'>{navi.name}</li>
                         ))
                     }
                 </ul>
