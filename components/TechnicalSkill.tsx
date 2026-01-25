@@ -28,7 +28,7 @@ const TechnicalSkill = () => {
                         }}
                         className="border rounded-2xl border-[#575757]  bg-linear-to-r from-[#1e2838] via-[#131a24] to-[#141b25] p-5">
                         {/* Add your technical skills content here */}
-                        <div className="flex items-center text-white">
+                        <div className="flex items-center text-[#e6e5e5]">
                             <div className="flex items-center gap-4">
                                 <div className="bg-[#7209b7] p-2 rounded-full">
                                     <FaCode className="text-4xl" />
@@ -42,7 +42,7 @@ const TechnicalSkill = () => {
                                     scale: 1.1
                                 }}
                                 className="flex flex-col items-center gap-2">
-                                <div className="flex items-center text-white bg-[#275866] border-2 border-[#5ED3F3] text-4xl p-3 rounded-2xl">
+                                <div className="flex items-center text-[#c2c2c2] bg-[#275866] border-2 border-[#5ED3F3] text-4xl p-3 rounded-2xl">
                                     <FaReact />
                                 </div>
                                 <p className="text-[#e6e5e5]">React</p>
@@ -52,7 +52,7 @@ const TechnicalSkill = () => {
                                     scale: 1.1
                                 }}
                                 className="flex flex-col items-center gap-2">
-                                <div className="flex items-center text-white bg-[#3a3a3a] border-2 border-[#eeeeeee8] text-4xl p-3 rounded-2xl">
+                                <div className="flex items-center text-[#c2c2c2] bg-[#3a3a3a] border-2 border-[#eeeeeee8] text-4xl p-3 rounded-2xl">
                                     <RiNextjsFill />
                                 </div>
                                 <p className="text-[#e6e5e5]">Next.js</p>
@@ -62,7 +62,7 @@ const TechnicalSkill = () => {
                                     scale: 1.1
                                 }}
                                 className="flex flex-col items-center gap-2">
-                                <div className="flex items-center text-white bg-[#15365a] border-2 border-[#2F74C0] text-4xl p-3 rounded-2xl">
+                                <div className="flex items-center text-[#c2c2c2] bg-[#15365a] border-2 border-[#2F74C0] text-4xl p-3 rounded-2xl">
                                     <BiLogoTypescript />
                                 </div>
                                 <p className="text-[#e6e5e5]">TypeScript</p>
@@ -72,7 +72,7 @@ const TechnicalSkill = () => {
                                     scale: 1.1
                                 }}
                                 className="flex flex-col items-center gap-2">
-                                <div className="flex items-center text-white bg-[#005661] border-2 border-[#00A7BC] text-4xl p-3 rounded-2xl">
+                                <div className="flex items-center text-[#c2c2c2] bg-[#005661] border-2 border-[#00A7BC] text-4xl p-3 rounded-2xl">
                                     <RiTailwindCssFill />
                                 </div>
                                 <p className="text-[#e6e5e5]">Tailwind</p>
@@ -92,7 +92,7 @@ const TechnicalSkill = () => {
                         }}
                         className="border rounded-2xl border-[#575757]  bg-linear-to-r from-[#1e2838] via-[#131a24] to-[#141b25] p-5">
                         {/* Add your technical skills content here */}
-                        <div className="flex items-center text-white">
+                        <div className="flex items-center text-[#e6e5e5]">
                             <div className="flex items-center gap-4">
                                 <div className="bg-[#7209b7] p-2 rounded-full">
                                     <FaCode className="text-4xl" />
@@ -106,7 +106,7 @@ const TechnicalSkill = () => {
                                     scale: 1.1
                                 }}
                                 className="flex flex-col items-center gap-2">
-                                <div className="flex items-center text-white bg-[#21331c] border-2 border-[#6FA661] text-4xl p-3 rounded-2xl">
+                                <div className="flex items-center text-[#c2c2c2] bg-[#21331c] border-2 border-[#6FA661] text-4xl p-3 rounded-2xl">
                                     <IoLogoNodejs />
                                 </div>
                                 <p className="text-[#e6e5e5]">Node.js</p>
@@ -116,7 +116,7 @@ const TechnicalSkill = () => {
                                     scale: 1.1
                                 }}
                                 className="flex flex-col items-center gap-2">
-                                <div className="flex items-center text-white bg-[#3a3a3a] border-2 border-[#eeeeeee8] text-4xl p-3 rounded-2xl">
+                                <div className="flex items-center text-[#c2c2c2] bg-[#3a3a3a] border-2 border-[#eeeeeee8] text-4xl p-3 rounded-2xl">
                                     <SiExpress />
                                 </div>
                                 <p className="text-[#e6e5e5]">Express.js</p>
@@ -126,7 +126,7 @@ const TechnicalSkill = () => {
                                     scale: 1.1
                                 }}
                                 className="flex flex-col items-center gap-2">
-                                <div className="flex items-center text-white bg-[#05381a] border-2 border-[#10A54D] text-4xl p-3 rounded-2xl">
+                                <div className="flex items-center text-[#c2c2c2] bg-[#05381a] border-2 border-[#10A54D] text-4xl p-3 rounded-2xl">
                                     <DiMongodb />
                                 </div>
                                 <p className="text-[#e6e5e5]">MongoDB</p>
@@ -136,7 +136,7 @@ const TechnicalSkill = () => {
                                     scale: 1.1
                                 }}
                                 className="flex flex-col items-center gap-2">
-                                <div className="flex items-center text-white bg-[#005661] border-2 border-[#00A7BC] text-4xl p-3 rounded-2xl">
+                                <div className="flex items-center text-[#c2c2c2] bg-[#005661] border-2 border-[#00A7BC] text-4xl p-3 rounded-2xl">
                                     <FaLaptopCode />
                                 </div>
                                 <p className="text-[#e6e5e5]">REST APIs</p>
@@ -156,7 +156,7 @@ const TechnicalSkill = () => {
                         }}
                         className="border rounded-2xl border-[#575757]  bg-linear-to-r from-[#1e2838] via-[#131a24] to-[#141b25] p-5">
                         {/* Add your technical skills content here */}
-                        <div className="flex items-center text-white">
+                        <div className="flex items-center text-[#e6e5e5]">
                             <div className="flex items-center gap-4">
                                 <div className="bg-[#7209b7] p-2 rounded-full">
                                     <FaCode className="text-4xl" />
@@ -170,7 +170,7 @@ const TechnicalSkill = () => {
                                     scale: 1.1
                                 }}
                                 className="flex flex-col items-center gap-2">
-                                <div className="flex items-center text-white bg-[#072438] border-2 border-[#1E97E8] text-4xl p-3 rounded-2xl">
+                                <div className="flex items-center text-[#c2c2c2] bg-[#072438] border-2 border-[#1E97E8] text-4xl p-3 rounded-2xl">
                                     <VscVscode />
                                 </div>
                                 <p className="text-[#e6e5e5]">VS Code</p>
@@ -180,7 +180,7 @@ const TechnicalSkill = () => {
                                     scale: 1.1
                                 }}
                                 className="flex flex-col items-center gap-2">
-                                <div className="flex items-center text-white bg-[#3a3d41] border-2 border-[#1A1E22] text-4xl p-3 rounded-2xl">
+                                <div className="flex items-center text-[#c2c2c2] bg-[#3a3d41] border-2 border-[#1A1E22] text-4xl p-3 rounded-2xl">
                                     <FaGithub />
                                 </div>
                                 <p className="text-[#e6e5e5]">GitHub</p>
@@ -190,7 +190,7 @@ const TechnicalSkill = () => {
                                     scale: 1.1
                                 }}
                                 className="flex flex-col items-center gap-2">
-                                <div className="flex items-center text-white bg-[#502e01] border-2 border-[#F78C00] text-4xl p-3 rounded-2xl">
+                                <div className="flex items-center text-[#c2c2c2] bg-[#502e01] border-2 border-[#F78C00] text-4xl p-3 rounded-2xl">
                                     <SiFirebase />
                                 </div>
                                 <p className="text-[#e6e5e5]">Firebase</p>
@@ -200,7 +200,7 @@ const TechnicalSkill = () => {
                                     scale: 1.1
                                 }}
                                 className="flex flex-col items-center gap-2">
-                                <div className="flex items-center text-white bg-[#25173b] border-2 border-[#7248B5] text-4xl p-3 rounded-2xl">
+                                <div className="flex items-center text-[#c2c2c2] bg-[#25173b] border-2 border-[#7248B5] text-4xl p-3 rounded-2xl">
                                     <SiRedux />
                                 </div>
                                 <p className="text-[#e6e5e5]">Redux</p>
