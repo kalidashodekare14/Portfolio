@@ -10,7 +10,7 @@ const HeroSection = () => {
         <div id='hero' className='-mt-px relative lg:min-h-screen bg-[#161f2d] overflow-hidden font-roboto flex flex-col items-center lg:justify-center pb-5'>
             <div className='relative max-w-7xl p-15 '>
                 <div className='z-20 flex flex-col items-center gap-6 mt-14 lg:mt-0'>
-                    <p className='text-[#f7f6f6bb] text-[22px] bg-[#47146b] p-3 py-1 rounded-3xl'>Frontend Developer</p>
+                    <p className='relative z-20 text-[#f7f6f6bb] text-[22px] bg-[#47146b] p-3 py-1 rounded-3xl'>Frontend Developer</p>
                     <h1 className='text-white text-[80px] lg:text-8xl text-center font-bold leading-tight'>
                         <span className='bg-linear-to-r from-[#ad6cdb] via-[#9a5dc2] to-[#8c50b4] bg-clip-text text-transparent animate-linear'>Kalidash Odekare</span>
                     </h1>
@@ -96,10 +96,12 @@ const HeroSection = () => {
                 {/* tech icons */}
                 <motion.div
                     initial={{
-                        y: 0
+                        y: 0,
+                        opacity: 1,
                     }}
                     animate={{
                         y: 6,
+                        opacity: .7,
                     }}
                     transition={{
                         duration: 1,
@@ -112,10 +114,12 @@ const HeroSection = () => {
                 </motion.div>
                 <motion.div
                     initial={{
-                        y: 0
+                        y: 0,
+                        opacity: 1,
                     }}
                     animate={{
                         y: 6,
+                        opacity: .7,
                     }}
                     transition={{
                         duration: 1,
@@ -128,10 +132,12 @@ const HeroSection = () => {
                 </motion.div>
                 <motion.div
                     initial={{
-                        y: 0
+                        y: 0,
+                        opacity: 1,
                     }}
                     animate={{
                         y: 6,
+                        opacity: .7,
                     }}
                     transition={{
                         duration: 1,
@@ -144,10 +150,12 @@ const HeroSection = () => {
                 </motion.div>
                 <motion.div
                     initial={{
-                        y: 0
+                        y: 0,
+                        opacity: 1,
                     }}
                     animate={{
                         y: 6,
+                        opacity: .7,
                     }}
                     transition={{
                         duration: 1,
