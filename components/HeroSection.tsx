@@ -90,7 +90,9 @@ const HeroSection = () => {
                             transition={{
                                 duration: 0.2
                             }}
-                            className='ml-4 border border-[#7209b7] px-9 py-4 rounded-3xl font-semibold cursor-pointer text-[#f3f3f3]'>Contact Us</motion.button>
+                            className='ml-4 border border-[#7209b7] px-9 py-4 rounded-3xl font-semibold cursor-pointer text-[#f3f3f3]'>
+                            Contact Us
+                        </motion.button>
                     </div>
                 </div>
                 {/* tech icons */}
