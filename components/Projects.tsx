@@ -20,8 +20,8 @@ const Projects = () => {
                         className="text-white rounded-2xl bg-[#12121d] ">
                         <Image className="w-full h-52 rounded-t-2xl" src="/project/helplink.png" alt="HelpLink" width={500} height={400} />
                         <div className="px-5 my-4 space-y-3">
-                            <h2 className="text-3xl">HelpLink</h2>
-                            <p className="text-[#d4d4d4] font-medium">A digital relief platform built with MERN stack to bridge the gap between donors and underprivileged communities during disasters in Bangladesh.</p>
+                            <h2 className="text-3xl text-[#dadada]">HelpLink</h2>
+                            <p className="text-[#b9b9b9] font-medium">A digital relief platform built with MERN stack to bridge the gap between donors and underprivileged communities during disasters in Bangladesh.</p>
                             <div className="flex flex-wrap gap-3">
                                 <div className="text-[#d8d8d8] bg-[#7209b7]  px-2 py-1 rounded-xl">
                                     <p className="font-medium text-[15px]">Next.js</p>
@@ -76,8 +76,8 @@ const Projects = () => {
                         className="text-white rounded-2xl bg-[#12121d] ">
                         <Image className="w-full h-52 rounded-t-2xl" src="/project/adoply.png" alt="HelpLink" width={500} height={400} />
                         <div className="px-5 my-4 space-y-3">
-                            <h2 className="text-3xl">Adoply</h2>
-                            <p className="text-[#d4d4d4] font-medium">Adoptly is a team-based MERN stack pet adoption platform featuring smart search and filtering, secure Firebase authentication, and role-based...</p>
+                            <h2 className="text-3xl text-[#dadada]">Adoply</h2>
+                            <p className="text-[#b9b9b9] font-medium">Adoptly is a team-based MERN stack pet adoption platform featuring smart search and filtering, secure Firebase authentication, and role-based...</p>
                             <div className="flex flex-wrap gap-3">
                                 <div className="text-[#cacaca] bg-[#7209b7]  px-2 py-1 rounded-xl">
                                     <p className="font-medium text-[15px]">Next.js</p>
@@ -129,8 +129,8 @@ const Projects = () => {
                         className="text-white rounded-2xl bg-[#12121d] ">
                         <Image className="w-full h-52 rounded-t-2xl" src="/project/healthcare.png" alt="HelpLink" width={500} height={400} />
                         <div className="px-5 my-4 space-y-3">
-                            <h2 className="text-3xl">HealthCare</h2>
-                            <p className="text-[#d4d4d4] font-medium">The Healthcare project is a patient-focused platform that enables easy online doctor appointment booking, secure payments, and access to professional...</p>
+                            <h2 className="text-3xl text-[#dadada]">HealthCare</h2>
+                            <p className="text-[#b9b9b9] font-medium">The Healthcare project is a patient-focused platform that enables easy online doctor appointment booking, secure payments, and access to professional...</p>
                             <div className="flex flex-wrap gap-3">
                                 <div className="text-[#d8d8d8] bg-[#7209b7]  px-2 py-1 rounded-xl">
                                     <p className="font-medium text-[15px] text-[#cacaca]">Next.js</p>
