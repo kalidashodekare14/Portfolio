@@ -6,11 +6,11 @@ import { motion } from 'motion/react'
 
 const ContactMe = () => {
     return (
-        <div className=" bg-[#161E2D] px-32">
-            <div className="h-200 font-roboto">
+        <div className="-mt-px bg-[#161E2D] ">
+            <div className="lg:h-200 max-w-6xl m-auto font-roboto">
                 <h1 className="text-5xl text-center text-[#7F22FE] font-bold py-10">Contact Me</h1>
-                <div className='w-full flex justify-between gap-10 mt-10'>
-                    <div className='w-[40%] space-y-9 border '>
+                <div className='w-full flex flex-col lg:flex-row justify-between gap-10 mt-10 pb-5'>
+                    <div className='lg:w-[40%] px-5 lg:space-y-9 space-y-5 border '>
                         <div className='text-white border bg-[#12121D] border-[#bbbb] p-5 rounded-2xl space-y-1'>
                             <h3 className='text-2xl'>Contact Info</h3>
                             <div>
@@ -36,16 +36,22 @@ const ContactMe = () => {
                         <div className='text-white border bg-[#12121D] border-[#bbbb] p-5 rounded-2xl space-y-1'>
                             <h3 className='text-2xl'>Follow me</h3>
                             <div className='flex items-center gap-4'>
-                                <div className='bg-[#7F22FE] p-3 rounded-full text-[19px]'>
+                                <motion.div
+                                    whileHover={{ scale: 1.1 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    className='bg-[#7F22FE] cursor-pointer p-3 rounded-full text-[19px]'>
                                     <FaLinkedinIn />
-                                </div>
-                                <div className='bg-[#7F22FE] p-3 rounded-full text-[19px]'>
+                                </motion.div>
+                                <motion.div
+                                    whileHover={{ scale: 1.1 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    className='bg-[#7F22FE]  cursor-pointer p-3 rounded-full text-[19px]'>
                                     <FaGithub />
-                                </div>
+                                </motion.div>
                             </div>
                         </div>
                     </div>
-                    <div className='w-[60%] rounded-2xl space-y-2 bg-[#12121D] text-white p-5'>
+                    <div className='lg:w-[60%] px-5 rounded-2xl space-y-2 bg-[#12121D] text-white p-5'>
                         <div className='w-full space-y-2'>
                             <p className='text-[#cfcfcf]'>Full Name</p>
                             <input className="input w-full font-medium focus:outline-[#7F22FE] text-white bg-[#1E2939]" type="text" placeholder="Name" />

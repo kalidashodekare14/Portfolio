@@ -4,6 +4,7 @@ import Education from "@/components/Education";
 import HeroSection from "@/components/HeroSection";
 import Projects from "@/components/Projects";
 import TechnicalSkill from "@/components/TechnicalSkill";
+import Footer from "@/layout/Footer";
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <TechnicalSkill />
       <Projects />
       <ContactMe />
+      <Footer />
     </div>
   );
 }

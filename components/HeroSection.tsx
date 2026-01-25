@@ -4,7 +4,7 @@ import { motion } from "motion/react"
 
 const HeroSection = () => {
     return (
-        <div className='relative lg:min-h-screen h-screen bg-[#161f2d] overflow-hidden font-roboto flex flex-col items-center lg:justify-center'>
+        <div className='-mt-px relative lg:min-h-screen h-screen  bg-[#161f2d] overflow-hidden font-roboto flex flex-col items-center lg:justify-center '>
             <div className='z-20 flex flex-col items-center gap-6 mt-14 lg:mt-0'>
                 <p className='text-[#f7f6f6bb] text-[22px] bg-[#411f80] p-3 py-1 rounded-3xl'>Frontend Developer</p>
                 <h1 className='text-white text-[94px] lg:text-8xl text-center font-bold leading-tight'>

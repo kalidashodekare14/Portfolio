@@ -5,7 +5,7 @@ import { motion } from "motion/react"
 
 const Projects = () => {
     return (
-        <div className=" bg-[#161E2D]  flex flex-col justify-center items-center">
+        <div className="-mt-px bg-[#161E2D]  flex flex-col justify-center items-center">
             <div className="lg:h-180 max-w-6xl font-roboto py-10">
                 <h1 className="text-5xl py-10 text-center text-[#7F22FE] font-bold">Projects</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-5">
