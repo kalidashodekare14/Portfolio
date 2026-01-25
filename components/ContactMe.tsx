@@ -6,7 +6,7 @@ import { motion } from 'motion/react'
 
 const ContactMe = () => {
     return (
-        <div className="-mt-px bg-[#161E2D] ">
+        <div id='contact' className="-mt-px bg-[#161E2D] ">
             <div className="lg:h-200 max-w-6xl m-auto font-roboto">
                 <h1 className="text-5xl text-center text-[#7F22FE] font-bold py-10">Contact Me</h1>
                 <div className='w-full flex flex-col lg:flex-row justify-between gap-10 mt-10 pb-5'>
