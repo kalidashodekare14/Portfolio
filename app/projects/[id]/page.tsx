@@ -11,7 +11,7 @@ import { Pagination } from 'swiper/modules';
 import { useParams } from 'next/navigation';
 import { motion } from "motion/react"
 import { FaDisplay } from 'react-icons/fa6';
-import { FaCheck, FaGithub } from 'react-icons/fa';
+import { FaArrowLeft, FaCheck, FaGithub } from 'react-icons/fa';
 import { AiFillDatabase } from 'react-icons/ai';
 import Link from 'next/link';
 import { IoShieldCheckmark } from 'react-icons/io5';
@@ -86,7 +86,12 @@ const page = () => {
     return (
         <div className='bg-[#161E2D] text-white'>
             <div className='max-w-5xl m-auto py-10'>
-                <h1>Project Details</h1>
+                <Link href="/#projects" className='flex items-center gap-2 text-[#7209b7] mb-5 hover:underline w-fit'>
+                    <div className='mx-5 flex items-center gap-2 text-xl text-[#be5cff] cursor-pointer'>
+                        <FaArrowLeft />
+                        <h1>Back to Project</h1>
+                    </div>
+                </Link>
                 <div className='my-10 mx-5'>
                     <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
                         {
