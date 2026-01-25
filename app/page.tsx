@@ -1,4 +1,5 @@
 import AboutMe from "@/components/AboutMe";
+import ContactMe from "@/components/ContactMe";
 import Education from "@/components/Education";
 import HeroSection from "@/components/HeroSection";
 import Projects from "@/components/Projects";
@@ -13,6 +14,7 @@ export default function Home() {
       {/* <Education /> */}
       <TechnicalSkill />
       <Projects />
+      <ContactMe />
     </div>
   );
 }
