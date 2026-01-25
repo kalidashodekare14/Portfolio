@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 import { FaLocationDot } from 'react-icons/fa6';
 import { MdEmail } from 'react-icons/md';
 import { motion } from 'motion/react'
+import Link from 'next/link';
 
 const ContactMe = () => {
     return (
@@ -36,18 +37,22 @@ const ContactMe = () => {
                         <div className='text-white border bg-[#12121D] border-[#bbbb] p-5 rounded-2xl space-y-1'>
                             <h3 className='text-2xl'>Follow me</h3>
                             <div className='flex items-center gap-4'>
-                                <motion.div
-                                    whileHover={{ scale: 1.1 }}
-                                    whileTap={{ scale: 0.9 }}
-                                    className='bg-[#7209b7] cursor-pointer p-3 rounded-full text-[19px]'>
-                                    <FaLinkedinIn />
-                                </motion.div>
-                                <motion.div
-                                    whileHover={{ scale: 1.1 }}
-                                    whileTap={{ scale: 0.9 }}
-                                    className='bg-[#7209b7]  cursor-pointer p-3 rounded-full text-[19px]'>
-                                    <FaGithub />
-                                </motion.div>
+                                <Link href={"https://www.linkedin.com/in/kalidash-odekare-webdev"} target='_blank'>
+                                    <motion.div
+                                        whileHover={{ scale: 1.1 }}
+                                        whileTap={{ scale: 0.9 }}
+                                        className='bg-[#7209b7] cursor-pointer p-3 rounded-full text-[19px]'>
+                                        <FaLinkedinIn />
+                                    </motion.div>
+                                </Link>
+                                <Link href={"https://github.com/kalidashodekare14"} target='_blank'>
+                                    <motion.div
+                                        whileHover={{ scale: 1.1 }}
+                                        whileTap={{ scale: 0.9 }}
+                                        className='bg-[#7209b7]  cursor-pointer p-3 rounded-full text-[19px]'>
+                                        <FaGithub />
+                                    </motion.div>
+                                </Link>
                             </div>
                         </div>
                     </div>

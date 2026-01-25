@@ -2,6 +2,7 @@
 
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 const Footer = () => {
     return (
@@ -24,18 +25,22 @@ const Footer = () => {
                     </aside>
                     <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
                         <div className='flex items-center gap-4'>
-                            <motion.div
-                                whileHover={{ scale: 1.1 }}
-                                whileTap={{ scale: 0.9 }}
-                                className='bg-[#7209b7] cursor-pointer p-3 rounded-full text-[19px]'>
-                                <FaLinkedinIn />
-                            </motion.div>
-                            <motion.div
-                                whileHover={{ scale: 1.1 }}
-                                whileTap={{ scale: 0.9 }}
-                                className='bg-[#7209b7]  cursor-pointer p-3 rounded-full text-[19px]'>
-                                <FaGithub />
-                            </motion.div>
+                            <Link href={"https://www.linkedin.com/in/kalidash-odekare-webdev"} target='_blank'>
+                                <motion.div
+                                    whileHover={{ scale: 1.1 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    className='bg-[#7209b7] cursor-pointer p-3 rounded-full text-[19px]'>
+                                    <FaLinkedinIn />
+                                </motion.div>
+                            </Link>
+                            <Link href={"https://github.com/kalidashodekare14"} target='_blank'>
+                                <motion.div
+                                    whileHover={{ scale: 1.1 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    className='bg-[#7209b7]  cursor-pointer p-3 rounded-full text-[19px]'>
+                                    <FaGithub />
+                                </motion.div>
+                            </Link>
                         </div>
                     </nav>
                 </footer>
