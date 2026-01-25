@@ -6,9 +6,9 @@ const HeroSection = () => {
     return (
         <div id='hero' className='-mt-px relative lg:min-h-screen h-screen  bg-[#161f2d] overflow-hidden font-roboto flex flex-col items-center lg:justify-center '>
             <div className='z-20 flex flex-col items-center gap-6 mt-14 lg:mt-0'>
-                <p className='text-[#f7f6f6bb] text-[22px] bg-[#411f80] p-3 py-1 rounded-3xl'>Frontend Developer</p>
+                <p className='text-[#f7f6f6bb] text-[22px] bg-[#47146b] p-3 py-1 rounded-3xl'>Frontend Developer</p>
                 <h1 className='text-white text-[94px] lg:text-8xl text-center font-bold leading-tight'>
-                    <span className='bg-linear-to-r from-violet-400 via-violet-400 to-violet-400 bg-clip-text text-transparent animate-linear'>Kalidash Odekare</span>
+                    <span className='bg-linear-to-r from-[#ad6cdb] via-[#9a5dc2] to-[#8c50b4] bg-clip-text text-transparent animate-linear'>Kalidash Odekare</span>
                 </h1>
                 {/* text-[#f95738] */}
                 <h3 className='text-[#bbbbbb] text-[23px] text-center'>Building Beautiful & Functional Web Interfaces</h3>
@@ -23,7 +23,7 @@ const HeroSection = () => {
                             duration: 0.2,
                             ease: "easeInOut"
                         }}
-                        className='font-semibold flex items-center gap-1 text-[#d4d4d4] bg-[#411f80] rounded-2xl p-2'>
+                        className='font-semibold flex items-center gap-1 text-[#d4d4d4] bg-[#47146b] rounded-2xl p-2'>
                         <IoCodeSlashSharp />
                         <p>Clean Code</p>
                     </motion.div>
@@ -36,7 +36,7 @@ const HeroSection = () => {
                         transition={{
                             duration: 0.2
                         }}
-                        className='font-semibold flex items-center gap-1 text-[#d4d4d4] bg-[#411f80] rounded-2xl p-2'>
+                        className='font-semibold flex items-center gap-1 text-[#d4d4d4] bg-[#47146b] rounded-2xl p-2'>
                         <IoCodeSlashSharp />
                         <p>User Friendly</p>
                     </motion.div>
@@ -49,7 +49,7 @@ const HeroSection = () => {
                         transition={{
                             duration: 0.2
                         }}
-                        className='font-semibold flex items-center gap-1 text-[#d4d4d4] bg-[#411f80] rounded-2xl p-2'>
+                        className='font-semibold flex items-center gap-1 text-[#d4d4d4] bg-[#47146b] rounded-2xl p-2'>
                         <IoCodeSlashSharp />
                         <p>Interactive UI</p>
                     </motion.div>
@@ -58,13 +58,14 @@ const HeroSection = () => {
                     <motion.button
                         whileHover={{
                             scale: 1.05,
-                            boxShadow: "0px 5px 15px #7c3aed",
+                            boxShadow: "0px 5px 15px #7C25B6",
                             cursor: "pointer"
                         }}
                         transition={{
                             duration: 0.2
                         }}
-                        className='bg-violet-600 px-9 py-4 rounded-3xl font-semibold cursor-pointer text-[#f3f3f3]'>
+                        // bg-violet-600
+                        className='bg-[#7209b7] px-9 py-4 rounded-3xl font-semibold cursor-pointer text-[#f3f3f3]'>
                         <span>Show Project</span>
                         <motion.span
                             initial={{ x: 0 }}
@@ -79,13 +80,13 @@ const HeroSection = () => {
                     <motion.button
                         whileHover={{
                             scale: 1.05,
-                            boxShadow: "0px 5px 15px #7c3aed",
+                            boxShadow: "0px 5px 15px #7C25B6",
                             cursor: "pointer"
                         }}
                         transition={{
                             duration: 0.2
                         }}
-                        className='ml-4 border border-violet-600 px-9 py-4 rounded-3xl font-semibold cursor-pointer text-[#f3f3f3]'>Contact Us</motion.button>
+                        className='ml-4 border border-[#7209b7] px-9 py-4 rounded-3xl font-semibold cursor-pointer text-[#f3f3f3]'>Contact Us</motion.button>
                 </div>
             </div>
             {/* <motion.div

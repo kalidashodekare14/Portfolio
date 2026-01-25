@@ -6,7 +6,7 @@ const AboutMe = () => {
     return (
         <div id="about" className="-mt-px bg-[#161E2D] flex flex-col justify-center items-center font-roboto">
             <div className="min-h-screen max-w-6xl pb-10">
-                <h1 className="text-5xl py-20 text-center text-[#7F22FE] font-bold">About Me</h1>
+                <h1 className="text-5xl py-20 text-center text-[#7209b7] font-bold">About Me</h1>
                 <div className="flex flex-col lg:flex-row">
                     <div className="lg:flex-1">
                         <Image className="w-115 h-120 rounded-2xl" src={"/about/kalidash.jpg"} alt="Kalidash Odekare" width={500} height={300} />

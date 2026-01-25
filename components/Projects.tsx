@@ -7,7 +7,7 @@ const Projects = () => {
     return (
         <div id="projects" className="-mt-px bg-[#161E2D]  flex flex-col justify-center items-center">
             <div className="lg:h-180 max-w-6xl font-roboto py-10">
-                <h1 className="text-5xl py-10 text-center text-[#7F22FE] font-bold">Projects</h1>
+                <h1 className="text-5xl py-10 text-center text-[#7209b7] font-bold">Projects</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-5">
                     <motion.div
                         whileHover={{
@@ -23,35 +23,35 @@ const Projects = () => {
                             <h2 className="text-3xl">HelpLink</h2>
                             <p className="text-[#d4d4d4] font-medium">A digital relief platform built with MERN stack to bridge the gap between donors and underprivileged communities during disasters in Bangladesh.</p>
                             <div className="flex flex-wrap gap-3">
-                                <div className="text-[#d8d8d8] bg-[#641bc9]  px-2 py-1 rounded-xl">
+                                <div className="text-[#d8d8d8] bg-[#7209b7]  px-2 py-1 rounded-xl">
                                     <p className="font-medium text-[15px]">Next.js</p>
                                 </div>
-                                <div className="text-[#d8d8d8] bg-[#641bc9]  px-2 py-1 rounded-xl">
+                                <div className="text-[#d8d8d8] bg-[#7209b7]  px-2 py-1 rounded-xl">
                                     <p className="font-medium text-[15px]">TypeScript</p>
                                 </div>
-                                <div className="text-[#d8d8d8] bg-[#641bc9]  px-2 py-1 rounded-xl">
+                                <div className="text-[#d8d8d8] bg-[#7209b7]  px-2 py-1 rounded-xl">
                                     <p className="font-medium text-[15px]">Tailwind CSS</p>
                                 </div>
-                                <div className="text-[#d8d8d8] bg-[#641bc9]  px-2 py-1 rounded-xl">
+                                <div className="text-[#d8d8d8] bg-[#7209b7]  px-2 py-1 rounded-xl">
                                     <p className="font-medium text-[15px]">Node.js</p>
                                 </div>
-                                <div className="text-[#d8d8d8] bg-[#641bc9]  px-2 py-1 rounded-xl">
+                                <div className="text-[#d8d8d8] bg-[#7209b7]  px-2 py-1 rounded-xl">
                                     <p className="font-medium text-[15px]">Express.js</p>
                                 </div>
-                                <div className="text-[#d8d8d8] bg-[#641bc9]  px-2 py-1 rounded-xl">
+                                <div className="text-[#d8d8d8] bg-[#7209b7]  px-2 py-1 rounded-xl">
                                     <p className="font-medium text-[15px]">MongoDB.js</p>
                                 </div>
                             </div>
                             <motion.button
                                 whileHover={{
                                     scale: 1.05,
-                                    boxShadow: "0px 5px 15px #7c3aed",
+                                    boxShadow: "0px 5px 15px #7C25B6",
                                     cursor: "pointer"
                                 }}
                                 transition={{
                                     duration: 0.2
                                 }}
-                                className='bg-violet-600 px-5 py-3 rounded-3xl font-semibold cursor-pointer text-[#f3f3f3]'>
+                                className='bg-[#7209b7] mt-5 px-5 py-3 rounded-3xl font-semibold cursor-pointer text-[#f3f3f3]'>
                                 <span>Show Project</span>
                                 <motion.span
                                     initial={{ x: 0 }}
@@ -79,32 +79,32 @@ const Projects = () => {
                             <h2 className="text-3xl">Adoply</h2>
                             <p className="text-[#d4d4d4] font-medium">Adoptly is a team-based MERN stack pet adoption platform featuring smart search and filtering, secure Firebase authentication, and role-based...</p>
                             <div className="flex flex-wrap gap-3">
-                                <div className="text-[#d8d8d8] bg-[#641bc9]  px-2 py-1 rounded-xl">
+                                <div className="text-[#cacaca] bg-[#7209b7]  px-2 py-1 rounded-xl">
                                     <p className="font-medium text-[15px]">Next.js</p>
                                 </div>
-                                <div className="text-[#d8d8d8] bg-[#641bc9]  px-2 py-1 rounded-xl">
+                                <div className="text-[#cacaca] bg-[#7209b7]  px-2 py-1 rounded-xl">
                                     <p className="font-medium text-[15px]">Tailwind CSS</p>
                                 </div>
-                                <div className="text-[#d8d8d8] bg-[#641bc9]  px-2 py-1 rounded-xl">
+                                <div className="text-[#cacaca] bg-[#7209b7]  px-2 py-1 rounded-xl">
                                     <p className="font-medium text-[15px]">Node.js</p>
                                 </div>
-                                <div className="text-[#d8d8d8] bg-[#641bc9]  px-2 py-1 rounded-xl">
+                                <div className="text-[#cacaca] bg-[#7209b7]  px-2 py-1 rounded-xl">
                                     <p className="font-medium text-[15px]">Express.js</p>
                                 </div>
-                                <div className="text-[#d8d8d8] bg-[#641bc9]  px-2 py-1 rounded-xl">
+                                <div className="text-[#cacaca] bg-[#7209b7]  px-2 py-1 rounded-xl">
                                     <p className="font-medium text-[15px]">Mongodb.js</p>
                                 </div>
                             </div>
                             <motion.button
                                 whileHover={{
                                     scale: 1.05,
-                                    boxShadow: "0px 5px 15px #7c3aed",
+                                    boxShadow: "0px 5px 15px #7C25B6",
                                     cursor: "pointer"
                                 }}
                                 transition={{
                                     duration: 0.2
                                 }}
-                                className='bg-violet-600 px-5 py-3 rounded-3xl font-semibold cursor-pointer text-[#f3f3f3]'>
+                                className='bg-[#7209b7] px-5 py-3 mt-5 rounded-3xl font-semibold cursor-pointer text-[#cacaca]'>
                                 <span>Show Project</span>
                                 <motion.span
                                     initial={{ x: 0 }}
@@ -132,32 +132,32 @@ const Projects = () => {
                             <h2 className="text-3xl">HealthCare</h2>
                             <p className="text-[#d4d4d4] font-medium">The Healthcare project is a patient-focused platform that enables easy online doctor appointment booking, secure payments, and access to professional...</p>
                             <div className="flex flex-wrap gap-3">
-                                <div className="text-[#d8d8d8] bg-[#641bc9]  px-2 py-1 rounded-xl">
-                                        <p className="font-medium text-[15px]">Next.js</p>
+                                <div className="text-[#d8d8d8] bg-[#7209b7]  px-2 py-1 rounded-xl">
+                                    <p className="font-medium text-[15px] text-[#cacaca]">Next.js</p>
                                 </div>
-                                <div className="text-[#d8d8d8] bg-[#641bc9]  px-2 py-1 rounded-xl">
-                                    <p className="font-medium text-[15px]">Tailwind CSS</p>
+                                <div className="text-[#d8d8d8] bg-[#7209b7]  px-2 py-1 rounded-xl">
+                                    <p className="font-medium text-[15px] text-[#cacaca]">Tailwind CSS</p>
                                 </div>
-                                <div className="text-[#d8d8d8] bg-[#641bc9]  px-2 py-1 rounded-xl">
-                                    <p className="font-medium text-[15px]">Node.js</p>
+                                <div className="text-[#d8d8d8] bg-[#7209b7]  px-2 py-1 rounded-xl">
+                                    <p className="font-medium text-[15px] text-[#cacaca]">Node.js</p>
                                 </div>
-                                <div className="text-[#d8d8d8] bg-[#641bc9]  px-2 py-1 rounded-xl">
-                                    <p className="font-medium text-[15px]">Express.js</p>
+                                <div className="text-[#d8d8d8] bg-[#7209b7]  px-2 py-1 rounded-xl">
+                                    <p className="font-medium text-[15px] text-[#cacaca]">Express.js</p>
                                 </div>
-                                <div className="text-[#d8d8d8] bg-[#641bc9]  px-2 py-1 rounded-xl">
-                                    <p className="font-medium text-[15px]">Mongodb.js</p>
+                                <div className="text-[#d8d8d8] bg-[#7209b7]  px-2 py-1 rounded-xl">
+                                    <p className="font-medium text-[15px] text-[#cacaca]">Mongodb.js</p>
                                 </div>
                             </div>
                             <motion.button
                                 whileHover={{
                                     scale: 1.05,
-                                    boxShadow: "0px 5px 15px #7c3aed",
+                                    boxShadow: "0px 5px 15px #7C25B6",
                                     cursor: "pointer"
                                 }}
                                 transition={{
                                     duration: 0.2
                                 }}
-                                className='bg-violet-600 px-5 py-3 rounded-3xl font-semibold cursor-pointer text-[#f3f3f3]'>
+                                className='bg-[#7209b7] mt-5 px-5 py-3 rounded-3xl font-semibold cursor-pointer text-[#cacaca]'>
                                 <span>Show Project</span>
                                 <motion.span
                                     initial={{ x: 0 }}
