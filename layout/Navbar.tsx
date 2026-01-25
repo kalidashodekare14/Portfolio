@@ -111,7 +111,7 @@ const Navbar = () => {
                         )
                     }
                 </div>
-                <ul className={`z-50 absolute left-0 p-5 lg:hidden  bg-[#307bc4] text-white w-full flex flex-col  gap-5 text-[19px] font-light translate-y-10 duration-700  ${toggle ? "translate-x-0" : "-translate-x-full"}`}>
+                <ul className={`z-50 absolute left-0 p-5 lg:hidden  bg-[#522374] text-white w-full flex flex-col  gap-5 text-[19px] font-light translate-y-10 duration-700  ${toggle ? "translate-x-0" : "-translate-x-full"}`}>
                     {links}
                 </ul>
             </nav>

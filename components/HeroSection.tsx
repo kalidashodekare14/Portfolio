@@ -4,15 +4,15 @@ import { motion } from "motion/react"
 
 const HeroSection = () => {
     return (
-        <div id='hero' className='-mt-px relative lg:min-h-screen h-screen  bg-[#161f2d] overflow-hidden font-roboto flex flex-col items-center lg:justify-center '>
+        <div id='hero' className='-mt-px relative lg:min-h-screen bg-[#161f2d] overflow-hidden font-roboto flex flex-col items-center lg:justify-center pb-5'>
             <div className='z-20 flex flex-col items-center gap-6 mt-14 lg:mt-0'>
                 <p className='text-[#f7f6f6bb] text-[22px] bg-[#47146b] p-3 py-1 rounded-3xl'>Frontend Developer</p>
-                <h1 className='text-white text-[94px] lg:text-8xl text-center font-bold leading-tight'>
+                <h1 className='text-white text-[80px] lg:text-8xl text-center font-bold leading-tight'>
                     <span className='bg-linear-to-r from-[#ad6cdb] via-[#9a5dc2] to-[#8c50b4] bg-clip-text text-transparent animate-linear'>Kalidash Odekare</span>
                 </h1>
                 {/* text-[#f95738] */}
-                <h3 className='text-[#bbbbbb] text-[23px] text-center'>Building Beautiful & Functional Web Interfaces</h3>
-                <div className='flex flex-wrap lg:flex-row justify-center items-center gap-4'>
+                <h3 className='text-[#bbbbbb] text-[20px] lg:text-[23px] text-center'>Building Beautiful & Functional Web Interfaces</h3>
+                <div className=' flex flex-wrap lg:flex-row justify-center items-center gap-4'>
                     <motion.div
                         whileHover={{
                             scale: 1.1,
@@ -54,7 +54,7 @@ const HeroSection = () => {
                         <p>Interactive UI</p>
                     </motion.div>
                 </div>
-                <div>
+                <div className='flex flex-col lg:flex-row gap-5'>
                     <motion.button
                         whileHover={{
                             scale: 1.05,
