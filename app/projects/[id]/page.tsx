@@ -87,7 +87,7 @@ const page = () => {
         <div className='bg-[#161E2D] text-white'>
             <div className='max-w-5xl m-auto py-10'>
                 <h1>Project Details</h1>
-                <div className='my-10'>
+                <div className='my-10 mx-5'>
                     <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
                         {
                             projectData.images.map((img, index) => (
@@ -100,7 +100,7 @@ const page = () => {
                         }
                     </Swiper>
                 </div>
-                <div>
+                <div className='mx-5'>
                     {/* Project Title */}
                     <h2 className='text-4xl font-bold mb-4'>{projectData.title}</h2>
                     <div>
@@ -111,7 +111,7 @@ const page = () => {
                         ))}
                     </div>
                     {/* Project Links */}
-                    <div className='flex items-center my-4 space-x-4'>
+                    <div className='flex flex-wrap gap-5 my-4 lg:space-x-4'>
                         <Link href={projectData.liveLink} target="_blank">
                             <motion.button
                                 whileHover={{
@@ -138,7 +138,7 @@ const page = () => {
                                 transition={{
                                     duration: 0.2
                                 }}
-                                className='flex items-center gap-2 ml-2 border border-[#7209b7] px-5 py-3 rounded-xl font-semibold cursor-pointer text-[#f3f3f3]'>
+                                className='flex items-center gap-2 lg:ml-2 border border-[#7209b7] px-5 py-3 rounded-xl font-semibold cursor-pointer text-[#f3f3f3]'>
                                 <FaGithub />
                                 <span>Frontend Code</span>
                             </motion.button>
@@ -153,7 +153,7 @@ const page = () => {
                                 transition={{
                                     duration: 0.2
                                 }}
-                                className='flex items-center gap-2 ml-2 border border-[#7209b7] px-5 py-3 rounded-xl font-semibold cursor-pointer text-[#f3f3f3]'>
+                                className='flex items-center gap-2 lg:ml-2 border border-[#7209b7] px-5 py-3 rounded-xl font-semibold cursor-pointer text-[#f3f3f3]'>
                                 <AiFillDatabase />
                                 <span>Backend Code</span>
                             </motion.button>
@@ -161,12 +161,12 @@ const page = () => {
                     </div>
                 </div>
                 {/* Project Overview */}
-                <div className='my-10'>
+                <div className='my-10 mx-5'>
                     <h3 className='text-3xl font-semibold mb-2'>Overview</h3>
                     <p className='text-gray-300'>{projectData.overview}</p>
                 </div>
                 {/* Project Features */}
-                <div className='mb-6'>
+                <div className='mb-6 mx-5'>
                     <h3 className='text-3xl font-semibold mb-2'>Key Features</h3>
                     <div className='list-disc list-inside text-gray-300'>
                         {projectData.features.map((feature, index) => (
