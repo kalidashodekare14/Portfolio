@@ -92,7 +92,7 @@ const Navbar = () => {
 
     return (
         <div className={`sticky top-0 z-50  text-[#f5f5f5] shadow-xl backdrop-blur-lg transition-all duration-300 opacity-100 bg-[#01161e]`}>
-            <nav className={` z-50 w-full lg:px-32 px-3 flex justify-between py-3 font-roboto font-extralight`}>
+            <nav className={` z-50 max-w-6xl m-auto px-3 flex justify-between py-3 font-roboto font-extralight`}>
                 <div className='flex items-center gap-20'>
                     <h1 className='text-3xl'>
                         Portfolio
