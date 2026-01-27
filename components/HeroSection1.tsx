@@ -4,12 +4,12 @@ import { ins } from "motion/react-client";
 import Link from "next/link";
 import { IoCodeSlashSharp } from "react-icons/io5";
 import { SiReaddotcv } from "react-icons/si";
-
+import { Link as ScrollLink } from 'react-scroll'
 
 const HeroSection1 = () => {
     return (
         <div id='hero' className='-mt-px relative  bg-[#161f2d] overflow-hidden font-roboto pb-5'>
-            <div className='relative lg:max-w-6xl m-auto h-150 flex items-center'>
+            <div className='relative lg:max-w-6xl m-auto lg:min-h-screen flex items-center'>
                 <div className="space-y-7 mx-5">
                     <p className='relative z-20 w-60 text-[#f7f6f6bb] text-[22px] bg-[#6734AE] p-3 py-1 rounded-3xl'>Frontend Developer</p>
                     <h6 className='text-[#C398FF] text-7xl font-bold mt-4 '>Kalidash Odekare</h6>
@@ -82,19 +82,26 @@ const HeroSection1 = () => {
                                 </motion.span>
                             </motion.button>
                         </Link>
-
-                        <motion.button
-                            whileHover={{
-                                scale: 1.05,
-                                boxShadow: "0px 5px 15px #9045F8",
-                                cursor: "pointer"
-                            }}
-                            transition={{
-                                duration: 0.2
-                            }}
-                            className='ml-4 border border-[#9045F8] px-9 py-4 rounded-3xl font-semibold cursor-pointer text-[#f3f3f3]'>
-                            Contact Us
-                        </motion.button>
+                        <ScrollLink
+                            to="contact"
+                            spy={true}
+                            smooth={true}
+                            offset={-50}
+                            duration={600}
+                        >
+                            <motion.button
+                                whileHover={{
+                                    scale: 1.05,
+                                    boxShadow: "0px 5px 15px #9045F8",
+                                    cursor: "pointer"
+                                }}
+                                transition={{
+                                    duration: 0.2
+                                }}
+                                className='ml-4 border border-[#9045F8] px-9 py-4 rounded-3xl font-semibold cursor-pointer text-[#f3f3f3]'>
+                                Contact Us
+                            </motion.button>
+                        </ScrollLink>
                     </div>
                 </div>
             </div>
