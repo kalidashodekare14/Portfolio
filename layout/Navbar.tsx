@@ -95,7 +95,7 @@ const Navbar = () => {
             <nav className={` z-50 max-w-6xl m-auto px-3 flex justify-between py-3 font-roboto font-extralight`}>
                 <div className='flex items-center gap-20'>
                     <h1 className='text-3xl'>
-                        Portfolio
+                        <img className='w-52' src="/logo.png" alt="" />
                     </h1>
                     <ul className='hidden lg:flex items-center space-x-3 gap-5 text-[16px] font-normal'>
                         {links}
