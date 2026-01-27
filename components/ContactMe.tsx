@@ -9,7 +9,14 @@ const ContactMe = () => {
     return (
         <div id='contact' className="-mt-px bg-[#161E2D] ">
             <div className="lg:h-200 max-w-6xl m-auto font-roboto">
-                <h1 className="text-5xl text-center text-[#9045F8] font-bold py-10">Contact Me</h1>
+                <div className="py-20">
+                    <h1 className="text-5xl text-center text-[#9045F8] font-bold">Contact Me</h1>
+                    <motion.p
+                        initial={{ width: 0 }}
+                        whileInView={{ width: 240 }}
+                        transition={{ duration: 1 }}
+                        className=" m-auto border-2 mt-2 rounded-full border-[#9045F8]"></motion.p>
+                </div>
                 <div className='w-full flex flex-col lg:flex-row justify-between gap-10 mt-10 pb-5'>
                     <div className='lg:w-[40%] px-5 lg:space-y-9 space-y-5 border '>
                         <div className='text-white border bg-[#12121D] border-[#bbbb] p-5 rounded-2xl space-y-1'>

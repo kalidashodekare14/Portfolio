@@ -1,12 +1,20 @@
 "use client"
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const AboutMe = () => {
     return (
         <div id="about" className="-mt-px bg-[#161E2D] flex flex-col justify-center items-center font-roboto">
             <div className="min-h-screen lg:max-w-5xl mx-5 pb-10">
-                <h1 className="text-5xl py-20 text-center text-[#9045F8] font-bold">About Me</h1>
+                <div className="py-20">
+                    <h1 className="text-5xl text-center text-[#9045F8] font-bold">About Me</h1>
+                    <motion.p
+                        initial={{ width: 0 }}
+                        whileInView={{ width: 240 }}
+                        transition={{ duration: 1 }}
+                        className=" m-auto border-2 mt-2 rounded-full border-[#9045F8]"></motion.p>
+                </div>
                 <div className="flex flex-col lg:flex-row justify-between">
                     <div className="lg:w-[40%]">
                         <Image className="w-96 h-96  rounded-xl" src={"/about/kalidash.jpg"} alt="Kalidash Odekare" width={500} height={300} />

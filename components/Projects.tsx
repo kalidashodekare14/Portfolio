@@ -7,8 +7,15 @@ import Link from "next/link";
 const Projects = () => {
     return (
         <div id="projects" className="-mt-px bg-[#161E2D]  flex flex-col justify-center items-center">
-            <div className="lg:h-180 max-w-6xl font-roboto py-10">
-                <h1 className="text-5xl py-10 text-center text-[#9045F8] font-bold">Projects</h1>
+            <div className="lg:h-200 max-w-6xl font-roboto py-5">
+                <div className="py-20">
+                    <h1 className="text-5xl text-center text-[#9045F8] font-bold">Projects</h1>
+                    <motion.p
+                        initial={{ width: 0 }}
+                        whileInView={{ width: 215 }}
+                        transition={{ duration: 1 }}
+                        className=" m-auto border-2 mt-2 rounded-full border-[#9045F8]"></motion.p>
+                </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-5">
                     <motion.div
                         whileHover={{

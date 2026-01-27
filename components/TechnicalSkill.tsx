@@ -13,7 +13,14 @@ const TechnicalSkill = () => {
     return (
         <div id="skills" className="-mt-px bg-[#161E2D] lg:h-150 flex flex-col justify-center items-center">
             <div className="lg:max-w-6xl mx-5 font-roboto">
-                <h2 className="text-5xl py-10 text-center text-[#9045F8] font-bold">Technical Skills</h2>
+                <div className="py-20">
+                    <h1 className="text-5xl text-center text-[#9045F8] font-bold">Technical Skills</h1>
+                    <motion.p
+                        initial={{ width: 0 }}
+                        whileInView={{ width: 350 }}
+                        transition={{ duration: 1 }}
+                        className=" m-auto border-2 mt-2 rounded-full border-[#9045F8]"></motion.p>
+                </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-10">
                     <motion.div
                         initial={{
