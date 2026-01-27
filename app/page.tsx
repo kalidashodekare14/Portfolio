@@ -5,11 +5,13 @@ import HeroSection from "@/components/HeroSection";
 import Projects from "@/components/Projects";
 import TechnicalSkill from "@/components/TechnicalSkill";
 import Footer from "@/layout/Footer";
+import Navbar from "@/layout/Navbar";
 
 
 export default function Home() {
   return (
     <div>
+      <Navbar />
       <HeroSection />
       <AboutMe />
       {/* <Education /> */}

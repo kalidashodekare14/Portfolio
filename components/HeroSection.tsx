@@ -10,9 +10,10 @@ const HeroSection = () => {
         <div id='hero' className='-mt-px relative lg:min-h-screen bg-[#161f2d] overflow-hidden font-roboto flex flex-col items-center lg:justify-center pb-5'>
             <div className='relative max-w-7xl p-15 '>
                 <div className='z-20 flex flex-col items-center gap-6 mt-14 lg:mt-0'>
-                    <p className='relative z-20 text-[#f7f6f6bb] text-[22px] bg-[#47146b] p-3 py-1 rounded-3xl'>Frontend Developer</p>
+                    <p className='relative z-20 text-[#f7f6f6bb] text-[22px] bg-[#523779] p-3 py-1 rounded-3xl'>Frontend Developer</p>
                     <h1 className='text-white text-[80px] lg:text-8xl text-center font-bold leading-tight'>
-                        <span className='bg-linear-to-r from-[#ad6cdb] via-[#9a5dc2] to-[#8c50b4] bg-clip-text text-transparent animate-linear'>Kalidash Odekare</span>
+                        <span className='bg-linear-to-r from-[#8257be] via-[#8257be] to-[#8257be] bg-clip-text text-transparent animate-linear'>Kalidash Odekare</span>
+                        {/* <span className='bg-linear-to-r from-[#ad6cdb] via-[#9a5dc2] to-[#8c50b4] bg-clip-text text-transparent animate-linear'>Kalidash Odekare</span> */}
                     </h1>
                     {/* text-[#f95738] */}
                     <h3 className='text-[#bbbbbb] text-[20px] lg:text-[23px] text-center'>Building Beautiful & Functional Web Interfaces</h3>
@@ -20,14 +21,14 @@ const HeroSection = () => {
                         <motion.div
                             whileHover={{
                                 scale: 1.1,
-                                boxShadow: "0px 5px 10px #411f80",
+                                boxShadow: "0px 5px 10px #9045F8",
                                 cursor: "pointer"
                             }}
                             transition={{
                                 duration: 0.2,
                                 ease: "easeInOut"
                             }}
-                            className='font-semibold flex items-center gap-1 text-[#d4d4d4] bg-[#47146b] rounded-2xl p-2'>
+                            className='font-semibold flex items-center gap-1 text-[#d4d4d4] bg-[#5a2e99] rounded-2xl p-2'>
                             <IoCodeSlashSharp />
                             <p>Clean Code</p>
                         </motion.div>
@@ -40,7 +41,7 @@ const HeroSection = () => {
                             transition={{
                                 duration: 0.2
                             }}
-                            className='font-semibold flex items-center gap-1 text-[#d4d4d4] bg-[#47146b] rounded-2xl p-2'>
+                            className='font-semibold flex items-center gap-1 text-[#d4d4d4] bg-[#5a2e99] rounded-2xl p-2'>
                             <IoCodeSlashSharp />
                             <p>User Friendly</p>
                         </motion.div>
@@ -53,7 +54,7 @@ const HeroSection = () => {
                             transition={{
                                 duration: 0.2
                             }}
-                            className='font-semibold flex items-center gap-1 text-[#d4d4d4] bg-[#47146b] rounded-2xl p-2'>
+                            className='font-semibold flex items-center gap-1 text-[#d4d4d4] bg-[#5a2e99] rounded-2xl p-2'>
                             <IoCodeSlashSharp />
                             <p>Interactive UI</p>
                         </motion.div>
@@ -69,7 +70,9 @@ const HeroSection = () => {
                                 duration: 0.2
                             }}
                             // bg-violet-600
-                            className='bg-[#7209b7] px-9 py-4 rounded-3xl font-semibold cursor-pointer text-[#f3f3f3]'>
+                            // bg-[#7209b7]
+                            // latest: #9045F8
+                            className='bg-[#9045F8] px-9 py-4 rounded-3xl font-semibold cursor-pointer text-[#f3f3f3]'>
                             <span>Show Project</span>
                             <motion.span
                                 initial={{ x: 0 }}
@@ -84,13 +87,13 @@ const HeroSection = () => {
                         <motion.button
                             whileHover={{
                                 scale: 1.05,
-                                boxShadow: "0px 5px 15px #7C25B6",
+                                boxShadow: "0px 5px 15px #9045F8",
                                 cursor: "pointer"
                             }}
                             transition={{
                                 duration: 0.2
                             }}
-                            className='ml-4 border border-[#7209b7] px-9 py-4 rounded-3xl font-semibold cursor-pointer text-[#f3f3f3]'>
+                            className='ml-4 border border-[#9045F8] px-9 py-4 rounded-3xl font-semibold cursor-pointer text-[#f3f3f3]'>
                             Contact Us
                         </motion.button>
                     </div>
@@ -180,8 +183,8 @@ const HeroSection = () => {
                 transition={{
                     duration: 2,
                 }}
-                className='z-10 absolute top-0 w-100 h-100 rounded-full bg-purple-400 opacity-35 blur-[140px]'>
-
+                className='z-10 absolute top-0 w-100 h-100 rounded-full bg-[#8257be] opacity-35 blur-[140px]'>
+                {/* bg-purple-400 */}
             </motion.div>
             <motion.div
                 initial={{
@@ -193,7 +196,7 @@ const HeroSection = () => {
                 transition={{
                     duration: 2,
                 }}
-                className='z-10 absolute -bottom-20 right-0 w-50 h-50 rounded-full bg-purple-400 opacity-35 blur-[140px]'>
+                className='z-10 absolute -bottom-20 right-0 w-50 h-50 rounded-full bg-[#8257be] opacity-35 blur-[140px]'>
 
             </motion.div>
             <motion.div
@@ -206,7 +209,7 @@ const HeroSection = () => {
                 transition={{
                     duration: 2,
                 }}
-                className='z-10 absolute -bottom-20 left-0 w-50 h-50 rounded-full bg-purple-400 opacity-35 blur-[140px]'>
+                className='z-10 absolute -bottom-20 left-0 w-50 h-50 rounded-full bg-[#8257be] opacity-35 blur-[140px]'>
 
             </motion.div>
         </div >

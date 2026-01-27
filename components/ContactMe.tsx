@@ -9,7 +9,7 @@ const ContactMe = () => {
     return (
         <div id='contact' className="-mt-px bg-[#161E2D] ">
             <div className="lg:h-200 max-w-6xl m-auto font-roboto">
-                <h1 className="text-5xl text-center text-[#7209b7] font-bold py-10">Contact Me</h1>
+                <h1 className="text-5xl text-center text-[#9045F8] font-bold py-10">Contact Me</h1>
                 <div className='w-full flex flex-col lg:flex-row justify-between gap-10 mt-10 pb-5'>
                     <div className='lg:w-[40%] px-5 lg:space-y-9 space-y-5 border '>
                         <div className='text-white border bg-[#12121D] border-[#bbbb] p-5 rounded-2xl space-y-1'>
@@ -41,7 +41,7 @@ const ContactMe = () => {
                                     <motion.div
                                         whileHover={{ scale: 1.1 }}
                                         whileTap={{ scale: 0.9 }}
-                                        className='bg-[#7209b7] cursor-pointer p-3 rounded-full text-[19px]'>
+                                        className='bg-[#9045F8] cursor-pointer p-3 rounded-full text-[19px]'>
                                         <FaLinkedinIn />
                                     </motion.div>
                                 </Link>
@@ -49,7 +49,7 @@ const ContactMe = () => {
                                     <motion.div
                                         whileHover={{ scale: 1.1 }}
                                         whileTap={{ scale: 0.9 }}
-                                        className='bg-[#7209b7]  cursor-pointer p-3 rounded-full text-[19px]'>
+                                        className='bg-[#9045F8]  cursor-pointer p-3 rounded-full text-[19px]'>
                                         <FaGithub />
                                     </motion.div>
                                 </Link>
@@ -59,20 +59,20 @@ const ContactMe = () => {
                     <div className='lg:w-[60%] px-5 rounded-2xl space-y-2 bg-[#12121D] text-white p-5'>
                         <div className='w-full space-y-2'>
                             <p className='text-[#cfcfcf]'>Full Name</p>
-                            <input className="input w-full font-medium focus:outline-[#7209b7] text-white bg-[#1E2939]" type="text" placeholder="Name" />
+                            <input className="input w-full font-medium focus:outline-[#9045F8] text-white bg-[#1E2939]" type="text" placeholder="Name" />
                         </div>
                         <div className='w-full space-y-2'>
                             <p className='text-[#cfcfcf]'>Email Address</p>
-                            <input className="input w-full font-medium focus:outline-[#7209b7] text-white bg-[#1E2939]" type="email" placeholder="Email" />
+                            <input className="input w-full font-medium focus:outline-[#9045F8] text-white bg-[#1E2939]" type="email" placeholder="Email" />
                         </div>
                         <div className='w-full space-y-2'>
                             <p className='text-[#cfcfcf]'>Message</p>
-                            <textarea className="textarea h-32 w-full font-medium focus:outline-[#7209b7] text-white bg-[#1E2939]" placeholder="Message" />
+                            <textarea className="textarea h-32 w-full font-medium focus:outline-[#9045F8] text-white bg-[#1E2939]" placeholder="Message" />
                         </div>
                         <motion.button
                             whileHover={{ scale: 1.01 }}
                             whileTap={{ scale: 0.95 }}
-                            className="w-full bg-[#7209b7] cursor-pointer text-white px-6 py-2 mt-5 rounded-lg font-medium"
+                            className="w-full bg-[#9045F8] cursor-pointer text-white px-6 py-2 mt-5 rounded-lg font-medium"
                         >
                             Submit
                         </motion.button>

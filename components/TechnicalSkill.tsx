@@ -13,7 +13,7 @@ const TechnicalSkill = () => {
     return (
         <div id="skills" className="-mt-px bg-[#161E2D] lg:h-150 flex flex-col justify-center items-center">
             <div className="lg:max-w-6xl mx-5 font-roboto">
-                <h2 className="text-5xl py-10 text-center text-[#7209b7] font-bold">Technical Skills</h2>
+                <h2 className="text-5xl py-10 text-center text-[#9045F8] font-bold">Technical Skills</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-10">
                     <motion.div
                         initial={{
@@ -21,7 +21,7 @@ const TechnicalSkill = () => {
                         }}
                         whileHover={{
                             y: -8,
-                            boxShadow: "0px 5px 15px #2D0A5E"
+                            boxShadow: "0px 5px 15px #5A2A9C"
                         }}
                         transition={{
                             duration: 0.3
@@ -30,7 +30,7 @@ const TechnicalSkill = () => {
                         {/* Add your technical skills content here */}
                         <div className="flex items-center text-[#e6e5e5]">
                             <div className="flex items-center gap-4">
-                                <div className="bg-[#7209b7] p-2 rounded-full">
+                                <div className="bg-[#9045F8] p-2 rounded-full">
                                     <FaCode className="text-4xl" />
                                 </div>
                                 <p className="text-2xl">Frontend</p>
@@ -85,7 +85,7 @@ const TechnicalSkill = () => {
                         }}
                         whileHover={{
                             y: -8,
-                            boxShadow: "0px 5px 15px #2D0A5E"
+                            boxShadow: "0px 5px 15px #5A2A9C"
                         }}
                         transition={{
                             duration: 0.3
@@ -94,7 +94,7 @@ const TechnicalSkill = () => {
                         {/* Add your technical skills content here */}
                         <div className="flex items-center text-[#e6e5e5]">
                             <div className="flex items-center gap-4">
-                                <div className="bg-[#7209b7] p-2 rounded-full">
+                                <div className="bg-[#9045F8] p-2 rounded-full">
                                     <FaCode className="text-4xl" />
                                 </div>
                                 <p className="text-2xl">Backend</p>
@@ -149,7 +149,7 @@ const TechnicalSkill = () => {
                         }}
                         whileHover={{
                             y: -8,
-                            boxShadow: "0px 5px 15px #2D0A5E"
+                            boxShadow: "0px 5px 15px #5A2A9C"
                         }}
                         transition={{
                             duration: 0.3
@@ -158,7 +158,7 @@ const TechnicalSkill = () => {
                         {/* Add your technical skills content here */}
                         <div className="flex items-center text-[#e6e5e5]">
                             <div className="flex items-center gap-4">
-                                <div className="bg-[#7209b7] p-2 rounded-full">
+                                <div className="bg-[#9045F8] p-2 rounded-full">
                                     <FaCode className="text-4xl" />
                                 </div>
                                 <p className="text-2xl">Technologies & Tools</p>
