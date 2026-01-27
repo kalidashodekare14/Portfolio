@@ -1,6 +1,9 @@
 "use client"
 import { motion } from "motion/react"
+import { ins } from "motion/react-client";
+import Link from "next/link";
 import { IoCodeSlashSharp } from "react-icons/io5";
+import { SiReaddotcv } from "react-icons/si";
 
 
 const HeroSection1 = () => {
@@ -54,30 +57,32 @@ const HeroSection1 = () => {
                         </motion.div>
                     </div>
                     <div className='flex flex-col lg:flex-row gap-4'>
-                        <motion.button
-                            whileHover={{
-                                scale: 1.05,
-                                boxShadow: "0px 5px 15px #7C25B6",
-                                cursor: "pointer"
-                            }}
-                            transition={{
-                                duration: 0.2
-                            }}
-                            // bg-violet-600
-                            // bg-[#7209b7]
-                            // latest: #9045F8
-                            className='bg-[#9045F8] px-9 py-4 rounded-3xl font-semibold cursor-pointer text-[#f3f3f3]'>
-                            <span>Show Project</span>
-                            <motion.span
-                                initial={{ x: 0 }}
+                        <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                            <motion.button
                                 whileHover={{
-                                    x: 5
+                                    scale: 1.05,
+                                    boxShadow: "0px 5px 15px #7C25B6",
+                                    cursor: "pointer"
                                 }}
                                 transition={{
-                                    duration: 0.5,
+                                    duration: 0.2
                                 }}
-                                className='ml-2' >→</motion.span>
-                        </motion.button>
+                                // bg-violet-600
+                                // bg-[#7209b7]
+                                // latest: #9045F8
+                                className='flex items-center bg-[#9045F8] px-9 py-4 rounded-3xl font-semibold cursor-pointer text-[#f3f3f3]'>
+                                <span>Dawnload Resume</span>
+                                <motion.span
+                                    initial={{ x: 0 }}
+                                    transition={{
+                                        duration: 0.5,
+                                    }}
+                                    className='ml-2 text-2xl' >
+                                    <SiReaddotcv />
+                                </motion.span>
+                            </motion.button>
+                        </Link>
+
                         <motion.button
                             whileHover={{
                                 scale: 1.05,
