@@ -48,29 +48,61 @@ const projectInfo = [
     {
         "id": 2,
         "images": [
-            "https://i.postimg.cc/5NyVnFXZ/project.png",
-            "https://i.postimg.cc/fWBscvRp/project2.png",
+            "https://i.postimg.cc/52YscWJK/a1.png",
+            "https://i.postimg.cc/W1F5RcVS/a2.png",
+            "https://i.postimg.cc/8zJZ8gGH/a3.png",
+            "https://i.postimg.cc/zGbxmYNg/a4.png",
+            "https://i.postimg.cc/Qd9fLZDc/a5.png",
+            "https://i.postimg.cc/TYHtHYzc/a6.png",
         ],
-        "title": "HelpLink – Disaster Relief Platform",
-        "overview": "HelpLink is a disaster relief platform that connects affected people with donors and volunteers.",
+        "title": "Adoply – Pet Adoption Platform",
+        "overview": "Adoptly is a team-based MERN Stack project for pet adoption, featuring smart filtering, Firebaseauthentication, and role-based dashboards for users and admins.",
         "skills": [
             "Next.js",
-            "TypeScript",
-            "Redux Toolkit",
             "Tailwind CSS",
+            "Firebase Auth",
+            "Tanstack Query",
+        ],
+        "features": [
+            "Responsive home page sections and core application pages",
+            "All Pets listing and detailed Pet Details pages",
+            "Efficient API integration with loading, error, and caching handling",
+            "Secure user dashboard with protected routes and role-based access",
+            "Dark mode support with toggle and persistent user preferences"
+        ],
+        "liveLink": "https://adoptly-team-project.vercel.app",
+        "frontendCode": "https://github.com/Mehedi86/adoptly-team-project",
+        "backendCode": ""
+    },
+    {
+        "id": 3,
+        "images": [
+            "https://i.postimg.cc/zGmQpfZG/img-1.png",
+            "https://i.postimg.cc/vZRKXmFw/img-2.png",
+            "https://i.postimg.cc/hPJFpwXm/img-3.png",
+        ],
+        "title": "HealthCare – Online Medical Service Platform",
+        "overview": "The Healthcare project is designed for patients. Here, you can easily book doctor appointments online without any hassle, make payments if required, and receive doctor consultations and treatments. Patients can view their booked appointments, and there is a dashboard that the admin can control.",
+        "skills": [
+            "Next.js",
+            "Tailwind CSS",
+            "Tanstack Query",
+            "NextAuth.js",
             "Node.js",
+            "Express.js",
             "MongoDB"
         ],
         "features": [
-            "Emergency request posting",
-            "AI-based emergency detection",
-            "Real-time hazard map",
-            "Secure payment integration",
-            "Role-based access control"
+            "Doctor search and filtering by name, department, and specialization",
+            "Online doctor appointment booking with optional payment system",
+            "Online doctor consultation and treatment support",
+            "Admin dashboard for managing doctors, patients, and appointments",
+            "Admin analytics to track revenue, total patients, doctors, and appointments",
+            "Full administrative control over the entire system"
         ],
-        "liveLink": "https://helplink.vercel.app",
-        "frontendCode": "https://github.com/username/HelpLink_Frontend",
-        "backendCode": "https://github.com/username/HelpLink_Backend"
+        "liveLink": "https://health-care14.vercel.app",
+        "frontendCode": "https://github.com/kalidashodekare14/HealthCare",
+        "backendCode": ""
     },
 
 ]
@@ -86,7 +118,7 @@ const page = () => {
     return (
         <div className='bg-[#161E2D] text-white'>
             <div className='max-w-5xl m-auto py-10'>
-                <Link href="/#projects" className='flex items-center gap-2 text-[#7209b7] mb-5 hover:underline w-fit'>
+                <Link href="/" className='flex items-center gap-2 text-[#7209b7] mb-5 hover:underline w-fit'>
                     <div className='mx-5 flex items-center gap-2 text-xl text-[#be5cff] cursor-pointer'>
                         <FaArrowLeft />
                         <h1>Back to Project</h1>
