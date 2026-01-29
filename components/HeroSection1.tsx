@@ -16,8 +16,8 @@ const HeroSection1 = () => {
 
     return (
         <div id='hero' className='-mt-px relative  bg-[#0D1317] overflow-hidden font-roboto pb-5'>
-            <div className='relative lg:max-w-6xl m-auto lg:h-150 flex items-center'>
-                <div className="w-[55%] space-y-7 mx-5">
+            <div className='relative lg:max-w-6xl m-auto lg:h-150 flex flex-col lg:flex-row items-center'>
+                <div className="lg:w-[55%] space-y-7 mx-5">
                     <p className='relative z-20 w-60 text-[#f7f6f6d5] text-[22px] bg-[#2d1a66] p-3 py-1 rounded-3xl'>Frontend Developer</p>
                     <h1 className='text-white text-[80px] lg:text-6xl text-center lg:text-left font-bold leading-tight'>
                         <span className='bg-linear-to-r from-[#8e77d4] via-[#9d84e7] to-[#9079d6] bg-clip-text text-transparent animate-linear'>Kalidash Odekare</span>
@@ -115,7 +115,7 @@ const HeroSection1 = () => {
                         </ScrollLink>
                     </div>
                 </div>
-                <div className='w-[45%] bg-linear-to-r from-[#11151a] via-[#11151a] to-[#0f1316] text-slate-400 flex border border-[#3f3f3fbb] rounded-xl p-5 text-[16px]'>
+                <div className='hidden lg:flex lg:w-[45%] bg-linear-to-r from-[#11151a] via-[#11151a] to-[#0f1316] text-slate-400 border border-[#3f3f3fbb] rounded-xl p-5 mx-5 text-[16px]'>
                     <div className="select-none pr-2">
                         <div>1</div>
                         <div>2</div>
