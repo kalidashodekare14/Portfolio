@@ -7,7 +7,7 @@ import { SiReaddotcv } from "react-icons/si";
 import { Link as ScrollLink } from 'react-scroll'
 // 161f2d
 const HeroSection1 = () => {
-
+    
 
     return (
         <div id='hero' className='-mt-px relative  bg-[#0D1317] overflow-hidden font-roboto pb-5'>
@@ -146,6 +146,7 @@ const HeroSection1 = () => {
                         <span>'</span>
                         <span className="text-[#9A82E3]">Tailwind CSS</span>
                         <span>']</span>
+                        <span>,</span>
                         {"\n"}
                         <span className="text-[#d38b5d]">backendEnd</span>{" "}
                         <span>:</span>{" "}
@@ -164,6 +165,7 @@ const HeroSection1 = () => {
                         <span>'</span>
                         <span className="text-[#9A82E3]">MongoDB</span>
                         <span>']</span>
+                        <span>,</span>
                         {"\n"}
                         <span className="text-[#d38b5d]">tools</span>{" "}
                         <span>:</span>{" "}
