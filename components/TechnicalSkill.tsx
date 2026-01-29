@@ -4,10 +4,11 @@ import { BiLogoTypescript } from "react-icons/bi";
 import { FaCode, FaGithub, FaLaptopCode, FaReact } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { motion } from "motion/react"
-import { IoLogoNodejs } from "react-icons/io5";
+import { IoLogoNodejs, IoServer } from "react-icons/io5";
 import { SiExpress, SiFirebase, SiRedux } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 import { VscVscode } from "react-icons/vsc";
+import { GrTechnology } from "react-icons/gr";
 
 const TechnicalSkill = () => {
     return (
@@ -102,7 +103,7 @@ const TechnicalSkill = () => {
                         <div className="flex items-center text-[#c9c9c9]">
                             <div className="flex items-center gap-4">
                                 <div className="bg-[#6532FF] p-2 rounded-full">
-                                    <FaCode className="text-4xl" />
+                                    <IoServer className="text-4xl" />
                                 </div>
                                 <p className="text-2xl">Backend</p>
                             </div>
@@ -166,7 +167,7 @@ const TechnicalSkill = () => {
                         <div className="flex items-center text-[#c9c9c9]">
                             <div className="flex items-center gap-4">
                                 <div className="bg-[#6532FF] p-2 rounded-full">
-                                    <FaCode className="text-4xl" />
+                                    <GrTechnology className="text-4xl" />
                                 </div>
                                 <p className="text-2xl">Technologies & Tools</p>
                             </div>
