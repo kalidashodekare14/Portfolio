@@ -8,16 +8,11 @@ import { Link as ScrollLink } from 'react-scroll'
 // 161f2d
 const HeroSection1 = () => {
 
-    const skills = {
-        frontEnd: ['HTML', 'CSS', 'Tailwind', 'JavaScript', 'TypeScript', 'React', 'Next.js'],
-        backEnd: ['Node.js', 'Express.js', 'MongoDB'],
-        tools: ['Redux Toolkit', 'RTK Query', 'Git', 'GitHub', 'Firebase', 'NextAuth'],
-    };
 
     return (
         <div id='hero' className='-mt-px relative  bg-[#0D1317] overflow-hidden font-roboto pb-5'>
             <div className='relative lg:max-w-6xl m-auto lg:h-150 flex flex-col lg:flex-row items-center'>
-                <div className="lg:w-[55%] space-y-7 mx-5">
+                <div className="lg:w-[55%] space-y-7 mx-5 mt-10 lg:mt-0">
                     <p className='relative z-20 w-60 text-[#f7f6f6d5] text-[22px] bg-[#3e2783] p-3 py-1 rounded-3xl'>Frontend Developer</p>
                     <h1 className='text-white text-[80px] lg:text-6xl text-center lg:text-left font-bold leading-tight'>
                         <span className='bg-linear-to-r from-[#8e77d4] via-[#9d84e7] to-[#9079d6] bg-clip-text text-transparent animate-linear'>Kalidash Odekare</span>
@@ -81,7 +76,7 @@ const HeroSection1 = () => {
                                 // bg-[#7209b7]
                                 // latest: #9045F8+
                                 // 208b3a
-                                className='flex items-center bg-[#6532FF] px-9 py-4 rounded-3xl font-semibold cursor-pointer text-[#f3f3f3]'>
+                                className='flex w-full items-center bg-[#6532FF] px-9 py-4 rounded-3xl font-semibold cursor-pointer text-[#f3f3f3]'>
                                 <span>Dawnload Resume</span>
                                 <motion.span
                                     initial={{ x: 0 }}
@@ -109,7 +104,7 @@ const HeroSection1 = () => {
                                 transition={{
                                     duration: 0.2
                                 }}
-                                className='ml-4 border border-[#6532FF] px-9 py-4 rounded-3xl font-semibold cursor-pointer text-[#f3f3f3]'>
+                                className='lg:ml-4 border w-full border-[#6532FF] px-9 py-4 rounded-3xl font-semibold cursor-pointer text-[#f3f3f3]'>
                                 Contact Us
                             </motion.button>
                         </ScrollLink>
