@@ -7,12 +7,19 @@ import { SiReaddotcv } from "react-icons/si";
 import { Link as ScrollLink } from 'react-scroll'
 // 161f2d
 const HeroSection1 = () => {
+
+    const skills = {
+        frontEnd: ['HTML', 'CSS', 'Tailwind', 'JavaScript', 'TypeScript', 'React', 'Next.js'],
+        backEnd: ['Node.js', 'Express.js', 'MongoDB'],
+        tools: ['Redux Toolkit', 'RTK Query', 'Git', 'GitHub', 'Firebase', 'NextAuth'],
+    };
+
     return (
         <div id='hero' className='-mt-px relative  bg-[#0D1317] overflow-hidden font-roboto pb-5'>
-            <div className='relative lg:max-w-6xl m-auto lg:min-h-screen flex items-center'>
-                <div className="space-y-7 mx-5">
+            <div className='relative lg:max-w-6xl m-auto lg:h-150 flex items-center'>
+                <div className="w-[55%] space-y-7 mx-5">
                     <p className='relative z-20 w-60 text-[#f7f6f6d5] text-[22px] bg-[#2d1a66] p-3 py-1 rounded-3xl'>Frontend Developer</p>
-                    <h1 className='text-white text-[80px] lg:text-7xl text-center font-bold leading-tight'>
+                    <h1 className='text-white text-[80px] lg:text-6xl text-center lg:text-left font-bold leading-tight'>
                         <span className='bg-linear-to-r from-[#8e77d4] via-[#9d84e7] to-[#9079d6] bg-clip-text text-transparent animate-linear'>Kalidash Odekare</span>
                         {/* <span className='bg-linear-to-r from-[#ad6cdb] via-[#9a5dc2] to-[#8c50b4] bg-clip-text text-transparent animate-linear'>Kalidash Odekare</span> */}
                     </h1>
@@ -107,6 +114,65 @@ const HeroSection1 = () => {
                             </motion.button>
                         </ScrollLink>
                     </div>
+                </div>
+                <div className='w-[45%] bg-linear-to-r from-[#11151a] via-[#11151a] to-[#0f1316] text-slate-400 flex border border-[#3f3f3fbb] rounded-xl p-5 text-[16px]'>
+                    <div className="select-none pr-2">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                        
+                    </div>
+                    <pre className="whitespace-pre-wrap font-medium">
+                        <span className="text-[#ba181b]">const</span>{" "}
+                        <span className="text-[#bbb]">skills</span>{" "}
+                        <span>=</span>{" "}
+                        <span>{"{"}</span>
+                        {"\n"}
+                        <span className="text-[#d38b5d]">frontEnd</span>{" "}
+                        <span>:</span>{" "}
+                        <span>['</span>
+                        <span className="text-[#9A82E3]">TypeScript</span>
+                        <span>,</span>{" "}
+                        <span className="text-[#9A82E3]">React.js</span>
+                        <span className="text-[#9A82E3]">,</span>{" "}
+                        <span className="text-[#9A82E3]">Next.js</span>
+                        <span>,</span>{" "}
+                        <span className="text-[#9A82E3]">Tailwind CSS</span>
+                        <span>,</span>
+                        <span>']</span>
+                        {"\n"}
+                        <span className="text-[#d38b5d]">backendEnd</span>{" "}
+                        <span>:</span>{" "}
+                        <span>['</span>
+                        <span className="text-[#9A82E3]">TypeScript</span>
+                        <span>,</span>{" "}
+                        <span className="text-[#9A82E3]">Node.js</span>
+                        <span>,</span>{" "}
+                        <span className="text-[#9A82E3]">Express.js</span>
+                        <span>,</span>{" "}
+                        <span className="text-[#9A82E3]">MongoDB</span>
+                        <span>,</span>
+                        <span>']</span>
+                        {"\n"}
+                        <span className="text-[#d38b5d]">tools</span>{" "}
+                        <span>:</span>{" "}
+                        <span>['</span>
+                        <span className="text-[#9A82E3]">VS Code</span>
+                        <span>,</span>{" "}
+                        <span className="text-[#9A82E3]">GitHub</span>
+                        <span>,</span>{" "}
+                        <span className="text-[#9A82E3]">Firebase</span>
+                        <span className="text-[#9A82E3]">,</span>{" "}
+                        <span className="text-[#9A82E3]">Redux</span>
+                        <span>,</span>
+                        <span>']</span>
+                    </pre>
                 </div>
             </div>
             <motion.div
