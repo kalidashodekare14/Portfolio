@@ -35,7 +35,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={-100}
                 duration={500}
-                activeClass="border-b-2 text-[#A684FF]! border-[#A684FF] rounded-none"
+                activeClass="border-b-2 text-[#9577ED]! font-bold border-[#9577ED] rounded-none"
                 className={'text-white cursor-pointer dark:text-black'}>
                 Home
             </Link>
@@ -46,7 +46,7 @@ const Navbar = () => {
                 spy={true}
                 smooth={true}
                 offset={-80}
-                activeClass="border-b-2 text-[#A684FF]! border-[#A684FF] rounded-none"
+                activeClass="border-b-2 text-[#9577ED]! font-bold border-[#9577ED] rounded-none"
                 duration={500}
                 className={'text-white cursor-pointer dark:text-black'}>
                 About Me
@@ -59,7 +59,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                activeClass="border-b-2 text-[#A684FF]! border-[#A684FF] rounded-none"
+                activeClass="border-b-2 text-[#9577ED]! font-bold border-[#9577ED] rounded-none"
                 className={'text-white cursor-pointer dark:text-black'}>
                 My Skills
             </Link>
@@ -71,7 +71,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={-60}
                 duration={500}
-                activeClass="border-b-2 text-[#A684FF]! border-[#A684FF] rounded-none"
+                activeClass="border-b-2 text-[#9577ED]! font-bold border-[#9577ED] rounded-none"
                 className={'text-white cursor-pointer dark:text-black'}>
                 Projects
             </Link>
@@ -83,7 +83,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={-50}
                 duration={500}
-                activeClass="border-b-2 text-[#A684FF]!  border-[#A684FF] rounded-none"
+                activeClass="border-b-2 text-[#9577ED]! font-bold border-[#9577ED] rounded-none"
                 className={'text-white cursor-pointer dark:text-black'}>
                 Contact Us
             </Link>
@@ -104,7 +104,7 @@ const Navbar = () => {
                 <div className='flex items-center gap-5 text-[19px]'>
                     {
                         toggle ? (
-                            <IoMdClose  onClick={handleToggle} className='text-white text-2xl lg:hidden' />
+                            <IoMdClose onClick={handleToggle} className='text-white text-2xl lg:hidden' />
                         ) : (
 
                             <FaBars onClick={handleToggle} className='text-white lg:hidden' />

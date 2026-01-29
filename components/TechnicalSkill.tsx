@@ -11,33 +11,33 @@ import { VscVscode } from "react-icons/vsc";
 
 const TechnicalSkill = () => {
     return (
-        <div id="skills" className="-mt-px bg-[#161E2D] lg:h-150 flex flex-col justify-center items-center">
+        <div id="skills" className="-mt-px bg-[#0D1317] lg:h-150 flex flex-col justify-center items-center">
             <div className="lg:max-w-6xl mx-5 font-roboto">
-                <div className="py-20">
-                    <h1 className="text-5xl text-center text-[#9045F8] font-bold">Technical Skills</h1>
+                <div className="py-14">
+                    <h1 className="text-5xl text-center text-[#6532FF] font-bold">Technical Skills</h1>
                     <motion.p
                         initial={{ width: 0 }}
                         whileInView={{ width: 350 }}
                         transition={{ duration: 1 }}
-                        className=" m-auto border-2 mt-2 rounded-full border-[#9045F8]"></motion.p>
+                        className=" m-auto border-2 mt-2 rounded-full border-[#6532FF]"></motion.p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
                     <motion.div
                         initial={{
                             y: 0
                         }}
                         whileHover={{
                             y: -8,
-                            boxShadow: "0px 5px 15px #5A2A9C"
+                            boxShadow: "0px 5px 15px #6532FF"
                         }}
                         transition={{
                             duration: 0.3
                         }}
-                        className="border rounded-2xl border-[#575757]  bg-linear-to-r from-[#1e2838] via-[#131a24] to-[#141b25] p-5">
+                        className="border rounded-2xl border-[#62558b]  bg-linear-to-r from-[#11151a] via-[#11151a] to-[#0f1316] p-5">
                         {/* Add your technical skills content here */}
                         <div className="flex items-center text-[#e6e5e5]">
                             <div className="flex items-center gap-4">
-                                <div className="bg-[#9045F8] p-2 rounded-full">
+                                <div className="bg-[#6532FF] p-2 rounded-full">
                                     <FaCode className="text-4xl" />
                                 </div>
                                 <p className="text-2xl">Frontend</p>
@@ -92,16 +92,16 @@ const TechnicalSkill = () => {
                         }}
                         whileHover={{
                             y: -8,
-                            boxShadow: "0px 5px 15px #5A2A9C"
+                            boxShadow: "0px 5px 15px #6532FF"
                         }}
                         transition={{
                             duration: 0.3
                         }}
-                        className="border rounded-2xl border-[#575757]  bg-linear-to-r from-[#1e2838] via-[#131a24] to-[#141b25] p-5">
+                        className="border rounded-2xl border-[#62558b]  bg-linear-to-r from-[#11151a] via-[#11151a] to-[#0f1316] p-5">
                         {/* Add your technical skills content here */}
                         <div className="flex items-center text-[#e6e5e5]">
                             <div className="flex items-center gap-4">
-                                <div className="bg-[#9045F8] p-2 rounded-full">
+                                <div className="bg-[#6532FF] p-2 rounded-full">
                                     <FaCode className="text-4xl" />
                                 </div>
                                 <p className="text-2xl">Backend</p>
@@ -156,16 +156,16 @@ const TechnicalSkill = () => {
                         }}
                         whileHover={{
                             y: -8,
-                            boxShadow: "0px 5px 15px #5A2A9C"
+                            boxShadow: "0px 5px 15px #6532FF"
                         }}
                         transition={{
                             duration: 0.3
                         }}
-                        className="border rounded-2xl border-[#575757]  bg-linear-to-r from-[#1e2838] via-[#131a24] to-[#141b25] p-5">
+                        className="border rounded-2xl border-[#62558b]  bg-linear-to-r from-[#11151a] via-[#11151a] to-[#0f1316] p-5">
                         {/* Add your technical skills content here */}
                         <div className="flex items-center text-[#e6e5e5]">
                             <div className="flex items-center gap-4">
-                                <div className="bg-[#9045F8] p-2 rounded-full">
+                                <div className="bg-[#6532FF] p-2 rounded-full">
                                     <FaCode className="text-4xl" />
                                 </div>
                                 <p className="text-2xl">Technologies & Tools</p>

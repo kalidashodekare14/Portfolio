@@ -118,7 +118,7 @@ const page = () => {
     return (
         <div className='bg-[#161E2D] text-white'>
             <div className='max-w-5xl m-auto py-10'>
-                <Link href="/" className='flex items-center gap-2 text-[#7209b7] mb-5 hover:underline w-fit'>
+                <Link href="/" className='flex items-center gap-2 text-[#9045F8] mb-5 hover:underline w-fit'>
                     <div className='mx-5 flex items-center gap-2 text-xl text-[#be5cff] cursor-pointer'>
                         <FaArrowLeft />
                         <h1>Back to Project</h1>
@@ -142,7 +142,7 @@ const page = () => {
                     <h2 className='text-4xl font-bold mb-4'>{projectData.title}</h2>
                     <div>
                         {projectData.skills.map((skill, index) => (
-                            <span key={index} className="inline-block bg-[#522374] text-sm px-3 py-1 rounded-full mr-2 mb-2">
+                            <span key={index} className="inline-block bg-[#6732b1] text-sm px-3 py-1 rounded-full mr-2 mb-2">
                                 {skill}
                             </span>
                         ))}
@@ -153,14 +153,14 @@ const page = () => {
                             <motion.button
                                 whileHover={{
                                     scale: 1.05,
-                                    boxShadow: "0px 5px 15px #7C25B6",
+                                    boxShadow: "0px 5px 15px #9045F8",
                                     cursor: "pointer"
                                 }}
                                 transition={{
                                     duration: 0.2
                                 }}
                                 // bg-violet-600
-                                className='flex items-center gap-2 bg-[#7209b7] px-5 py-3 rounded-xl font-semibold cursor-pointer text-[#f3f3f3]'>
+                                className='flex items-center gap-2 bg-[#9045F8] px-5 py-3 rounded-xl font-semibold cursor-pointer text-[#f3f3f3]'>
                                 <FaDisplay />
                                 <span>Live Project</span>
                             </motion.button>
@@ -169,13 +169,13 @@ const page = () => {
                             <motion.button
                                 whileHover={{
                                     scale: 1.05,
-                                    boxShadow: "0px 5px 15px #7C25B6",
+                                    boxShadow: "0px 5px 15px #9045F8",
                                     cursor: "pointer"
                                 }}
                                 transition={{
                                     duration: 0.2
                                 }}
-                                className='flex items-center gap-2 lg:ml-2 border border-[#7209b7] px-5 py-3 rounded-xl font-semibold cursor-pointer text-[#f3f3f3]'>
+                                className='flex items-center gap-2 lg:ml-2 border border-[#9045F8] px-5 py-3 rounded-xl font-semibold cursor-pointer text-[#f3f3f3]'>
                                 <FaGithub />
                                 <span>Frontend Code</span>
                             </motion.button>
@@ -184,13 +184,13 @@ const page = () => {
                             <motion.button
                                 whileHover={{
                                     scale: 1.05,
-                                    boxShadow: "0px 5px 15px #7C25B6",
+                                    boxShadow: "0px 5px 15px #9045F8",
                                     cursor: "pointer"
                                 }}
                                 transition={{
                                     duration: 0.2
                                 }}
-                                className='flex items-center gap-2 lg:ml-2 border border-[#7209b7] px-5 py-3 rounded-xl font-semibold cursor-pointer text-[#f3f3f3]'>
+                                className='flex items-center gap-2 lg:ml-2 border border-[#9045F8] px-5 py-3 rounded-xl font-semibold cursor-pointer text-[#f3f3f3]'>
                                 <AiFillDatabase />
                                 <span>Backend Code</span>
                             </motion.button>
@@ -208,7 +208,7 @@ const page = () => {
                     <div className='list-disc list-inside text-gray-300'>
                         {projectData.features.map((feature, index) => (
                             <div className='flex items-center gap-2 mb-2' key={index}>
-                                <IoIosCheckmarkCircleOutline className='text-2xl text-[#8823cc]' />
+                                <IoIosCheckmarkCircleOutline className='text-2xl text-[#9045F8]' />
                                 <span className='text-[17px]' key={index}>{feature}</span>
                             </div>
                         ))}
