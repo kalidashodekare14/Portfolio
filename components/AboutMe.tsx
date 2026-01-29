@@ -8,12 +8,12 @@ const AboutMe = () => {
         <div id="about" className="-mt-px bg-[#0D1317] flex flex-col justify-center items-center font-roboto">
             <div className="min-h-screen lg:max-w-5xl mx-5 pb-10">
                 <div className="py-20">
-                    <h1 className="text-5xl text-center text-[#6532FF] font-bold">About Me</h1>
+                    <h1 className="text-5xl text-center text-[#6f46ec] font-bold">About Me</h1>
                     <motion.p
                         initial={{ width: 0 }}
                         whileInView={{ width: 240 }}
                         transition={{ duration: 1 }}
-                        className=" m-auto border-2 mt-2 rounded-full border-[#6532FF]"></motion.p>
+                        className=" m-auto border-2 mt-2 rounded-full text-[#6f46ec]"></motion.p>
                 </div>
                 <div className="flex flex-col lg:flex-row justify-between">
                     <div className="lg:w-[40%]">

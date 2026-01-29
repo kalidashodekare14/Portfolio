@@ -14,12 +14,12 @@ const TechnicalSkill = () => {
         <div id="skills" className="-mt-px bg-[#0D1317] lg:h-150 flex flex-col justify-center items-center">
             <div className="lg:max-w-6xl mx-5 font-roboto">
                 <div className="py-14">
-                    <h1 className="text-5xl text-center text-[#6532FF] font-bold">Technical Skills</h1>
+                    <h1 className="text-5xl text-center text-[#6f46ec] font-bold">Technical Skills</h1>
                     <motion.p
                         initial={{ width: 0 }}
                         whileInView={{ width: 350 }}
                         transition={{ duration: 1 }}
-                        className=" m-auto border-2 mt-2 rounded-full border-[#6532FF]"></motion.p>
+                        className=" m-auto border-2 mt-2 rounded-full border-[#6f46ec]"></motion.p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
                     <motion.div
@@ -28,7 +28,7 @@ const TechnicalSkill = () => {
                         }}
                         whileHover={{
                             y: -8,
-                            boxShadow: "0px 5px 15px #6532FF"
+                            boxShadow: "0px 5px 10px #512EB9"
                         }}
                         transition={{
                             duration: 0.3
@@ -92,7 +92,7 @@ const TechnicalSkill = () => {
                         }}
                         whileHover={{
                             y: -8,
-                            boxShadow: "0px 5px 15px #6532FF"
+                            boxShadow: "0px 5px 10px #512EB9"
                         }}
                         transition={{
                             duration: 0.3
@@ -156,7 +156,7 @@ const TechnicalSkill = () => {
                         }}
                         whileHover={{
                             y: -8,
-                            boxShadow: "0px 5px 15px #6532FF"
+                            boxShadow: "0px 5px 10px #512EB9"
                         }}
                         transition={{
                             duration: 0.3

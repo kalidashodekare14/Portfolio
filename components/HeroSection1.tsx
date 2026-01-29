@@ -18,7 +18,7 @@ const HeroSection1 = () => {
         <div id='hero' className='-mt-px relative  bg-[#0D1317] overflow-hidden font-roboto pb-5'>
             <div className='relative lg:max-w-6xl m-auto lg:h-150 flex flex-col lg:flex-row items-center'>
                 <div className="lg:w-[55%] space-y-7 mx-5">
-                    <p className='relative z-20 w-60 text-[#f7f6f6d5] text-[22px] bg-[#2d1a66] p-3 py-1 rounded-3xl'>Frontend Developer</p>
+                    <p className='relative z-20 w-60 text-[#f7f6f6d5] text-[22px] bg-[#3e2783] p-3 py-1 rounded-3xl'>Frontend Developer</p>
                     <h1 className='text-white text-[80px] lg:text-6xl text-center lg:text-left font-bold leading-tight'>
                         <span className='bg-linear-to-r from-[#8e77d4] via-[#9d84e7] to-[#9079d6] bg-clip-text text-transparent animate-linear'>Kalidash Odekare</span>
                         {/* <span className='bg-linear-to-r from-[#ad6cdb] via-[#9a5dc2] to-[#8c50b4] bg-clip-text text-transparent animate-linear'>Kalidash Odekare</span> */}
@@ -28,40 +28,40 @@ const HeroSection1 = () => {
                         <motion.div
                             whileHover={{
                                 scale: 1.1,
-                                boxShadow: "0px 5px 10px #009865",
+                                boxShadow: "0px 5px 10px #4e2fad",
                                 cursor: "pointer"
                             }}
                             transition={{
                                 duration: 0.2,
                                 ease: "easeInOut"
                             }}
-                            className='font-semibold flex items-center gap-1 text-[#d4d4d4] bg-[#4e2fad] rounded-2xl p-2'>
+                            className='font-semibold flex items-center gap-1 text-[#d4d4d4] bg-[#3e2783] rounded-2xl p-2'>
                             <IoCodeSlashSharp />
                             <p>Clean Code</p>
                         </motion.div>
                         <motion.div
                             whileHover={{
                                 scale: 1.1,
-                                boxShadow: "0px 5px 10px #156e51",
+                                boxShadow: "0px 5px 10px #4e2fad",
                                 cursor: "pointer"
                             }}
                             transition={{
                                 duration: 0.2
                             }}
-                            className='font-semibold flex items-center gap-1 text-[#d4d4d4] bg-[#4e2fad] rounded-2xl p-2'>
+                            className='font-semibold flex items-center gap-1 text-[#d4d4d4] bg-[#3e2783] rounded-2xl p-2'>
                             <IoCodeSlashSharp />
                             <p>User Friendly</p>
                         </motion.div>
                         <motion.div
                             whileHover={{
                                 scale: 1.1,
-                                boxShadow: "0px 5px 10px #156e51",
+                                boxShadow: "0px 5px 10px #4e2fad",
                                 cursor: "pointer"
                             }}
                             transition={{
                                 duration: 0.2
                             }}
-                            className='font-semibold flex items-center gap-1 text-[#d4d4d4] bg-[#4e2fad] rounded-2xl p-2'>
+                            className='font-semibold flex items-center gap-1 text-[#d4d4d4] bg-[#3e2783] rounded-2xl p-2'>
                             <IoCodeSlashSharp />
                             <p>Interactive UI</p>
                         </motion.div>

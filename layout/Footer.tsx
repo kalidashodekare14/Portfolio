@@ -29,7 +29,7 @@ const Footer = () => {
                                 <motion.div
                                     whileHover={{ scale: 1.1 }}
                                     whileTap={{ scale: 0.9 }}
-                                    className='bg-[#6532FF] cursor-pointer p-3 rounded-full text-[19px]'>
+                                    className='bg-[#4e27c2] text-[#ccc] cursor-pointer p-3 rounded-full text-[19px]'>
                                     <FaLinkedinIn />
                                 </motion.div>
                             </Link>
@@ -37,7 +37,7 @@ const Footer = () => {
                                 <motion.div
                                     whileHover={{ scale: 1.1 }}
                                     whileTap={{ scale: 0.9 }}
-                                    className='bg-[#6532FF]  cursor-pointer p-3 rounded-full text-[19px]'>
+                                    className='bg-[#4e27c2] text-[#ccc]  cursor-pointer p-3 rounded-full text-[19px]'>
                                     <FaGithub />
                                 </motion.div>
                             </Link>
