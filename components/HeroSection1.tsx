@@ -121,7 +121,7 @@ const HeroSection1 = () => {
                         <div>7</div>
                         <div>8</div>
                         <div>9</div>
-                        
+
                     </div>
                     <pre className="whitespace-pre-wrap font-medium">
                         <span className="text-[#ba181b]">const</span>{" "}
@@ -133,39 +133,54 @@ const HeroSection1 = () => {
                         <span>:</span>{" "}
                         <span>['</span>
                         <span className="text-[#9A82E3]">TypeScript</span>
+                        <span>'</span>
                         <span>,</span>{" "}
+                        <span>'</span>
                         <span className="text-[#9A82E3]">React.js</span>
+                        <span>'</span>
                         <span className="text-[#9A82E3]">,</span>{" "}
+                        <span>'</span>
                         <span className="text-[#9A82E3]">Next.js</span>
+                        <span>'</span>
                         <span>,</span>{" "}
+                        <span>'</span>
                         <span className="text-[#9A82E3]">Tailwind CSS</span>
-                        <span>,</span>
                         <span>']</span>
                         {"\n"}
                         <span className="text-[#d38b5d]">backendEnd</span>{" "}
                         <span>:</span>{" "}
                         <span>['</span>
                         <span className="text-[#9A82E3]">TypeScript</span>
+                        <span>'</span>
                         <span>,</span>{" "}
+                        <span>'</span>
                         <span className="text-[#9A82E3]">Node.js</span>
+                        <span>'</span>
                         <span>,</span>{" "}
+                        <span>'</span>
                         <span className="text-[#9A82E3]">Express.js</span>
+                        <span>'</span>
                         <span>,</span>{" "}
+                        <span>'</span>
                         <span className="text-[#9A82E3]">MongoDB</span>
-                        <span>,</span>
                         <span>']</span>
                         {"\n"}
                         <span className="text-[#d38b5d]">tools</span>{" "}
                         <span>:</span>{" "}
                         <span>['</span>
                         <span className="text-[#9A82E3]">VS Code</span>
+                        <span>'</span>
                         <span>,</span>{" "}
+                        <span>'</span>
                         <span className="text-[#9A82E3]">GitHub</span>
+                        <span>'</span>
                         <span>,</span>{" "}
+                        <span>'</span>
                         <span className="text-[#9A82E3]">Firebase</span>
+                        <span>'</span>
                         <span className="text-[#9A82E3]">,</span>{" "}
+                        <span>'</span>
                         <span className="text-[#9A82E3]">Redux</span>
-                        <span>,</span>
                         <span>']</span>
                     </pre>
                 </div>
