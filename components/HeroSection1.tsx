@@ -182,6 +182,8 @@ const HeroSection1 = () => {
                         <span>'</span>
                         <span className="text-[#9A82E3]">Redux</span>
                         <span>']</span>
+                        {"\n"}
+                        <span>{"}"}</span>
                     </pre>
                 </div>
             </div>
