@@ -12,32 +12,38 @@ const ContactMe = () => {
 
     const form = useRef<HTMLFormElement>(null);
 
-    // const sendEmail = (e: any) => {
-    //     e.preventDefault();
+    const sendEmail = (e: any) => {
+        e.preventDefault();
 
-    //     console.log('checking from data', form);
+        console.log('checking from data', form);
 
-    //     emailjs
-    //         .sendForm('service_allih9w', 'template_49b5xew', form.current, {
-    //             publicKey: 'zX6tgAJJyr1MY3rZr',
-    //         })
-    //         .then(
-    //             () => {
-    //                 console.log('SUCCESS!');
-    //                 Swal.fire({
-    //                     position: "center",
-    //                     icon: "success",
-    //                     title: "Your mail has been sent successfully.",
-    //                     showConfirmButton: false,
-    //                     timer: 1500
-    //                 });
-    //                 e.target.reset()
-    //             },
-    //             (error) => {
-    //                 console.log('FAILED...', error.text);
-    //             },
-    //         );
-    // };
+        if(form.current){
+            console.log('form null')
+        }
+
+        if (form.current) {
+            emailjs
+                .sendForm('service_allih9w', 'template_49b5xew', form.current, {
+                    publicKey: 'zX6tgAJJyr1MY3rZr',
+                })
+                .then(
+                    () => {
+                        console.log('SUCCESS!');
+                        Swal.fire({
+                            position: "center",
+                            icon: "success",
+                            title: "Your mail has been sent successfully.",
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
+                        e.target.reset()
+                    },
+                    (error) => {
+                        console.log('FAILED...', error.text);
+                    },
+                );
+        }
+    };
 
     return (
         <div id='contact' className="-mt-px bg-[#0D1317] ">
@@ -96,7 +102,7 @@ const ContactMe = () => {
                             </div>
                         </div>
                     </div>
-                    <form ref={form} className='lg:w-[60%] px-5 rounded-2xl space-y-2 bg-[#0e141f] text-white p-5'>
+                    <form ref={form} onSubmit={sendEmail} className='lg:w-[60%] px-5 rounded-2xl space-y-2 bg-[#0e141f] text-white p-5'>
                         <div className='w-full space-y-2'>
                             <p className='text-[#cfcfcf]'>Full Name</p>
                             <input className="input w-full font-medium focus:outline-[#4e27c2] text-white bg-[#1E2939]" type="text" name='user_name' placeholder="Name" />
