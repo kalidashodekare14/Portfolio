@@ -46,7 +46,7 @@ const ContactMe = () => {
     };
 
     return (
-        <div id='contact' className="-mt-px bg-[#0D1317] ">
+        <div id='contact' className="-mt-px bg-[#0D1317] dark:bg-white">
             <div className="lg:h-200 max-w-6xl m-auto font-roboto">
                 <div className="py-20">
                     <h1 className="text-5xl text-center text-[#6f46ec] font-bold">Contact Me</h1>
@@ -58,30 +58,30 @@ const ContactMe = () => {
                 </div>
                 <div className='w-full flex flex-col lg:flex-row justify-between gap-10 mt-10 pb-5'>
                     <div className='lg:w-[40%] px-5 lg:space-y-9 space-y-5 '>
-                        <div className='text-white border bg-[#0e141f] border-[#3f3f3fbb] p-5 rounded-2xl space-y-1'>
-                            <h3 className='text-2xl text-[#ffffffbb]'>Contact Info</h3>
+                        <div className='text-white border bg-[#0e141f] dark:bg-white border-[#3f3f3fbb] dark:border-[#bbbb] p-5 rounded-2xl space-y-1'>
+                            <h3 className='text-2xl text-[#ffffffbb] dark:text-[#363d4b]'>Contact Info</h3>
                             <div>
-                                <div className='flex items-center gap-2 text-[17px] text-[#b6b4b4]'>
+                                <div className='flex items-center gap-2 text-[17px] text-[#b6b4b4] dark:text-[#454d5e]'>
                                     <MdEmail />
                                     <span className='font-medium '>kalidashodekare14@gmail.com</span>
                                 </div>
-                                <div className='flex items-center gap-2 text-[17px] text-[#b6b4b4]'>
+                                <div className='flex items-center gap-2 text-[17px] text-[#b6b4b4] dark:text-[#454d5e]'>
                                     <FaWhatsapp />
                                     <span className='font-medium '>+8801776046270</span>
                                 </div>
                             </div>
                         </div>
-                        <div className='text-white border bg-[#0e141f] border-[#3f3f3fbb] p-5 rounded-2xl space-y-1'>
-                            <h3 className='text-2xl text-[#ffffffbb]'>Address</h3>
+                        <div className='text-white border bg-[#0e141f] dark:bg-white border-[#3f3f3fbb] dark:border-[#bbbb] p-5 rounded-2xl space-y-1'>
+                            <h3 className='text-2xl text-[#ffffffbb] dark:text-[#363d4b]'>Address</h3>
                             <div>
-                                <div className='flex items-center gap-2 text-[17px] text-[#b6b4b4]'>
+                                <div className='flex items-center gap-2 text-[17px] text-[#b6b4b4] dark:text-[#454d5e]'>
                                     <FaLocationDot />
                                     <span className='font-medium'>Dinajpur, Bangladesh</span>
                                 </div>
                             </div>
                         </div>
-                        <div className='text-white border bg-[#0e141f] border-[#3f3f3fbb] p-5 rounded-2xl space-y-1'>
-                            <h3 className='text-2xl text-[#ffffffbb]'>Follow me</h3>
+                        <div className='text-white border bg-[#0e141f] dark:bg-white border-[#3f3f3fbb] dark:border-[#bbbb] p-5 rounded-2xl space-y-1'>
+                            <h3 className='text-2xl text-[#ffffffbb] dark:text-[#363d4b]'>Follow me</h3>
                             <div className='flex items-center gap-4'>
                                 <Link href={"https://www.linkedin.com/in/kalidash-odekare-webdev"} target='_blank'>
                                     <motion.div
@@ -102,18 +102,18 @@ const ContactMe = () => {
                             </div>
                         </div>
                     </div>
-                    <form ref={form} onSubmit={sendEmail} className='lg:w-[60%] px-5 rounded-2xl space-y-2 bg-[#0e141f] text-white p-5'>
+                    <form ref={form} onSubmit={sendEmail} className='lg:w-[60%] px-5 rounded-2xl space-y-2 bg-[#0e141f] dark:bg-white border border-[#6e6e6ebb] dark:border-[#bbbb] text-white p-5'>
                         <div className='w-full space-y-2'>
-                            <p className='text-[#cfcfcf]'>Full Name</p>
-                            <input className="input w-full font-medium focus:outline-[#4e27c2] text-white bg-[#1E2939]" type="text" name='user_name' placeholder="Name" />
+                            <p className='text-[#cfcfcf] dark:text-[#363d4b]'>Full Name</p>
+                            <input className="input w-full font-medium focus:outline-[#4e27c2] text-white dark:text-black bg-[#1E2939] dark:bg-white" type="text" name='user_name' placeholder="Name" />
                         </div>
                         <div className='w-full space-y-2'>
-                            <p className='text-[#cfcfcf]'>Email Address</p>
-                            <input className="input w-full font-medium focus:outline-[#4e27c2] text-white bg-[#1E2939]" type="email" name='user_email' placeholder="Email" />
+                            <p className='text-[#cfcfcf] dark:text-[#363d4b]'>Email Address</p>
+                            <input className="input w-full font-medium focus:outline-[#4e27c2] text-white dark:text-black bg-[#1E2939] dark:bg-white" type="email" name='user_email' placeholder="Email" />
                         </div>
                         <div className='w-full space-y-2'>
-                            <p className='text-[#cfcfcf]'>Message</p>
-                            <textarea className="textarea h-32 w-full font-medium focus:outline-[#4e27c2] text-white bg-[#1E2939]" name='message' placeholder="Message" />
+                            <p className='text-[#cfcfcf] dark:text-[#363d4b]'>Message</p>
+                            <textarea className="textarea h-32 w-full font-medium focus:outline-[#4e27c2] text-white dark:text-black bg-[#1E2939] dark:bg-white" name='message' placeholder="Message" />
                         </div>
                         <motion.button
                             whileHover={{ scale: 1.01 }}

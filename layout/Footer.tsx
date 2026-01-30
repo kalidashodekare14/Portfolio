@@ -6,12 +6,12 @@ import Link from "next/link";
 
 const Footer = () => {
     return (
-        <div className="-mt-px bg-[#161E2D]">
+        <div className="-mt-px bg-[#161E2D] dark:bg-white">
             <div className=" max-w-6xl m-auto font-roboto">
                 <footer className="footer sm:footer-horizontal text-neutral-content items-center p-4">
                     <aside className="grid-flow-col items-center">
                         <img className="w-14" src="/singel_logo.png" alt="" />
-                        <p className="text-[17px]">Kalidash Odekare © {new Date().getFullYear()} - All right reserved</p>
+                        <p className="text-[17px] dark:text-[#363d4b]">Kalidash Odekare © {new Date().getFullYear()} - All right reserved</p>
                     </aside>
                     <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
                         <div className='flex items-center gap-4'>
