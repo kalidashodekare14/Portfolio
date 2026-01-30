@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Projects = () => {
     return (
-        <div id="projects" className="-mt-px bg-[#0D1317]  flex flex-col justify-center items-center">
+        <div id="projects" className="-mt-px bg-[#0D1317] dark:bg-white  flex flex-col justify-center items-center">
             <div className="lg:h-200 max-w-6xl font-roboto py-5">
                 <div className="py-20">
                     <h1 className="text-5xl text-center text-[#6f46ec] font-bold">Projects</h1>
@@ -25,28 +25,28 @@ const Projects = () => {
                         transition={{
                             duration: 0.2
                         }}
-                        className="text-white rounded-2xl bg-[#0e141f] ">
+                        className="text-white rounded-2xl bg-[#0e141f] dark:bg-white border border-[#bbbb] shadow-lg">
                         <Image className="w-full h-52 rounded-t-2xl" src="/project/helplink.png" alt="HelpLink" width={500} height={400} />
                         <div className="px-5 my-4 space-y-3">
-                            <h2 className="text-3xl text-[#dadada]">HelpLink</h2>
-                            <p className="text-[#b9b9b9] font-medium">A digital relief platform built with MERN stack to bridge the gap between donors and underprivileged communities during disasters in Bangladesh.</p>
+                            <h2 className="text-3xl text-[#dadada] dark:text-[#363d4b]">HelpLink</h2>
+                            <p className="text-[#b9b9b9] font-medium dark:text-[#4c566a]">A digital relief platform built with MERN stack to bridge the gap between donors and underprivileged communities during disasters in Bangladesh.</p>
                             <div className="flex flex-wrap gap-3">
-                                <div className="text-[#d4d3d3] bg-[#452d8d]  px-2 py-1 rounded-xl">
+                                <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
                                     <p className="font-medium text-[15px]">Next.js</p>
                                 </div>
-                                <div className="text-[#d8d8d8] bg-[#452d8d]  px-2 py-1 rounded-xl">
+                                <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
                                     <p className="font-medium text-[15px]">TypeScript</p>
                                 </div>
-                                <div className="text-[#d8d8d8] bg-[#452d8d]  px-2 py-1 rounded-xl">
+                                <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
                                     <p className="font-medium text-[15px]">Tailwind CSS</p>
                                 </div>
-                                <div className="text-[#d8d8d8] bg-[#452d8d]  px-2 py-1 rounded-xl">
+                                <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
                                     <p className="font-medium text-[15px]">Node.js</p>
                                 </div>
-                                <div className="text-[#d8d8d8] bg-[#452d8d]  px-2 py-1 rounded-xl">
+                                <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
                                     <p className="font-medium text-[15px]">Express.js</p>
                                 </div>
-                                <div className="text-[#d8d8d8] bg-[#452d8d]  px-2 py-1 rounded-xl">
+                                <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
                                     <p className="font-medium text-[15px]">MongoDB.js</p>
                                 </div>
                             </div>
@@ -83,25 +83,25 @@ const Projects = () => {
                         transition={{
                             duration: 0.2
                         }}
-                        className="text-white rounded-2xl bg-[#0e141f] ">
+                         className="text-white rounded-2xl bg-[#0e141f] dark:bg-white border border-[#bbbb] shadow-lg">
                         <Image className="w-full h-52 rounded-t-2xl" src="/project/adoply.png" alt="HelpLink" width={500} height={400} />
                         <div className="px-5 my-4 space-y-3">
-                            <h2 className="text-3xl text-[#dadada]">Adoply</h2>
-                            <p className="text-[#b9b9b9] font-medium">Adoptly is a team-based MERN stack pet adoption platform featuring smart search and filtering, secure Firebase authentication, and role-based...</p>
+                            <h2 className="text-3xl text-[#dadada] dark:text-[#363d4b]">Adoply</h2>
+                            <p className="text-[#b9b9b9] font-medium dark:text-[#4c566a]">Adoptly is a team-based MERN stack pet adoption platform featuring smart search and filtering, secure Firebase authentication, and role-based...</p>
                             <div className="flex flex-wrap gap-3">
-                                <div className="text-[#cacaca] bg-[#452d8d]  px-2 py-1 rounded-xl">
+                                <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
                                     <p className="font-medium text-[15px]">Next.js</p>
                                 </div>
-                                <div className="text-[#cacaca] bg-[#452d8d]  px-2 py-1 rounded-xl">
+                                <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
                                     <p className="font-medium text-[15px]">Tailwind CSS</p>
                                 </div>
-                                <div className="text-[#cacaca] bg-[#452d8d]  px-2 py-1 rounded-xl">
+                                <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
                                     <p className="font-medium text-[15px]">Node.js</p>
                                 </div>
-                                <div className="text-[#cacaca] bg-[#452d8d]  px-2 py-1 rounded-xl">
+                                <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
                                     <p className="font-medium text-[15px]">Express.js</p>
                                 </div>
-                                <div className="text-[#cacaca] bg-[#452d8d]  px-2 py-1 rounded-xl">
+                                <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
                                     <p className="font-medium text-[15px]">Mongodb.js</p>
                                 </div>
                             </div>
@@ -138,26 +138,26 @@ const Projects = () => {
                         transition={{
                             duration: 0.2
                         }}
-                        className="text-white rounded-2xl bg-[#0e141f] ">
+                         className="text-white rounded-2xl bg-[#0e141f] dark:bg-white border border-[#bbbb] shadow-lg">
                         <Image className="w-full h-52 rounded-t-2xl" src="/project/healthcare.png" alt="HelpLink" width={500} height={400} />
                         <div className="px-5 my-4 space-y-3">
-                            <h2 className="text-3xl text-[#dadada]">HealthCare</h2>
-                            <p className="text-[#b9b9b9] font-medium">The Healthcare project is a patient-focused platform that enables easy online doctor appointment booking, secure payments, and access to professional...</p>
+                            <h2 className="text-3xl text-[#dadada] dark:text-[#363d4b]">HealthCare</h2>
+                            <p className="text-[#b9b9b9] font-medium dark:text-[#4c566a]">The Healthcare project is a patient-focused platform that enables easy online doctor appointment booking, secure payments, and access to professional...</p>
                             <div className="flex flex-wrap gap-3">
-                                <div className="text-[#d8d8d8] bg-[#452d8d]  px-2 py-1 rounded-xl">
-                                    <p className="font-medium text-[15px] text-[#cacaca]">Next.js</p>
+                                <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
+                                    <p className="font-medium text-[15px] text-[#cacaca] dark:text-[#354461]">Next.js</p>
                                 </div>
-                                <div className="text-[#d8d8d8] bg-[#452d8d]  px-2 py-1 rounded-xl">
-                                    <p className="font-medium text-[15px] text-[#cacaca]">Tailwind CSS</p>
+                                <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
+                                    <p className="font-medium text-[15px] text-[#cacaca] dark:text-[#354461]">Tailwind CSS</p>
                                 </div>
-                                <div className="text-[#d8d8d8] bg-[#452d8d]  px-2 py-1 rounded-xl">
-                                    <p className="font-medium text-[15px] text-[#cacaca]">Node.js</p>
+                                <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
+                                    <p className="font-medium text-[15px] text-[#cacaca] dark:text-[#354461]">Node.js</p>
                                 </div>
-                                <div className="text-[#d8d8d8] bg-[#452d8d]  px-2 py-1 rounded-xl">
-                                    <p className="font-medium text-[15px] text-[#cacaca]">Express.js</p>
+                                <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
+                                    <p className="font-medium text-[15px] text-[#cacaca] dark:text-[#354461]">Express.js</p>
                                 </div>
-                                <div className="text-[#d8d8d8] bg-[#452d8d]  px-2 py-1 rounded-xl">
-                                    <p className="font-medium text-[15px] text-[#cacaca]">Mongodb.js</p>
+                                <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
+                                    <p className="font-medium text-[15px] text-[#cacaca] dark:text-[#354461]">Mongodb.js</p>
                                 </div>
                             </div>
                             <Link href="/projects/3">
