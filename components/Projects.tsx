@@ -47,7 +47,7 @@ const Projects = () => {
                                     <p className="font-medium text-[15px]">MongoDB.js</p>
                                 </div>
                             </div>
-                            {/* <Link href="/projects/1">
+                            <Link href="/projects/1">
                                 <motion.button
                                     whileHover={{
                                         scale: 1.05,
@@ -59,17 +59,8 @@ const Projects = () => {
                                     }}
                                     className='bg-[#401fa1] mt-5 px-5 py-3 rounded-3xl font-semibold cursor-pointer text-[#cacaca]'>
                                     <span>Show Project</span>
-                                    <motion.span
-                                        initial={{ x: 0 }}
-                                        whileHover={{
-                                            x: 5
-                                        }}
-                                        transition={{
-                                            duration: 0.5,
-                                        }}
-                                        className='ml-2' >→</motion.span>
                                 </motion.button>
-                            </Link> */}
+                            </Link>
                         </div>
                     </motion.div>
                     <motion.div
@@ -102,7 +93,7 @@ const Projects = () => {
                                     <p className="font-medium text-[15px]">Mongodb.js</p>
                                 </div>
                             </div>
-                            {/* <Link href="/projects/2">
+                            <Link href="/projects/2">
                                 <motion.button
                                     whileHover={{
                                         scale: 1.05,
@@ -114,17 +105,8 @@ const Projects = () => {
                                     }}
                                     className='bg-[#401fa1] px-5 py-3 mt-5 rounded-3xl font-semibold cursor-pointer text-[#cacaca]'>
                                     <span>Show Project</span>
-                                    <motion.span
-                                        initial={{ x: 0 }}
-                                        whileHover={{
-                                            x: 5
-                                        }}
-                                        transition={{
-                                            duration: 0.5,
-                                        }}
-                                        className='ml-2' >→</motion.span>
                                 </motion.button>
-                            </Link> */}
+                            </Link>
                         </div>
                     </motion.div>
                     <motion.div
@@ -157,7 +139,7 @@ const Projects = () => {
                                     <p className="font-medium text-[15px] text-[#cacaca] dark:text-[#354461]">Mongodb.js</p>
                                 </div>
                             </div>
-                            {/* <Link href="/projects/3">
+                            <Link href="/projects/3">
                                 <motion.button
                                     whileHover={{
                                         scale: 1.05,
@@ -169,17 +151,8 @@ const Projects = () => {
                                     }}
                                     className='bg-[#401fa1] mt-5 px-5 py-3 rounded-3xl font-semibold cursor-pointer text-[#cacaca]'>
                                     <span>Show Project</span>
-                                    <motion.span
-                                        initial={{ x: 0 }}
-                                        whileHover={{
-                                            x: 5
-                                        }}
-                                        transition={{
-                                            duration: 0.5,
-                                        }}
-                                        className='ml-2' >→</motion.span>
                                 </motion.button>
-                            </Link> */}
+                            </Link>
                         </div>
                     </motion.div>
                 </div>
