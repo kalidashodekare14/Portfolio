@@ -50,7 +50,7 @@ const Projects = () => {
                                     <p className="font-medium text-[15px]">MongoDB.js</p>
                                 </div>
                             </div>
-                            <Link href="/projects/1">
+                            {/* <Link href="/projects/1">
                                 <motion.button
                                     whileHover={{
                                         scale: 1.05,
@@ -72,7 +72,7 @@ const Projects = () => {
                                         }}
                                         className='ml-2' >→</motion.span>
                                 </motion.button>
-                            </Link>
+                            </Link> */}
                         </div>
                     </motion.div>
                     <motion.div
@@ -105,7 +105,7 @@ const Projects = () => {
                                     <p className="font-medium text-[15px]">Mongodb.js</p>
                                 </div>
                             </div>
-                            <Link href="/projects/2">
+                            {/* <Link href="/projects/2">
                                 <motion.button
                                     whileHover={{
                                         scale: 1.05,
@@ -127,7 +127,7 @@ const Projects = () => {
                                         }}
                                         className='ml-2' >→</motion.span>
                                 </motion.button>
-                            </Link>
+                            </Link> */}
                         </div>
                     </motion.div>
                     <motion.div
@@ -160,7 +160,7 @@ const Projects = () => {
                                     <p className="font-medium text-[15px] text-[#cacaca] dark:text-[#354461]">Mongodb.js</p>
                                 </div>
                             </div>
-                            <Link href="/projects/3">
+                            {/* <Link href="/projects/3">
                                 <motion.button
                                     whileHover={{
                                         scale: 1.05,
@@ -182,7 +182,7 @@ const Projects = () => {
                                         }}
                                         className='ml-2' >→</motion.span>
                                 </motion.button>
-                            </Link>
+                            </Link> */}
                         </div>
                     </motion.div>
                 </div>
