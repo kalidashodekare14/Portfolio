@@ -194,12 +194,12 @@ const HeroSection1 = () => {
                     opacity: 0,
                 }}
                 animate={{
-                    opacity: 0.35,
+                    opacity: 0.20,
                 }}
                 transition={{
                     duration: 2,
                 }}
-                className='z-10 absolute -bottom-20 right-0 w-50 h-50 rounded-full bg-[#6532FF] opacity-100 blur-[140px]'>
+                className='z-10 absolute -bottom-5 right-0 w-50 h-50 rounded-full bg-[#6532FF] opacity-100 blur-[140px]'>
 
             </motion.div>
             <motion.div
@@ -207,7 +207,20 @@ const HeroSection1 = () => {
                     opacity: 0,
                 }}
                 animate={{
-                    opacity: 0.20,
+                    opacity: 0.30,
+                }}
+                transition={{
+                    duration: 2,
+                }}
+                className='z-10 absolute -top-50 left-[40%] w-96 h-96 rounded-full bg-[#6532FF] opacity-100 blur-[140px]'>
+
+            </motion.div>
+            <motion.div
+                initial={{
+                    opacity: 0,
+                }}
+                animate={{
+                    opacity: 0.30,
                 }}
                 transition={{
                     duration: 2,
