@@ -6,15 +6,12 @@ import Link from "next/link";
 
 const Projects = () => {
     return (
-        <div id="projects" className="-mt-px bg-[#0D1317] dark:bg-white  flex flex-col justify-center items-center">
-            <div className="lg:h-200 max-w-6xl font-rubik py-5">
-                <div className="py-20">
-                    <h1 className="text-5xl text-center text-[#6f46ec] font-bold">Projects</h1>
-                    <motion.p
-                        initial={{ width: 0 }}
-                        whileInView={{ width: 215 }}
-                        transition={{ duration: 1 }}
-                        className=" m-auto border-2 mt-2 rounded-full border-[#6f46ec]"></motion.p>
+        <div id="projects" className="-mt-px relative overflow-hidden bg-[#0D1317] dark:bg-white  flex flex-col justify-center items-center">
+            <div className="lg:h-200 max-w-6xl font-rubik py-5 relative z-20">
+                <div className="flex items-center gap-2 text-xl py-14">
+                    <p className="w-14 border-2 border-[#6532FF]" />
+                    <p className="text-white dark:text-[#000000bb]">Projects</p>
+                    <p className="w-14 border-2 border-[#6532FF]" />
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-5">
                     <motion.div
@@ -83,7 +80,7 @@ const Projects = () => {
                         transition={{
                             duration: 0.2
                         }}
-                         className="text-white rounded-2xl bg-[#0e141f] dark:bg-white border border-[#bbbb] shadow-lg">
+                        className="text-white rounded-2xl bg-[#0e141f] dark:bg-white border border-[#bbbb] shadow-lg">
                         <Image className="w-full h-52 rounded-t-2xl" src="/project/adoply.png" alt="HelpLink" width={500} height={400} />
                         <div className="px-5 my-4 space-y-3">
                             <h2 className="text-3xl text-[#dadada] dark:text-[#363d4b]">Adoply</h2>
@@ -138,7 +135,7 @@ const Projects = () => {
                         transition={{
                             duration: 0.2
                         }}
-                         className="text-white rounded-2xl bg-[#0e141f] dark:bg-white border border-[#bbbb] shadow-lg">
+                        className="text-white rounded-2xl bg-[#0e141f] dark:bg-white border border-[#bbbb] shadow-lg">
                         <Image className="w-full h-52 rounded-t-2xl" src="/project/healthcare.png" alt="HelpLink" width={500} height={400} />
                         <div className="px-5 my-4 space-y-3">
                             <h2 className="text-3xl text-[#dadada] dark:text-[#363d4b]">HealthCare</h2>
@@ -187,6 +184,15 @@ const Projects = () => {
                     </motion.div>
                 </div>
             </div>
+            <motion.div
+                className='z-10 absolute top-0 left-10 w-60 h-50 rounded-full bg-[#6532FF] opacity-50 blur-[140px]'>
+            </motion.div>
+            <motion.div
+                className='z-10 absolute top-50 left-[40%] w-80 h-80 rounded-full bg-[#6532FF] opacity-20 blur-[160px]'>
+            </motion.div>
+            <motion.div
+                className='z-10 absolute -bottom-20 left-0 w-50 h-50 rounded-full bg-[#6532FF] opacity-50 blur-[140px]'>
+            </motion.div>
         </div>
     );
 };

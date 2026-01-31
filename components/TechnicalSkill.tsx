@@ -12,15 +12,20 @@ import { GrTechnology } from "react-icons/gr";
 
 const TechnicalSkill = () => {
     return (
-        <div id="skills" className="-mt-px bg-[#0D1317] dark:bg-white lg:h-150 flex flex-col justify-center items-center">
-            <div className="lg:max-w-6xl mx-5 font-rubik">
-                <div className="py-14">
+        <div id="skills" className="-mt-px relative overflow-hidden bg-[#0D1317] dark:bg-white lg:h-150 flex flex-col justify-center items-center">
+            <div className="lg:max-w-6xl relative z-20 mx-5 font-rubik">
+                {/* <div className="py-14">
                     <h1 className="text-5xl text-center text-[#6f46ec] font-bold">Technical Skills</h1>
                     <motion.p
                         initial={{ width: 0 }}
                         whileInView={{ width: 350 }}
                         transition={{ duration: 1 }}
                         className=" m-auto border-2 mt-2 rounded-full border-[#6f46ec]"></motion.p>
+                </div> */}
+                <div className="flex items-center gap-2 text-xl py-14">
+                    <p className="w-14 border-2 border-[#6532FF]" />
+                    <p className="text-white dark:text-[#000000bb]">Technical Skills</p>
+                    <p className="w-14 border-2 border-[#6532FF]" />
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
                     <motion.div
@@ -162,7 +167,7 @@ const TechnicalSkill = () => {
                         transition={{
                             duration: 0.3
                         }}
-                         className="border rounded-2xl border-[#62558b] dark:border-[#757474bb] shadow-2xl  dark:bg-white light:bg-linear-to-r from-[#11151a] via-[#11151a] to-[#0f1316] p-5">
+                        className="border rounded-2xl border-[#62558b] dark:border-[#757474bb] shadow-2xl  dark:bg-white light:bg-linear-to-r from-[#11151a] via-[#11151a] to-[#0f1316] p-5">
                         {/* Add your technical skills content here */}
                         <div className="flex items-center text-[#c9c9c9]">
                             <div className="flex items-center gap-4">
@@ -190,7 +195,7 @@ const TechnicalSkill = () => {
                                 className="flex flex-col items-center gap-2">
                                 <div className="flex items-center text-[#c2c2c2] bg-[#3a3d41] border-2 border-[#1A1E22] text-4xl p-3 rounded-2xl">
                                     <FaGithub />
-                                </div> 
+                                </div>
                                 <p className="text-[#c7c7c7] dark:text-[#232730]">GitHub</p>
                             </motion.div>
                             <motion.div
@@ -217,6 +222,15 @@ const TechnicalSkill = () => {
                     </motion.div>
                 </div>
             </div>
+            <motion.div
+                className='z-10 absolute top-0 left-10 w-60 h-50 rounded-full bg-[#6532FF] opacity-50 blur-[140px]'>
+            </motion.div>
+             <motion.div
+                className='z-10 absolute top-50 left-[40%] w-80 h-80 rounded-full bg-[#6532FF] opacity-20 blur-[160px]'>
+            </motion.div>
+            <motion.div
+                className='z-10 absolute -bottom-20 left-0 w-50 h-50 rounded-full bg-[#6532FF] opacity-50 blur-[140px]'>
+            </motion.div>
         </div>
     );
 };

@@ -17,7 +17,7 @@ const ContactMe = () => {
 
         console.log('checking from data', form);
 
-        if(form.current){
+        if (form.current) {
             console.log('form null')
         }
 
@@ -46,18 +46,15 @@ const ContactMe = () => {
     };
 
     return (
-        <div id='contact' className="-mt-px bg-[#0D1317] dark:bg-white">
-            <div className="lg:h-200 max-w-6xl m-auto font-roboto">
-                <div className="py-20">
-                    <h1 className="text-5xl text-center text-[#6f46ec] font-bold">Contact Me</h1>
-                    <motion.p
-                        initial={{ width: 0 }}
-                        whileInView={{ width: 240 }}
-                        transition={{ duration: 1 }}
-                        className=" m-auto border-2 mt-2 rounded-full border-[#6f46ec]"></motion.p>
+        <div id='contact' className="-mt-px relative overflow-hidden bg-[#0D1317] dark:bg-white">
+            <div className="lg:h-150 max-w-5xl m-auto font-roboto relative z-20">
+                <div className="flex items-center gap-2 text-xl py-14">
+                    <p className="w-14 border-2 border-[#6532FF]" />
+                    <p className="text-white dark:text-[#000000bb]">Contact Us</p>
+                    <p className="w-14 border-2 border-[#6532FF]" />
                 </div>
                 <div className='w-full flex flex-col lg:flex-row justify-between gap-10 mt-10 pb-5'>
-                    <div className='lg:w-[40%] px-5 lg:space-y-9 space-y-5 '>
+                    {/* <div className='lg:w-[40%] px-5 lg:space-y-9 space-y-5 '>
                         <div className='text-white border bg-[#0e141f] dark:bg-white border-[#3f3f3fbb] dark:border-[#bbbb] p-5 rounded-2xl space-y-1'>
                             <h3 className='text-2xl text-[#ffffffbb] dark:text-[#363d4b]'>Contact Info</h3>
                             <div>
@@ -101,15 +98,17 @@ const ContactMe = () => {
                                 </Link>
                             </div>
                         </div>
-                    </div>
-                    <form ref={form} onSubmit={sendEmail} className='lg:w-[60%] px-5 rounded-2xl space-y-2 bg-[#0e141f] dark:bg-white border border-[#6e6e6ebb] dark:border-[#bbbb] text-white p-5'>
-                        <div className='w-full space-y-2'>
-                            <p className='text-[#cfcfcf] dark:text-[#363d4b]'>Full Name</p>
-                            <input className="input w-full font-medium focus:outline-[#4e27c2] text-white dark:text-black bg-[#1E2939] dark:bg-white" type="text" name='user_name' placeholder="Name" />
-                        </div>
-                        <div className='w-full space-y-2'>
-                            <p className='text-[#cfcfcf] dark:text-[#363d4b]'>Email Address</p>
-                            <input className="input w-full font-medium focus:outline-[#4e27c2] text-white dark:text-black bg-[#1E2939] dark:bg-white" type="email" name='user_email' placeholder="Email" />
+                    </div> */}
+                    <form ref={form} onSubmit={sendEmail} className='w-full px-5 rounded-2xl space-y-2 bg-[#0e141f] dark:bg-white border border-[#6e6e6ebb] dark:border-[#bbbb] text-white p-5'>
+                        <div className='flex items-center gap-5'>
+                            <div className='w-full space-y-2'>
+                                <p className='text-[#cfcfcf] dark:text-[#363d4b]'>Full Name</p>
+                                <input className="input w-full font-medium focus:outline-[#4e27c2] text-white dark:text-black bg-[#1E2939] dark:bg-white" type="text" name='user_name' placeholder="Name" />
+                            </div>
+                            <div className='w-full space-y-2'>
+                                <p className='text-[#cfcfcf] dark:text-[#363d4b]'>Email Address</p>
+                                <input className="input w-full font-medium focus:outline-[#4e27c2] text-white dark:text-black bg-[#1E2939] dark:bg-white" type="email" name='user_email' placeholder="Email" />
+                            </div>
                         </div>
                         <div className='w-full space-y-2'>
                             <p className='text-[#cfcfcf] dark:text-[#363d4b]'>Message</p>
@@ -125,6 +124,15 @@ const ContactMe = () => {
                     </form>
                 </div>
             </div>
+            <motion.div
+                className='z-10 absolute top-0 left-10 w-60 h-50 rounded-full bg-[#6532FF] opacity-50 blur-[140px]'>
+            </motion.div>
+            <motion.div
+                className='z-10 absolute top-50 left-[40%] w-80 h-80 rounded-full bg-[#6532FF] opacity-20 blur-[160px]'>
+            </motion.div>
+            <motion.div
+                className='z-10 absolute -bottom-20 left-0 w-50 h-50 rounded-full bg-[#6532FF] opacity-50 blur-[140px]'>
+            </motion.div>
         </div>
     );
 };
