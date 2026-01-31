@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { MdEmail } from "react-icons/md";
 import { FaGithub, FaLinkedinIn, FaPhoneAlt } from "react-icons/fa";
 import Link from "next/link";
+import { FaLocationDot } from "react-icons/fa6";
 // bg-[#161E2D]
 const AboutMe = () => {
     return (
@@ -12,7 +13,7 @@ const AboutMe = () => {
             <div className="min-h-screen lg:max-w-6xl m-auto pb-10 font-rubik mt-24">
                 <div className="text-white flex flex-col-reverse lg:flex-row items-center gap-10 mx-5">
                     <div className="lg:w-[60%] space-y-3 z-20">
-                        <div className="flex items-center gap-2 text-xl">
+                        <div className="flex items-center gap-2 text-xl my-5">
                             <p className="w-14 border-2 border-[#6532FF]" />
                             <p className="dark:text-[#000000bb]">About me</p>
                             <p className="w-14 border-2 border-[#6532FF]" />
@@ -40,7 +41,7 @@ const AboutMe = () => {
                             </div>
                             <div className="flex items-center gap-2">
                                 <div className="bg-[#6532FF] text-2xl p-2 rounded-full">
-                                    <FaPhoneAlt />
+                                    <FaLocationDot />
                                 </div>
                                 <div>
                                     <p className="font-bold dark:text-[#000000bb]">Address:</p>
