@@ -13,7 +13,7 @@ import { GrTechnology } from "react-icons/gr";
 const TechnicalSkill = () => {
     return (
         <div id="skills" className="-mt-px bg-[#0D1317] dark:bg-white lg:h-150 flex flex-col justify-center items-center">
-            <div className="lg:max-w-6xl mx-5 font-roboto">
+            <div className="lg:max-w-6xl mx-5 font-rubik">
                 <div className="py-14">
                     <h1 className="text-5xl text-center text-[#6f46ec] font-bold">Technical Skills</h1>
                     <motion.p

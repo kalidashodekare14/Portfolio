@@ -7,7 +7,7 @@ import Link from "next/link";
 const Projects = () => {
     return (
         <div id="projects" className="-mt-px bg-[#0D1317] dark:bg-white  flex flex-col justify-center items-center">
-            <div className="lg:h-200 max-w-6xl font-roboto py-5">
+            <div className="lg:h-200 max-w-6xl font-rubik py-5">
                 <div className="py-20">
                     <h1 className="text-5xl text-center text-[#6f46ec] font-bold">Projects</h1>
                     <motion.p

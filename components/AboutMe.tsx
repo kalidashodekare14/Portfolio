@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 // bg-[#161E2D]
 const AboutMe = () => {
     return (
-        <div id="about" className="-mt-px bg-[#0D1317] dark:bg-white flex flex-col justify-center items-center font-roboto">
-            <div className="min-h-screen lg:max-w-5xl mx-5 pb-10">
+        <div id="about" className="-mt-px bg-[#0D1317] dark:bg-white flex flex-col justify-center items-center ">
+            <div className="min-h-screen lg:max-w-5xl mx-5 pb-10 font-roboto">
                 <div className="py-20">
                     <h1 className="text-5xl text-center text-[#6f46ec] font-bold">About Me</h1>
                     <motion.p

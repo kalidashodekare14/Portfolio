@@ -149,7 +149,7 @@ const Navbar = () => {
 
                         {/* moon icon */}
                         <svg
-                            className="swap-off h-10 w-10 fill-current"
+                            className="swap-off h-9 w-9 fill-current"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24">
                             <path
@@ -160,14 +160,14 @@ const Navbar = () => {
                 <div className='flex items-center gap-5 text-[19px]'>
                     {
                         toggle ? (
-                            <IoMdClose onClick={handleToggle} className='text-white text-2xl lg:hidden' />
+                            <IoMdClose onClick={handleToggle} className='text-white dark:text-[#363d4b] text-2xl lg:hidden' />
                         ) : (
 
-                            <FaBars onClick={handleToggle} className='text-white lg:hidden' />
+                            <FaBars onClick={handleToggle} className='text-white dark:text-[#363d4b] lg:hidden' />
                         )
                     }
                 </div>
-                <ul className={`z-50 absolute left-0 p-5 lg:hidden  bg-[#522374] text-white w-full flex flex-col  gap-5 text-[19px] font-light translate-y-10 duration-700  ${toggle ? "translate-x-0" : "-translate-x-full"}`}>
+                <ul className={`z-50 absolute left-0 p-5 lg:hidden  bg-[#7b50fd]  text-white dark:text-[#363d4b] w-full flex flex-col  gap-5 text-[19px] font-light translate-y-10 duration-700  ${toggle ? "translate-x-0" : "-translate-x-full "}`}>
                     {links}
                 </ul>
             </nav>
