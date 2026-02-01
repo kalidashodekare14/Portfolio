@@ -27,7 +27,7 @@ const AboutMe = () => {
                                 </div>
                                 <div>
                                     <p className="font-bold dark:text-[#000000bb]">Phone:</p>
-                                    <p className="text-[#ebebebbb] dark:text-[#000000bb] text-[16px]">+8801728659562</p>
+                                    <p className="text-[#ebebebbb] dark:text-[#000000bb] text-[16px]">+8801776046270</p>
                                 </div>
                             </div>
                             <div className="flex items-center gap-2">
