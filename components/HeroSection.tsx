@@ -1,6 +1,6 @@
 "use client"
 import { IoCodeSlashSharp } from 'react-icons/io5';
-import { motion } from "motion/react"
+import { motion } from "motion/react";
 import { FaReact } from 'react-icons/fa';
 import { RiNextjsFill, RiTailwindCssFill } from 'react-icons/ri';
 import { TbBrandRedux } from 'react-icons/tb';
@@ -11,7 +11,18 @@ const HeroSection = () => {
             <div className='relative max-w-7xl p-15 '>
                 <div>
                     <div className='z-20 flex flex-col items-center gap-6 mt-14 lg:mt-0'>
-                        <p className='relative z-20 text-[#f7f6f6bb] text-[22px] bg-[#523779] p-3 py-1 rounded-3xl'>Frontend Developer</p>
+                        <motion.p
+                            initial={{
+                                top: 20,
+                                opacity: 0
+                            }}
+                            whileInView={{
+                                top: 0,
+                                opacity: 1
+                            }}
+                            className='relative z-20 text-[#f7f6f6bb] text-[22px] bg-[#523779] p-3 py-1 rounded-3xl'>
+                            Frontend Developer
+                        </motion.p>
                         <h1 className='text-white text-[80px] lg:text-8xl text-center font-bold leading-tight'>
                             <span className='bg-linear-to-r from-[#8257be] via-[#8257be] to-[#8257be] bg-clip-text text-transparent animate-linear'>Kalidash Odekare</span>
                             {/* <span className='bg-linear-to-r from-[#ad6cdb] via-[#9a5dc2] to-[#8c50b4] bg-clip-text text-transparent animate-linear'>Kalidash Odekare</span> */}

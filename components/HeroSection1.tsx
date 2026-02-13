@@ -1,6 +1,6 @@
 "use client"
 import { motion } from "motion/react"
-import { ins } from "motion/react-client";
+
 import Link from "next/link";
 import { IoCodeSlashSharp } from "react-icons/io5";
 import { SiReaddotcv } from "react-icons/si";
@@ -13,13 +13,69 @@ const HeroSection1 = () => {
         <div id='hero' className='-mt-px relative  bg-[#0D1317] dark:bg-white overflow-hidden font-roboto pb-5'>
             <div className='relative lg:max-w-6xl m-auto lg:h-150 flex flex-col lg:flex-row items-center'>
                 <div className="lg:w-[55%] space-y-7 mx-5 mt-10 lg:mt-0">
-                    <p className='relative z-20 w-60 text-[#f7f6f6d5] text-[22px] bg-[#3e2783] p-3 py-1 rounded-3xl'>Frontend Developer</p>
-                    <h1 className='text-white text-[80px] lg:text-6xl text-center lg:text-left font-bold leading-tight'>
+                    <motion.p
+                        initial={{
+                            y: -50,
+                            opacity: 0
+                        }}
+                        whileInView={{
+                            y: 0,
+                            opacity: 1
+                        }}
+                        transition={{
+                            duration: 0.5,
+                            delay: 0.5
+                        }}
+                        className='relative z-20 w-60 text-[#f7f6f6d5] text-[22px] bg-[#3e2783] p-3 py-1 rounded-3xl'>
+                        Frontend Developer
+                    </motion.p>
+                    <motion.h1
+                        initial={{
+                            y: -50,
+                            opacity: 0
+                        }}
+                        whileInView={{
+                            y: 0,
+                            opacity: 1
+                        }}
+                        transition={{
+                            duration: 0.5,
+                            delay: 0.6
+                        }}
+                        className='text-white text-[80px] lg:text-6xl text-center lg:text-left font-bold leading-tight'>
                         <span className='dark:bg-[#6532FF] bg-linear-to-r from-[#8e77d4] via-[#9d84e7] to-[#9079d6] dark:from-[#6532FF] dark:via-[#6532FF] dark:to-[#6532FF] to bg-clip-text text-transparent animate-linear'>Kalidash Odekare</span>
                         {/* <span className='bg-linear-to-r from-[#ad6cdb] via-[#9a5dc2] to-[#8c50b4] bg-clip-text text-transparent animate-linear'>Kalidash Odekare</span> */}
-                    </h1>
-                    <p className='text-[#B7B7B7] dark:text-[#474747] text-xl'>Building Beautiful & Functional Web Interfaces</p>
-                    <div className=' flex flex-wrap lg:justify-start justify-center lg:flex-row gap-4'>
+                    </motion.h1>
+                    <motion.p
+                        initial={{
+                            y: -50,
+                            opacity: 0
+                        }}
+                        whileInView={{
+                            y: 0,
+                            opacity: 1
+                        }}
+                        transition={{
+                            duration: 0.5,
+                            delay: 0.7
+                        }}
+                        className='text-[#B7B7B7] dark:text-[#474747] text-xl'>
+                        Building Beautiful & Functional Web Interfaces
+                    </motion.p>
+                    <motion.div
+                        initial={{
+                            y: -50,
+                            opacity: 0
+                        }}
+                        whileInView={{
+                            y: 0,
+                            opacity: 1
+                        }}
+                        transition={{
+                            duration: 0.5,
+                            delay: 0.8
+                        }}
+                        className=' flex flex-wrap lg:justify-start justify-center lg:flex-row gap-4'>
                         <motion.div
                             whileHover={{
                                 scale: 1.1,
@@ -56,12 +112,25 @@ const HeroSection1 = () => {
                             transition={{
                                 duration: 0.2
                             }}
-                             className='font-semibold flex items-center gap-1 text-[#d4d4d4] dark:text-[#3e2783] bg-[#3e2783] dark:bg-[#dbcfff] rounded-2xl p-2'>
+                            className='font-semibold flex items-center gap-1 text-[#d4d4d4] dark:text-[#3e2783] bg-[#3e2783] dark:bg-[#dbcfff] rounded-2xl p-2'>
                             <IoCodeSlashSharp />
                             <p>Interactive UI</p>
                         </motion.div>
-                    </div>
-                    <div className='flex flex-col lg:flex-row gap-4'>
+                    </motion.div>
+                    <motion.div
+                        initial={{
+                            y: -50,
+                            opacity: 0
+                        }}
+                        whileInView={{
+                            y: 0,
+                            opacity: 1
+                        }}
+                        transition={{
+                            duration: 0.5,
+                            delay: 0.9
+                        }}
+                        className='flex flex-col lg:flex-row gap-4'>
                         <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
                             <motion.button
                                 whileHover={{
@@ -108,9 +177,22 @@ const HeroSection1 = () => {
                                 Contact Us
                             </motion.button>
                         </ScrollLink>
-                    </div>
+                    </motion.div>
                 </div>
-                <div className='hidden lg:flex lg:w-[45%] bg-linear-to-r from-[#11151a] via-[#11151a] to-[#0f1316] text-slate-400 border border-[#3f3f3fbb] rounded-xl p-5 mx-5 text-[16px]'>
+                <motion.div
+                    initial={{
+                        // y: -50,
+                        opacity: 0
+                    }}
+                    whileInView={{
+                        // y: 0,
+                        opacity: 1
+                    }}
+                    transition={{
+                        duration: 0.5,
+                        delay: 1.1
+                    }}
+                    className='hidden lg:flex lg:w-[45%] bg-linear-to-r from-[#11151a] via-[#11151a] to-[#0f1316] text-slate-400 border border-[#3f3f3fbb] rounded-xl p-5 mx-5 text-[16px]'>
                     <div className="select-none pr-2">
                         <div>1</div>
                         <div>2</div>
@@ -187,48 +269,48 @@ const HeroSection1 = () => {
                         {"\n"}
                         <span>{"}"}</span>
                     </pre>
-                </div>
+                </motion.div>
             </div>
             <motion.div
                 initial={{
-                    opacity: 0,
-                }}
-                animate={{
                     opacity: 0.20,
                 }}
-                transition={{
-                    duration: 2,
-                }}
+                // animate={{
+                //     opacity: 0.20,
+                // }}
+                // transition={{
+                //     duration: 2,
+                // }}
                 className='z-10 absolute -bottom-5 right-0 w-50 h-50 rounded-full bg-[#6532FF] opacity-100 blur-[140px]'>
 
             </motion.div>
             <motion.div
                 initial={{
-                    opacity: 0,
-                }}
-                animate={{
                     opacity: 0.30,
                 }}
-                transition={{
-                    duration: 2,
-                }}
+                // animate={{
+                //     opacity: 0.30,
+                // }}
+                // transition={{
+                //     duration: 2,
+                // }}
                 className='z-10 absolute -top-50 left-[40%] w-96 h-96 rounded-full bg-[#6532FF] opacity-100 blur-[140px]'>
 
             </motion.div>
             <motion.div
                 initial={{
-                    opacity: 0,
-                }}
-                animate={{
                     opacity: 0.30,
                 }}
-                transition={{
-                    duration: 2,
-                }}
+                // animate={{
+                //     opacity: 0.30,
+                // }}
+                // transition={{
+                //     duration: 2,
+                // }}
                 className='z-10 absolute -bottom-5 left-0 w-50 h-50 rounded-full bg-[#6532FF] opacity-100 blur-[140px]'>
 
             </motion.div>
-        </div>
+        </div >
     );
 };
 
