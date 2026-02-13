@@ -26,6 +26,7 @@ const AboutMe = () => {
                                 duration: 0.5,
                                 delay: 0.5
                             }}
+                            viewport={{ once: true }}
                             className="flex items-center gap-2 text-xl my-5">
                             <p className="w-14 border-2 border-[#6532FF]" />
                             <p className="dark:text-[#000000bb]">About me</p>
@@ -44,6 +45,7 @@ const AboutMe = () => {
                                 duration: 0.5,
                                 delay: 0.6
                             }}
+                             viewport={{ once: true }}
                             className="text-4xl dark:text-[#6532FF]">
                             Frontend Developer
                         </motion.h1>
