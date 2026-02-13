@@ -24,8 +24,10 @@ const HeroSection1 = () => {
                         }}
                         transition={{
                             duration: 0.5,
-                            delay: 0.5
+                            delay: 0.5,
+
                         }}
+                        viewport={{ once: true }}
                         className='relative z-20 w-60 text-[#f7f6f6d5] text-[22px] bg-[#3e2783] p-3 py-1 rounded-3xl'>
                         Frontend Developer
                     </motion.p>
@@ -42,6 +44,7 @@ const HeroSection1 = () => {
                             duration: 0.5,
                             delay: 0.6
                         }}
+                        viewport={{ once: true }}
                         className='text-white text-[80px] lg:text-6xl text-center lg:text-left font-bold leading-tight'>
                         <span className='dark:bg-[#6532FF] bg-linear-to-r from-[#8e77d4] via-[#9d84e7] to-[#9079d6] dark:from-[#6532FF] dark:via-[#6532FF] dark:to-[#6532FF] to bg-clip-text text-transparent animate-linear'>Kalidash Odekare</span>
                         {/* <span className='bg-linear-to-r from-[#ad6cdb] via-[#9a5dc2] to-[#8c50b4] bg-clip-text text-transparent animate-linear'>Kalidash Odekare</span> */}
@@ -59,6 +62,7 @@ const HeroSection1 = () => {
                             duration: 0.5,
                             delay: 0.7
                         }}
+                        viewport={{ once: true }}
                         className='text-[#B7B7B7] dark:text-[#474747] text-xl'>
                         Building Beautiful & Functional Web Interfaces
                     </motion.p>
@@ -75,6 +79,7 @@ const HeroSection1 = () => {
                             duration: 0.5,
                             delay: 0.8
                         }}
+                        viewport={{ once: true }}
                         className=' flex flex-wrap lg:justify-start justify-center lg:flex-row gap-4'>
                         <motion.div
                             whileHover={{
@@ -86,6 +91,7 @@ const HeroSection1 = () => {
                                 duration: 0.2,
                                 ease: "easeInOut"
                             }}
+                            viewport={{ once: true }}
                             className='font-semibold flex items-center gap-1 text-[#d4d4d4] dark:text-[#3e2783] bg-[#3e2783] dark:bg-[#dbcfff] rounded-2xl p-2'>
                             <IoCodeSlashSharp />
                             <p>Clean Code</p>
@@ -99,6 +105,7 @@ const HeroSection1 = () => {
                             transition={{
                                 duration: 0.2
                             }}
+                            viewport={{ once: true }}
                             className='font-semibold flex items-center gap-1 text-[#d4d4d4] dark:text-[#3e2783] bg-[#3e2783] dark:bg-[#dbcfff] rounded-2xl p-2'>
                             <IoCodeSlashSharp />
                             <p>User Friendly</p>
@@ -112,6 +119,7 @@ const HeroSection1 = () => {
                             transition={{
                                 duration: 0.2
                             }}
+                            viewport={{ once: true }}
                             className='font-semibold flex items-center gap-1 text-[#d4d4d4] dark:text-[#3e2783] bg-[#3e2783] dark:bg-[#dbcfff] rounded-2xl p-2'>
                             <IoCodeSlashSharp />
                             <p>Interactive UI</p>
@@ -130,6 +138,7 @@ const HeroSection1 = () => {
                             duration: 0.5,
                             delay: 0.9
                         }}
+                        viewport={{ once: true }}
                         className='flex flex-col lg:flex-row gap-4'>
                         <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
                             <motion.button
@@ -192,6 +201,7 @@ const HeroSection1 = () => {
                         duration: 0.5,
                         delay: 1.1
                     }}
+                    viewport={{ once: true }}
                     className='hidden lg:flex lg:w-[45%] bg-linear-to-r from-[#11151a] via-[#11151a] to-[#0f1316] text-slate-400 border border-[#3f3f3fbb] rounded-xl p-5 mx-5 text-[16px]'>
                     <div className="select-none pr-2">
                         <div>1</div>
