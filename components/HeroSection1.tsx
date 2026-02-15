@@ -202,8 +202,8 @@ const HeroSection1 = () => {
                         delay: 1.1
                     }}
                     viewport={{ once: true }}
-                    className='hidden lg:flex lg:w-[45%] bg-linear-to-r from-[#11151a] via-[#11151a] to-[#0f1316] text-slate-400 border border-[#3f3f3fbb] rounded-xl p-5 mx-5 text-[16px]'>
-                    <div className="select-none pr-2">
+                    className='hidden lg:flex lg:w-[45%] bg-[#11151a] dark:bg-[#dbe1e7]   text-slate-400 border border-[#3f3f3fbb] rounded-xl p-5 mx-5 text-[16px]'>
+                    <div className="select-none pr-2 dark:text-[#3a3a3a]">
                         <div>1</div>
                         <div>2</div>
                         <div>3</div>
@@ -217,67 +217,67 @@ const HeroSection1 = () => {
                     </div>
                     <pre className="whitespace-pre-wrap font-medium">
                         <span className="text-[#ba181b]">const</span>{" "}
-                        <span className="text-[#bbb]">skills</span>{" "}
-                        <span>=</span>{" "}
-                        <span>{"{"}</span>
+                        <span className="text-[#bbb] dark:text-[#292828]">skills</span>{" "}
+                        <span className="dark:text-[#292828]">=</span>{" "}
+                        <span className="dark:text-[#292828]">{"{"}</span>
                         {"\n"}
-                        <span className="text-[#d38b5d]">frontEnd</span>{" "}
-                        <span>:</span>{" "}
-                        <span>['</span>
-                        <span className="text-[#9A82E3]">TypeScript</span>
-                        <span>'</span>
-                        <span>,</span>{" "}
-                        <span>'</span>
-                        <span className="text-[#9A82E3]">React.js</span>
-                        <span>'</span>
+                        <span className="text-[#d38b5d] dark:text-[#03045e]">frontEnd</span>{" "}
+                        <span className="dark:text-[#292828]">:</span>{" "}
+                        <span className="dark:text-[#292828]">['</span>
+                        <span className="text-[#9A82E3] dark:text-[#2323CC]">TypeScript</span>
+                        <span className="dark:text-[#292828]">'</span>
+                        <span className="dark:text-[#292828]">,</span>{" "}
+                        <span className="dark:text-[#292828]">'</span>
+                        <span className="text-[#9A82E3] dark:text-[#2323CC]">React.js</span>
+                        <span className="dark:text-[#292828]">'</span>
                         <span className="text-[#9A82E3]">,</span>{" "}
-                        <span>'</span>
-                        <span className="text-[#9A82E3]">Next.js</span>
-                        <span>'</span>
-                        <span>,</span>{" "}
-                        <span>'</span>
-                        <span className="text-[#9A82E3]">Tailwind CSS</span>
-                        <span>']</span>
-                        <span>,</span>
+                        <span className="dark:text-[#292828]">'</span>
+                        <span className="text-[#9A82E3] dark:text-[#2323CC]">Next.js</span>
+                        <span className="dark:text-[#292828]">'</span>
+                        <span className="dark:text-[#292828]">,</span>{" "}
+                        <span className="dark:text-[#292828]">'</span>
+                        <span className="text-[#9A82E3] dark:text-[#2323CC]">Tailwind CSS</span>
+                        <span className="dark:text-[#292828]">']</span>
+                        <span className="dark:text-[#292828]">,</span>
                         {"\n"}
-                        <span className="text-[#d38b5d]">backendEnd</span>{" "}
-                        <span>:</span>{" "}
-                        <span>['</span>
-                        <span className="text-[#9A82E3]">TypeScript</span>
-                        <span>'</span>
-                        <span>,</span>{" "}
-                        <span>'</span>
-                        <span className="text-[#9A82E3]">Node.js</span>
-                        <span>'</span>
-                        <span>,</span>{" "}
-                        <span>'</span>
-                        <span className="text-[#9A82E3]">Express.js</span>
-                        <span>'</span>
-                        <span>,</span>{" "}
-                        <span>'</span>
-                        <span className="text-[#9A82E3]">MongoDB</span>
-                        <span>']</span>
-                        <span>,</span>
+                        <span className="text-[#d38b5d] dark:text-[#03045e]">backendEnd</span>{" "}
+                        <span className="dark:text-[#292828]">:</span>{" "}
+                        <span className="dark:text-[#292828]">['</span>
+                        <span className="text-[#9A82E3] dark:text-[#2323CC]">TypeScript</span>
+                        <span className="dark:text-[#292828]">'</span>
+                        <span className="dark:text-[#292828]">,</span>{" "}
+                        <span className="dark:text-[#292828]">'</span>
+                        <span className="text-[#9A82E3] dark:text-[#2323CC]">Node.js</span>
+                        <span className="dark:text-[#292828]">'</span>
+                        <span className="dark:text-[#292828]">,</span>{" "}
+                        <span className="dark:text-[#292828]">'</span>
+                        <span className="text-[#9A82E3] dark:text-[#2323CC]">Express.js</span>
+                        <span className="dark:text-[#292828]">'</span>
+                        <span className="dark:text-[#292828]">,</span>{" "}
+                        <span className="dark:text-[#292828]">'</span>
+                        <span className="text-[#9A82E3] dark:text-[#2323CC]">MongoDB</span>
+                        <span className="dark:text-[#292828]">']</span>
+                        <span className="dark:text-[#292828]">,</span>
                         {"\n"}
-                        <span className="text-[#d38b5d]">tools</span>{" "}
-                        <span>:</span>{" "}
-                        <span>['</span>
-                        <span className="text-[#9A82E3]">VS Code</span>
-                        <span>'</span>
-                        <span>,</span>{" "}
-                        <span>'</span>
-                        <span className="text-[#9A82E3]">GitHub</span>
-                        <span>'</span>
-                        <span>,</span>{" "}
-                        <span>'</span>
-                        <span className="text-[#9A82E3]">Firebase</span>
-                        <span>'</span>
+                        <span className="text-[#d38b5d] dark:text-[#03045e]">tools</span>{" "}
+                        <span className="dark:text-[#292828]">:</span>{" "}
+                        <span className="dark:text-[#292828]">['</span>
+                        <span className="text-[#9A82E3] dark:text-[#2323CC]">VS Code</span>
+                        <span className="dark:text-[#292828]">'</span>
+                        <span className="dark:text-[#292828]">,</span>{" "}
+                        <span className="dark:text-[#292828]">'</span>
+                        <span className="text-[#9A82E3] dark:text-[#2323CC]">GitHub</span>
+                        <span className="dark:text-[#292828]">'</span>
+                        <span className="dark:text-[#292828]">,</span>{" "}
+                        <span className="dark:text-[#292828]">'</span>
+                        <span className="text-[#9A82E3] dark:text-[#2323CC]">Firebase</span>
+                        <span className="dark:text-[#292828]">'</span>
                         <span className="text-[#9A82E3]">,</span>{" "}
-                        <span>'</span>
-                        <span className="text-[#9A82E3]">Redux</span>
-                        <span>']</span>
+                        <span className="dark:text-[#292828]">'</span>
+                        <span className="text-[#9A82E3] dark:text-[#2323CC]">Redux</span>
+                        <span className="dark:text-[#292828]">']</span>
                         {"\n"}
-                        <span>{"}"}</span>
+                        <span className="dark:text-[#292828]">{"}"}</span>
                     </pre>
                 </motion.div>
             </div>
