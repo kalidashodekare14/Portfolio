@@ -80,7 +80,7 @@ const AboutMe = () => {
                                 delay: 0.8
                             }}
                             viewport={{ once: true }}
-                            className="flex flex-wrap gap-5 border border-[#a0a0a0bb] p-5 rounded-4xl">
+                            className="flex flex-wrap gap-5 border border-[#363636bb] bg-[#151f2b] dark:bg-[#c6d4e6] p-5 rounded-4xl">
                             <div className="flex items-center gap-2">
                                 <div className="bg-[#6532FF] text-2xl p-2 rounded-full">
                                     <FaPhoneAlt />
