@@ -21,6 +21,7 @@ const Projects = () => {
                         duration: 0.5,
                         delay: 0.5
                     }}
+                    viewport={{ once: true }}
                     className="flex items-center gap-2 text-xl py-14">
                     <p className="w-14 border-2 border-[#6532FF]" />
                     <p className="text-white dark:text-[#000000bb]">Projects</p>
@@ -40,6 +41,7 @@ const Projects = () => {
                             duration: 0.5,
                             delay: 0.6
                         }}
+                        viewport={{ once: true }}
                     >
                         <motion.div
                             whileHover={{
@@ -104,6 +106,7 @@ const Projects = () => {
                             duration: 0.5,
                             delay: 0.7
                         }}
+                        viewport={{ once: true }}
                     >
                         <motion.div
                             whileHover={{
@@ -165,6 +168,7 @@ const Projects = () => {
                             duration: 0.5,
                             delay: 0.8
                         }}
+                        viewport={{ once: true }}
                     >
                         <motion.div
                             whileHover={{
