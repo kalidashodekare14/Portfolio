@@ -361,9 +361,9 @@ const HeroSection1 = () => {
                     </div>
                 </motion.div>
                 {/* Skill motion */}
-                <div className="absolute reactDesign top-100 left-150 text-[#beabf8] text-3xl">
+                {/* <div className="absolute reactDesign top-100 left-150 text-[#beabf8] text-3xl">
                     <FaReact />
-                </div>
+                </div> */}
             </div>
             {/* Background color */}
             <motion.div
