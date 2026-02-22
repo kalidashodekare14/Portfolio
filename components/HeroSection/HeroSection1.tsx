@@ -2,7 +2,6 @@
 import { motion } from "motion/react"
 
 import Link from "next/link";
-import { FaReact } from "react-icons/fa";
 import { IoCodeSlashSharp } from "react-icons/io5";
 import { SiReaddotcv } from "react-icons/si";
 import { Link as ScrollLink } from "react-scroll"
