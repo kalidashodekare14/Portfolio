@@ -214,7 +214,7 @@ const HeroSection1 = () => {
                         </div>
                         <p className="text-[14px] font-semibold">/Users/Kalidash/profile.json</p>
                     </div>
-                    <div className="flex p-5">
+                    <div className="flex flex-col p-5">
                         {/* <div className="select-none pr-2 dark:text-[#3a3a3a]">
                             <div>1</div>
                             <div>2</div>
@@ -357,6 +357,12 @@ const HeroSection1 = () => {
                             {"\n"}
                             <span className="dark:text-[#292828]">{"}"}</span>
                         </pre>
+                        <div className="flex items-center gap-1">
+                            <p className="text-[15px]">C:\Users\Kalidash{'>'}$</p>
+                            <motion.div
+                                className="bg-[#9A82E3] w-2 h-4 animate-blink"
+                            />
+                        </div>
                     </div>
                 </motion.div>
                 {/* Skill motion */}

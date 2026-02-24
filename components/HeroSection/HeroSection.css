@@ -1,3 +1,5 @@
-.reactDesign {
-    text-shadow: 10px 10px 10px #6532FF;
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
 }
