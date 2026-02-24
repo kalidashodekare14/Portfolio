@@ -30,7 +30,7 @@ const HeroSection1 = () => {
 
                         }}
                         viewport={{ once: true }}
-                        className="relative z-20 w-60 text-[#f7f6f6d5] text-[22px] bg-[#3e2783] p-3 py-1 rounded-3xl">
+                        className="relative z-20 w-60 text-[#f7f6f6d5] text-[22px] bg-[#2e2157] px-5 py-1 rounded-3xl">
                         Frontend Developer
                     </motion.p>
                     <motion.h1
