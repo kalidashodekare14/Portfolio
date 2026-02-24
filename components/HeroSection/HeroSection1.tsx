@@ -212,7 +212,7 @@ const HeroSection1 = () => {
                             <div className="w-3 h-3 bg-amber-300 rounded-full"></div>
                             <div className="w-3 h-3 bg-[#6532FF] rounded-full"></div>
                         </div>
-                        <p className="text-[14px] font-semibold">/Users/Kalidash/profile.json</p>
+                        <p className="text-[14px] font-semibold">/Users/Kalidash/skills.json</p>
                     </div>
                     <div className="flex flex-col p-5">
                         {/* <div className="select-none pr-2 dark:text-[#3a3a3a]">
