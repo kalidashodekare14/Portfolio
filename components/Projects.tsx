@@ -218,11 +218,17 @@ const Projects = () => {
                         </motion.div>
                     </motion.div>
                 </div>
-                <Link href={"/projects"}>
-                    <div className="text-white my-10 text-center cursor-pointer">
-                        <h1>More Projects</h1>
-                    </div>
-                </Link>
+                <div className="flex justify-center items-center">
+                    <Link href={"/projects"}>
+                        <motion.div
+                            whileHover={{
+                                backgroundColor: "#291a55"
+                            }}
+                            className="text-white my-10 text-center cursor-pointer border  border-[#7f5ee0] w-40 p-2 rounded-xl">
+                            <h1>More Projects</h1>
+                        </motion.div>
+                    </Link>
+                </div>
             </div>
             <motion.div
                 className='z-10 absolute top-0 left-10 w-60 h-50 rounded-full bg-[#6532FF] opacity-50 blur-[140px]'>
