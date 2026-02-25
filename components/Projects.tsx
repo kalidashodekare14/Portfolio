@@ -7,7 +7,7 @@ import Link from "next/link";
 const Projects = () => {
     return (
         <div id="projects" className="-mt-px relative overflow-hidden bg-[#0D1317] dark:bg-white  flex flex-col justify-center items-center">
-            <div className="lg:h-200 max-w-6xl font-rubik py-5 relative z-20">
+            <div className="lg:h-210 max-w-6xl font-rubik py-5 relative z-20">
                 <motion.div
                     initial={{
                         y: -50,
@@ -218,6 +218,11 @@ const Projects = () => {
                         </motion.div>
                     </motion.div>
                 </div>
+                <Link href={"/projects"}>
+                    <div className="text-white my-10 text-center cursor-pointer">
+                        <h1>More Projects</h1>
+                    </div>
+                </Link>
             </div>
             <motion.div
                 className='z-10 absolute top-0 left-10 w-60 h-50 rounded-full bg-[#6532FF] opacity-50 blur-[140px]'>

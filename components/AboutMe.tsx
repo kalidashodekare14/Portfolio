@@ -45,7 +45,7 @@ const AboutMe = () => {
                                 duration: 0.5,
                                 delay: 0.6
                             }}
-                             viewport={{ once: true }}
+                            viewport={{ once: true }}
                             className="text-4xl dark:text-[#6532FF]">
                             Frontend Developer
                         </motion.h1>
@@ -146,7 +146,7 @@ const AboutMe = () => {
                         }}
                         viewport={{ once: true }}
                         className="lg:w-[35%] relative z-20">
-                        <Image className="w-full h-110 rounded-xl" src={"/about/kalidash.jpg"} alt="Kalidash Odekare" width={500} height={300} />
+                        <Image className="w-full max-h-1/2 rounded-xl" src={"/about/kalidash.jpg"} alt="Kalidash Odekare" width={500} height={300} />
                     </motion.div>
                 </div>
             </div>
