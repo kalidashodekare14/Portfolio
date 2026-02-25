@@ -2,7 +2,7 @@
 
 import { BiLogoTypescript } from "react-icons/bi";
 import { FaCode, FaGithub, FaLaptopCode, FaReact } from "react-icons/fa";
-import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
+import { RiNextjsFill, RiNpmjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { motion } from "motion/react"
 import { IoLogoNodejs, IoServer } from "react-icons/io5";
 import { SiExpress, SiFirebase, SiRedux } from "react-icons/si";
@@ -12,16 +12,8 @@ import { GrTechnology } from "react-icons/gr";
 
 const TechnicalSkill = () => {
     return (
-        <div id="skills" className="-mt-px relative overflow-hidden bg-[#0D1317] dark:bg-white lg:h-150 flex flex-col justify-center items-center">
-            <div className="lg:max-w-6xl relative z-20 mx-5 font-rubik">
-                {/* <div className="py-14">
-                    <h1 className="text-5xl text-center text-[#6f46ec] font-bold">Technical Skills</h1>
-                    <motion.p
-                        initial={{ width: 0 }}
-                        whileInView={{ width: 350 }}
-                        transition={{ duration: 1 }}
-                        className=" m-auto border-2 mt-2 rounded-full border-[#6f46ec]"></motion.p>
-                </div> */}
+        <div id="skills" className="-mt-px relative overflow-hidden bg-[#0D1317] dark:bg-white">
+            <div className="lg:max-w-6xl m-auto">
                 <motion.div
                     initial={{
                         y: -50,
@@ -36,252 +28,264 @@ const TechnicalSkill = () => {
                         delay: 0.5
                     }}
                     viewport={{ once: true }}
-                    className="flex items-center gap-2 text-xl pb-14">
+                    className="flex items-center gap-2 text-xl py-14">
                     <p className="w-14 border-2 border-[#6532FF]" />
                     <p className="text-white dark:text-[#000000bb]">Technical Skills</p>
                     <p className="w-14 border-2 border-[#6532FF]" />
                 </motion.div>
-                <div className="flex flex-wrap mb-20 lg:mb-0 gap-5 ">
-                    <motion.div
-                        initial={{
-                            y: -50,
-                            opacity: 0
-                        }}
-                        whileInView={{
-                            y: 0,
-                            opacity: 1
-                        }}
-                        transition={{
-                            duration: 0.5,
-                            delay: 0.6
-                        }}
-                        viewport={{ once: true }}
-                    >
+                <div className="relative z-20 mx-5 font-rubik ">
+                    <div className="flex flex-col lg:flex-row mb-20 lg:mb-0 gap-5 ">
                         <motion.div
                             initial={{
-                                y: 0
+                                y: -50,
+                                opacity: 0
                             }}
-                            whileHover={{
-                                y: -8,
-                                boxShadow: "0px 5px 10px #512EB9"
+                            whileInView={{
+                                y: 0,
+                                opacity: 1
                             }}
                             transition={{
-                                duration: 0.3
+                                duration: 0.5,
+                                delay: 0.6
                             }}
-                            className="border rounded-2xl border-[#62558b] dark:border-[#757474bb] shadow-2xl  dark:bg-white light:bg-linear-to-r from-[#11151a] via-[#11151a] to-[#0f1316] p-5">
-                            {/* Add your technical skills content here */}
-                            <div className="flex items-center text-[#c9c9c9]">
-                                <div className="flex items-center gap-4">
-                                    <div className="bg-[#6532FF] p-2 rounded-full">
-                                        <FaCode className="text-4xl" />
+                            viewport={{ once: true }}
+                        >
+                            <motion.div
+                                initial={{
+                                    y: 0
+                                }}
+                                whileHover={{
+                                    y: -8,
+                                    boxShadow: "0px 5px 10px #512EB9"
+                                }}
+                                transition={{
+                                    duration: 0.3
+                                }}
+                                className="border rounded-2xl border-[#62558b] dark:border-[#757474bb] shadow-2xl  dark:bg-white light:bg-linear-to-r from-[#11151a] via-[#11151a] to-[#0f1316] p-5">
+                                {/* Add your technical skills content here */}
+                                <div className="flex items-center text-[#c9c9c9]">
+                                    <div className="flex items-center gap-4">
+                                        <div className="bg-[#6532FF] p-2 rounded-full">
+                                            <FaCode className="text-4xl" />
+                                        </div>
+                                        <p className="text-2xl dark:text-[#282a2e]">Frontend</p>
                                     </div>
-                                    <p className="text-2xl dark:text-[#282a2e]">Frontend</p>
                                 </div>
-                            </div>
-                            <div className="flex flex-wrap gap-4 my-5">
-                                <motion.div
-                                    whileHover={{
-                                        scale: 1.1
-                                    }}
-                                    className="flex flex-col items-center gap-2">
-                                    <div className="flex items-center text-[#c2c2c2] bg-[#275866] border-2 border-[#5ED3F3] text-4xl p-3 rounded-2xl">
-                                        <FaReact />
-                                    </div>
-                                    <p className="text-[#c7c7c7] dark:text-[#232730]">React</p>
-                                </motion.div>
-                                <motion.div
-                                    whileHover={{
-                                        scale: 1.1
-                                    }}
-                                    className="flex flex-col items-center gap-2">
-                                    <div className="flex items-center text-[#c2c2c2] bg-[#3a3a3a] border-2 border-[#eeeeeee8] text-4xl p-3 rounded-2xl">
-                                        <RiNextjsFill />
-                                    </div>
-                                    <p className="text-[#c7c7c7] dark:text-[#232730]">Next.js</p>
-                                </motion.div>
-                                <motion.div
-                                    whileHover={{
-                                        scale: 1.1
-                                    }}
-                                    className="flex flex-col items-center gap-2">
-                                    <div className="flex items-center text-[#c2c2c2] bg-[#15365a] border-2 border-[#2F74C0] text-4xl p-3 rounded-2xl">
-                                        <BiLogoTypescript />
-                                    </div>
-                                    <p className="text-[#c7c7c7] dark:text-[#232730]">TypeScript</p>
-                                </motion.div>
-                                <motion.div
-                                    whileHover={{
-                                        scale: 1.1
-                                    }}
-                                    className="flex flex-col items-center gap-2">
-                                    <div className="flex items-center text-[#c2c2c2] bg-[#005661] border-2 border-[#00A7BC] text-4xl p-3 rounded-2xl">
-                                        <RiTailwindCssFill />
-                                    </div>
-                                    <p className="text-[#c7c7c7] dark:text-[#232730]">Tailwind</p>
-                                </motion.div>
-                            </div>
+                                <div className="flex flex-wrap gap-4 my-5">
+                                    <motion.div
+                                        whileHover={{
+                                            scale: 1.1
+                                        }}
+                                        className="flex flex-col items-center gap-2">
+                                        <div className="flex items-center text-[#c2c2c2] bg-[#275866] border-2 border-[#5ED3F3] text-4xl p-3 rounded-2xl">
+                                            <FaReact />
+                                        </div>
+                                        <p className="text-[#c7c7c7] dark:text-[#232730]">React</p>
+                                    </motion.div>
+                                    <motion.div
+                                        whileHover={{
+                                            scale: 1.1
+                                        }}
+                                        className="flex flex-col items-center gap-2">
+                                        <div className="flex items-center text-[#c2c2c2] bg-[#3a3a3a] border-2 border-[#eeeeeee8] text-4xl p-3 rounded-2xl">
+                                            <RiNextjsFill />
+                                        </div>
+                                        <p className="text-[#c7c7c7] dark:text-[#232730]">Next.js</p>
+                                    </motion.div>
+                                    <motion.div
+                                        whileHover={{
+                                            scale: 1.1
+                                        }}
+                                        className="flex flex-col items-center gap-2">
+                                        <div className="flex items-center text-[#c2c2c2] bg-[#15365a] border-2 border-[#2F74C0] text-4xl p-3 rounded-2xl">
+                                            <BiLogoTypescript />
+                                        </div>
+                                        <p className="text-[#c7c7c7] dark:text-[#232730]">TypeScript</p>
+                                    </motion.div>
+                                    <motion.div
+                                        whileHover={{
+                                            scale: 1.1
+                                        }}
+                                        className="flex flex-col items-center gap-2">
+                                        <div className="flex items-center text-[#c2c2c2] bg-[#005661] border-2 border-[#00A7BC] text-4xl p-3 rounded-2xl">
+                                            <RiTailwindCssFill />
+                                        </div>
+                                        <p className="text-[#c7c7c7] dark:text-[#232730]">Tailwind</p>
+                                    </motion.div>
+                                </div>
+                            </motion.div>
                         </motion.div>
-                    </motion.div>
-                    <motion.div
-                        initial={{
-                            y: -50,
-                            opacity: 0
-                        }}
-                        whileInView={{
-                            y: 0,
-                            opacity: 1
-                        }}
-                        transition={{
-                            duration: 0.5,
-                            delay: 0.7
-                        }}
-                        viewport={{ once: true }}
-                    >
                         <motion.div
                             initial={{
-                                y: 0
+                                y: -50,
+                                opacity: 0
                             }}
-                            whileHover={{
-                                y: -8,
-                                boxShadow: "0px 5px 10px #512EB9"
+                            whileInView={{
+                                y: 0,
+                                opacity: 1
                             }}
                             transition={{
-                                duration: 0.3
+                                duration: 0.5,
+                                delay: 0.7
                             }}
-                            className="border rounded-2xl border-[#62558b] dark:border-[#757474bb] shadow-2xl  dark:bg-white light:bg-linear-to-r from-[#11151a] via-[#11151a] to-[#0f1316] p-5">
-                            {/* Add your technical skills content here */}
-                            <div className="flex items-center text-[#c9c9c9]">
-                                <div className="flex items-center gap-4">
-                                    <div className="bg-[#6532FF] p-2 rounded-full">
-                                        <IoServer className="text-4xl" />
+                            viewport={{ once: true }}
+                        >
+                            <motion.div
+                                initial={{
+                                    y: 0
+                                }}
+                                whileHover={{
+                                    y: -8,
+                                    boxShadow: "0px 5px 10px #512EB9"
+                                }}
+                                transition={{
+                                    duration: 0.3
+                                }}
+                                className="border rounded-2xl border-[#62558b] dark:border-[#757474bb] shadow-2xl  dark:bg-white light:bg-linear-to-r from-[#11151a] via-[#11151a] to-[#0f1316] p-5">
+                                {/* Add your technical skills content here */}
+                                <div className="flex items-center text-[#c9c9c9]">
+                                    <div className="flex items-center gap-4">
+                                        <div className="bg-[#6532FF] p-2 rounded-full">
+                                            <IoServer className="text-4xl" />
+                                        </div>
+                                        <p className="text-2xl dark:text-[#282a2e]">Backend</p>
                                     </div>
-                                    <p className="text-2xl dark:text-[#282a2e]">Backend</p>
                                 </div>
-                            </div>
-                            <div className="flex flex-wrap gap-4 my-5">
-                                <motion.div
-                                    whileHover={{
-                                        scale: 1.1
-                                    }}
-                                    className="flex flex-col items-center gap-2">
-                                    <div className="flex items-center text-[#c7c7c7] bg-[#21331c] border-2 border-[#6FA661] text-4xl p-3 rounded-2xl">
-                                        <IoLogoNodejs />
-                                    </div>
-                                    <p className="text-[#c7c7c7] dark:text-[#232730]">Node.js</p>
-                                </motion.div>
-                                <motion.div
-                                    whileHover={{
-                                        scale: 1.1
-                                    }}
-                                    className="flex flex-col items-center gap-2">
-                                    <div className="flex items-center text-[#c2c2c2] bg-[#3a3a3a] border-2 border-[#eeeeeee8] text-4xl p-3 rounded-2xl">
-                                        <SiExpress />
-                                    </div>
-                                    <p className="text-[#c7c7c7] dark:text-[#232730]">Express.js</p>
-                                </motion.div>
-                                <motion.div
-                                    whileHover={{
-                                        scale: 1.1
-                                    }}
-                                    className="flex flex-col items-center gap-2">
-                                    <div className="flex items-center text-[#c2c2c2] bg-[#05381a] border-2 border-[#10A54D] text-4xl p-3 rounded-2xl">
-                                        <DiMongodb />
-                                    </div>
-                                    <p className="text-[#c7c7c7] dark:text-[#232730]">MongoDB</p>
-                                </motion.div>
-                                <motion.div
-                                    whileHover={{
-                                        scale: 1.1
-                                    }}
-                                    className="flex flex-col items-center gap-2">
-                                    <div className="flex items-center text-[#c2c2c2] bg-[#005661] border-2 border-[#00A7BC] text-4xl p-3 rounded-2xl">
-                                        <FaLaptopCode />
-                                    </div>
-                                    <p className="text-[#c7c7c7] dark:text-[#232730]">REST APIs</p>
-                                </motion.div>
-                            </div>
+                                <div className="flex flex-wrap gap-4 my-5">
+                                    <motion.div
+                                        whileHover={{
+                                            scale: 1.1
+                                        }}
+                                        className="flex flex-col items-center gap-2">
+                                        <div className="flex items-center text-[#c7c7c7] bg-[#21331c] border-2 border-[#6FA661] text-4xl p-3 rounded-2xl">
+                                            <IoLogoNodejs />
+                                        </div>
+                                        <p className="text-[#c7c7c7] dark:text-[#232730]">Node.js</p>
+                                    </motion.div>
+                                    <motion.div
+                                        whileHover={{
+                                            scale: 1.1
+                                        }}
+                                        className="flex flex-col items-center gap-2">
+                                        <div className="flex items-center text-[#c2c2c2] bg-[#3a3a3a] border-2 border-[#eeeeeee8] text-4xl p-3 rounded-2xl">
+                                            <SiExpress />
+                                        </div>
+                                        <p className="text-[#c7c7c7] dark:text-[#232730]">Express.js</p>
+                                    </motion.div>
+                                    <motion.div
+                                        whileHover={{
+                                            scale: 1.1
+                                        }}
+                                        className="flex flex-col items-center gap-2">
+                                        <div className="flex items-center text-[#c2c2c2] bg-[#05381a] border-2 border-[#10A54D] text-4xl p-3 rounded-2xl">
+                                            <DiMongodb />
+                                        </div>
+                                        <p className="text-[#c7c7c7] dark:text-[#232730]">MongoDB</p>
+                                    </motion.div>
+                                    <motion.div
+                                        whileHover={{
+                                            scale: 1.1
+                                        }}
+                                        className="flex flex-col items-center gap-2">
+                                        <div className="flex items-center text-[#c2c2c2] bg-[#005661] border-2 border-[#00A7BC] text-4xl p-3 rounded-2xl">
+                                            <FaLaptopCode />
+                                        </div>
+                                        <p className="text-[#c7c7c7] dark:text-[#232730]">REST APIs</p>
+                                    </motion.div>
+                                </div>
+                            </motion.div>
                         </motion.div>
-                    </motion.div>
-                    <motion.div
-                        initial={{
-                            y: -50,
-                            opacity: 0
-                        }}
-                        whileInView={{
-                            y: 0,
-                            opacity: 1
-                        }}
-                        transition={{
-                            duration: 0.5,
-                            delay: 0.8
-                        }}
-                        viewport={{ once: true }}
-                    >
                         <motion.div
                             initial={{
-                                y: 0
+                                y: -50,
+                                opacity: 0
                             }}
-                            whileHover={{
-                                y: -8,
-                                boxShadow: "0px 5px 10px #512EB9"
+                            whileInView={{
+                                y: 0,
+                                opacity: 1
                             }}
                             transition={{
-                                duration: 0.3
+                                duration: 0.5,
+                                delay: 0.8
                             }}
-                            className="border rounded-2xl border-[#62558b] dark:border-[#757474bb] shadow-2xl  dark:bg-white light:bg-linear-to-r from-[#11151a] via-[#11151a] to-[#0f1316] p-5">
-                            {/* Add your technical skills content here */}
-                            <div className="flex items-center text-[#c9c9c9]">
-                                <div className="flex items-center gap-4">
-                                    <div className="bg-[#6532FF] p-2 rounded-full">
-                                        <GrTechnology className="text-4xl" />
+                            viewport={{ once: true }}
+                        >
+                            <motion.div
+                                initial={{
+                                    y: 0
+                                }}
+                                whileHover={{
+                                    y: -8,
+                                    boxShadow: "0px 5px 10px #512EB9"
+                                }}
+                                transition={{
+                                    duration: 0.3
+                                }}
+                                className="border rounded-2xl border-[#62558b] dark:border-[#757474bb] shadow-2xl  dark:bg-white light:bg-linear-to-r from-[#11151a] via-[#11151a] to-[#0f1316] p-5">
+                                {/* Add your technical skills content here */}
+                                <div className="flex items-center text-[#c9c9c9]">
+                                    <div className="flex items-center gap-4">
+                                        <div className="bg-[#6532FF] p-2 rounded-full">
+                                            <GrTechnology className="text-4xl" />
+                                        </div>
+                                        <p className="text-2xl dark:text-[#282a2e]">Technologies & Tools</p>
                                     </div>
-                                    <p className="text-2xl dark:text-[#282a2e]">Technologies & Tools</p>
                                 </div>
-                            </div>
-                            <div className="flex flex-wrap gap-4 my-5">
-                                <motion.div
-                                    whileHover={{
-                                        scale: 1.1
-                                    }}
-                                    className="flex flex-col items-center gap-2">
-                                    <div className="flex items-center text-[#c2c2c2] bg-[#072438] border-2 border-[#1E97E8] text-4xl p-3 rounded-2xl">
-                                        <VscVscode />
-                                    </div>
-                                    <p className="text-[#c7c7c7] dark:text-[#232730]">VS Code</p>
-                                </motion.div>
-                                <motion.div
-                                    whileHover={{
-                                        scale: 1.1
-                                    }}
-                                    className="flex flex-col items-center gap-2">
-                                    <div className="flex items-center text-[#c2c2c2] bg-[#3a3d41] border-2 border-[#1A1E22] text-4xl p-3 rounded-2xl">
-                                        <FaGithub />
-                                    </div>
-                                    <p className="text-[#c7c7c7] dark:text-[#232730]">GitHub</p>
-                                </motion.div>
-                                <motion.div
-                                    whileHover={{
-                                        scale: 1.1
-                                    }}
-                                    className="flex flex-col items-center gap-2">
-                                    <div className="flex items-center text-[#c2c2c2] bg-[#502e01] border-2 border-[#F78C00] text-4xl p-3 rounded-2xl">
-                                        <SiFirebase />
-                                    </div>
-                                    <p className="text-[#c7c7c7] dark:text-[#232730]">Firebase</p>
-                                </motion.div>
-                                <motion.div
-                                    whileHover={{
-                                        scale: 1.1
-                                    }}
-                                    className="flex flex-col items-center gap-2">
-                                    <div className="flex items-center text-[#c2c2c2] bg-[#25173b] border-2 border-[#7248B5] text-4xl p-3 rounded-2xl">
-                                        <SiRedux />
-                                    </div>
-                                    <p className="text-[#c7c7c7] dark:text-[#232730]">Redux</p>
-                                </motion.div>
-                            </div>
+                                <div className="flex flex-wrap gap-4 my-5">
+                                    <motion.div
+                                        whileHover={{
+                                            scale: 1.1
+                                        }}
+                                        className="flex flex-col items-center gap-2">
+                                        <div className="flex items-center text-[#c2c2c2] bg-[#3b0e0e] border-2 border-[#CC3534] text-4xl p-3 rounded-2xl">
+                                            <RiNpmjsFill />
+                                        </div>
+                                        <p className="text-[#c7c7c7] dark:text-[#232730]">NPM</p>
+                                    </motion.div>
+                                    <motion.div
+                                        whileHover={{
+                                            scale: 1.1
+                                        }}
+                                        className="flex flex-col items-center gap-2">
+                                        <div className="flex items-center text-[#c2c2c2] bg-[#072438] border-2 border-[#1E97E8] text-4xl p-3 rounded-2xl">
+                                            <VscVscode />
+                                        </div>
+                                        <p className="text-[#c7c7c7] dark:text-[#232730]">VS Code</p>
+                                    </motion.div>
+                                    <motion.div
+                                        whileHover={{
+                                            scale: 1.1
+                                        }}
+                                        className="flex flex-col items-center gap-2">
+                                        <div className="flex items-center text-[#c2c2c2] bg-[#3a3d41] border-2 border-[#1A1E22] text-4xl p-3 rounded-2xl">
+                                            <FaGithub />
+                                        </div>
+                                        <p className="text-[#c7c7c7] dark:text-[#232730]">GitHub</p>
+                                    </motion.div>
+                                    <motion.div
+                                        whileHover={{
+                                            scale: 1.1
+                                        }}
+                                        className="flex flex-col items-center gap-2">
+                                        <div className="flex items-center text-[#c2c2c2] bg-[#502e01] border-2 border-[#F78C00] text-4xl p-3 rounded-2xl">
+                                            <SiFirebase />
+                                        </div>
+                                        <p className="text-[#c7c7c7] dark:text-[#232730]">Firebase</p>
+                                    </motion.div>
+                                    <motion.div
+                                        whileHover={{
+                                            scale: 1.1
+                                        }}
+                                        className="flex flex-col items-center gap-2">
+                                        <div className="flex items-center text-[#c2c2c2] bg-[#25173b] border-2 border-[#7248B5] text-4xl p-3 rounded-2xl">
+                                            <SiRedux />
+                                        </div>
+                                        <p className="text-[#c7c7c7] dark:text-[#232730]">Redux</p>
+                                    </motion.div>
+                                </div>
+                            </motion.div>
                         </motion.div>
-                    </motion.div>
+                    </div>
                 </div>
             </div>
             <motion.div
