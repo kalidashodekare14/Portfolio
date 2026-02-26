@@ -97,9 +97,7 @@ const Projects = () => {
         {
             "id": 4,
             "images": [
-                "https://i.postimg.cc/zGmQpfZG/img-1.png",
-                "https://i.postimg.cc/vZRKXmFw/img-2.png",
-                "https://i.postimg.cc/hPJFpwXm/img-3.png",
+                "https://i.postimg.cc/mDjTkPLt/image.png",
             ],
             "title": "BookZoneBD – E-commerce Platform",
             "overview": "BookZoneBD is a MERN Stack project where book readers can easily browse, search, filter, add to cart, and order books. It features role-based authentication secured via JWT and Firebase.",
