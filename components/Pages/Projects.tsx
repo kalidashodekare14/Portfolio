@@ -9,7 +9,7 @@ const Projects = () => {
 
     const projectInfo = [
         {
-            "id": 2,
+            "id": 1,
             "images": [
                 "https://i.postimg.cc/52YscWJK/a1.png",
                 "https://i.postimg.cc/W1F5RcVS/a2.png",
@@ -38,7 +38,7 @@ const Projects = () => {
             "backendCode": ""
         },
         {
-            "id": 1,
+            "id": 2,
             "images": [
                 "https://i.postimg.cc/5NyVnFXZ/project.png",
                 "https://i.postimg.cc/fWBscvRp/project2.png",
@@ -94,6 +94,33 @@ const Projects = () => {
             "frontendCode": "https://github.com/kalidashodekare14/HealthCare",
             "backendCode": ""
         },
+        {
+            "id": 4,
+            "images": [
+                "https://i.postimg.cc/zGmQpfZG/img-1.png",
+                "https://i.postimg.cc/vZRKXmFw/img-2.png",
+                "https://i.postimg.cc/hPJFpwXm/img-3.png",
+            ],
+            "title": "BookZoneBD – E-commerce Platform",
+            "overview": "BookZoneBD is a MERN Stack project where book readers can easily browse, search, filter, add to cart, and order books. It features role-based authentication secured via JWT and Firebase.",
+            "skills": [
+                "React.js",
+                "Tailwind CSS",
+                "Redux",
+                "Firebase",
+                "Node.js",
+                "Express.js",
+                "MongoDB"
+            ],
+            "features": [
+                "Role-Based Secure Authentication : Secure login/registration with JWT and Firebase. Users, authors, and admins get separate functionality.",
+                "User Book Interaction & Payment: Users can search and filter books, add them to the cart, and complete orders securely via SSLCommerz payment integration.",
+                "Admin Dashboard & Management: Admin can monitor and manage all data from an intuitive dashboard, including books, users, orders, and reviews.",
+            ],
+            "liveLink": "https://bookzonebd.vercel.app",
+            "frontendCode": "https://github.com/kalidashodekare14/BookZoneBD-Client",
+            "backendCode": "https://github.com/kalidashodekare14/BookZoneBD-Server"
+        },
 
     ]
 
@@ -139,26 +166,15 @@ const Projects = () => {
                                         <h2 className="text-3xl text-[#dadada] dark:text-[#363d4b]">{project?.title}</h2>
                                         <p className="text-[#b9b9b9] font-medium dark:text-[#4c566a]">{project?.overview.slice(0, 150)}...</p>
                                         <div className="flex flex-wrap gap-3">
-                                            <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
-                                                <p className="font-medium text-[15px]">Next.js</p>
-                                            </div>
-                                            <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
-                                                <p className="font-medium text-[15px]">TypeScript</p>
-                                            </div>
-                                            <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
-                                                <p className="font-medium text-[15px]">Tailwind CSS</p>
-                                            </div>
-                                            <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
-                                                <p className="font-medium text-[15px]">Node.js</p>
-                                            </div>
-                                            <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
-                                                <p className="font-medium text-[15px]">Express.js</p>
-                                            </div>
-                                            <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
-                                                <p className="font-medium text-[15px]">MongoDB.js</p>
-                                            </div>
+                                            {
+                                                project.skills.map(skill => (
+                                                    <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
+                                                        <p className="font-medium text-[15px]">{skill}</p>
+                                                    </div>
+                                                ))
+                                            }
                                         </div>
-                                        <Link href="/projects/1">
+                                        <Link href={`/projects/${project.id}`} >
                                             <motion.button
                                                 whileHover={{
                                                     scale: 1.05,

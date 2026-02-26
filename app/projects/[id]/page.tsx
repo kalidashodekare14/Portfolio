@@ -11,11 +11,10 @@ import { Pagination } from 'swiper/modules';
 import { useParams } from 'next/navigation';
 import { motion } from "motion/react"
 import { FaDisplay } from 'react-icons/fa6';
-import { FaArrowLeft, FaCheck, FaGithub } from 'react-icons/fa';
+import { FaArrowLeft, FaGithub } from 'react-icons/fa';
 import { AiFillDatabase } from 'react-icons/ai';
 import Link from 'next/link';
-import { IoShieldCheckmark } from 'react-icons/io5';
-import { IoIosCheckmarkCircle, IoIosCheckmarkCircleOutline } from 'react-icons/io';
+import { IoIosCheckmarkCircleOutline } from 'react-icons/io';
 
 const projectInfo = [
     {
@@ -103,6 +102,33 @@ const projectInfo = [
         "liveLink": "https://health-care14.vercel.app",
         "frontendCode": "https://github.com/kalidashodekare14/HealthCare",
         "backendCode": ""
+    },
+    {
+        "id": 4,
+        "images": [
+            "https://i.postimg.cc/zGmQpfZG/img-1.png",
+            "https://i.postimg.cc/vZRKXmFw/img-2.png",
+            "https://i.postimg.cc/hPJFpwXm/img-3.png",
+        ],
+        "title": "BookZoneBD – E-commerce Platform",
+        "overview": "BookZoneBD is a MERN Stack project where book readers can easily browse, search, filter, add to cart, and order books. It features role-based authentication secured via JWT and Firebase.",
+        "skills": [
+            "React.js",
+            "Tailwind CSS",
+            "Redux",
+            "Firebase",
+            "Node.js",
+            "Express.js",
+            "MongoDB"
+        ],
+        "features": [
+            "Role-Based Secure Authentication : Secure login/registration with JWT and Firebase. Users, authors, and admins get separate functionality.",
+            "User Book Interaction & Payment: Users can search and filter books, add them to the cart, and complete orders securely via SSLCommerz payment integration.",
+            "Admin Dashboard & Management: Admin can monitor and manage all data from an intuitive dashboard, including books, users, orders, and reviews.",
+        ],
+        "liveLink": "https://bookzonebd.vercel.app",
+        "frontendCode": "https://github.com/kalidashodekare14/BookZoneBD-Client",
+        "backendCode": "https://github.com/kalidashodekare14/BookZoneBD-Server"
     },
 
 ]
