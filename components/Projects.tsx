@@ -232,17 +232,23 @@ const Projects = () => {
                         delay: 0.9
                     }}
                     viewport={{ once: true }}
-                    className="flex justify-center items-center">
+                    className="flex justify-center items-center"
+                >
                     <Link href={"/projects"}>
-                        <motion.div
+                        <motion.button
                             whileHover={{
+                                scale: 1.05,
                                 backgroundColor: "#291a55"
+                            }}
+                            transition={{
+                                duration: 0.2,
                             }}
                             className="text-white my-10 text-center cursor-pointer border  border-[#7f5ee0] w-40 p-2 rounded-xl">
                             <h1>More Projects</h1>
-                        </motion.div>
+                        </motion.button>
                     </Link>
                 </motion.div>
+
             </div>
             <motion.div
                 className='z-10 absolute top-0 left-10 w-60 h-50 rounded-full bg-[#6532FF] opacity-50 blur-[140px]'>
