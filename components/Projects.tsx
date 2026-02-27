@@ -219,7 +219,19 @@ const Projects = () => {
                     </motion.div>
                 </div>
                 <motion.div
-                    
+                    initial={{
+                        y: -50,
+                        opacity: 0
+                    }}
+                    whileInView={{
+                        y: 0,
+                        opacity: 1
+                    }}
+                    transition={{
+                        duration: 0.5,
+                        delay: 0.9
+                    }}
+                    viewport={{ once: true }}
                     className="flex justify-center items-center">
                     <Link href={"/projects"}>
                         <motion.div
