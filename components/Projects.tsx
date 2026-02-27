@@ -218,7 +218,9 @@ const Projects = () => {
                         </motion.div>
                     </motion.div>
                 </div>
-                <div className="flex justify-center items-center">
+                <motion.div
+                    
+                    className="flex justify-center items-center">
                     <Link href={"/projects"}>
                         <motion.div
                             whileHover={{
@@ -228,7 +230,7 @@ const Projects = () => {
                             <h1>More Projects</h1>
                         </motion.div>
                     </Link>
-                </div>
+                </motion.div>
             </div>
             <motion.div
                 className='z-10 absolute top-0 left-10 w-60 h-50 rounded-full bg-[#6532FF] opacity-50 blur-[140px]'>
