@@ -53,9 +53,8 @@ const HeroSection = () => {
 
                             }}
                             viewport={{ once: true }}
-                            className='flex items-center gap-5 text-white text-[80px] lg:text-[80px] text-center font-bold leading-tight'>
-                            <span className='text-[#9981df] dark:text-[#6532FF]'>Kalidash</span>
-                            <span className='text-[#9981df] dark:text-[#6532FF]'>Odekare</span>
+                            className='gap-5 text-white text-[80px] lg:text-[80px] text-center font-bold leading-tight'>
+                            <span className='text-[#9981df] dark:text-[#6532FF]'>Kalidash Odekare</span>
                             {/* <span className='bg-linear-to-r from-[#ad6cdb] via-[#9a5dc2] to-[#8c50b4] bg-clip-text text-transparent animate-linear'>Kalidash Odekare</span> */}
                         </motion.h1>
                         {/* text-[#f95738] */}
@@ -74,7 +73,7 @@ const HeroSection = () => {
 
                             }}
                             viewport={{ once: true }}
-                            className='text-[#8d82aa] dark:text-[#686374] text-[20px] lg:text-[20px] text-center w-[65%]'>Building Beautiful, Scalable & User-Centric Web Applications with Modern Frontend Technologies</motion.h3>
+                            className='text-[#8d82aa] dark:text-[#686374] text-[20px] lg:text-[20px] text-center lg:w-[65%] w-full'>Building Beautiful, Scalable & User-Centric Web Applications with Modern Frontend Technologies</motion.h3>
                         <motion.div
                             initial={{
                                 y: -50,
