@@ -1,8 +1,8 @@
 import AboutMe from "@/components/AboutMe";
 import ContactMe from "@/components/ContactMe";
-import Education from "@/components/Education";
-import HeroSection from "@/components/Herosection/HeroSection";
-import HeroSection1 from "@/components/HeroSection1/HeroSection1";
+// import Education from "@/components/Education";
+import HeroSection from "@/components/HeroSection/HeroSection";
+// import HeroSection1 from "@/components/HeroSection1/HeroSection1";
 import Projects from "@/components/Projects";
 import TechnicalSkill from "@/components/TechnicalSkill";
 import Footer from "@/layout/Footer";
