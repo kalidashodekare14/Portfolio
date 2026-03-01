@@ -18,12 +18,17 @@ const HeroSection = () => {
                     <div className='z-20 flex flex-col items-center gap-6 mt-14 lg:mt-0'>
                         <motion.div
                             initial={{
-                                top: 20,
+                                y: -50,
                                 opacity: 0
                             }}
                             whileInView={{
-                                top: 0,
+                                y: 0,
                                 opacity: 1
+                            }}
+                            transition={{
+                                duration: 0.5,
+                                delay: 0.5,
+
                             }}
                             className='relative z-20 flex items-center gap-2 text-[#f7f6f6bb] dark:text-[#8C67FA] text-[18px] border-[0.1px] border-[#3d3d3dbb] p-3 py-1 rounded-3xl'>
                             <div className="relative flex size-2">
@@ -32,13 +37,41 @@ const HeroSection = () => {
                             </div>
                             <span>Frontend Developer</span>
                         </motion.div>
-                        <h1 className='flex items-center gap-5 text-white text-[80px] lg:text-[80px] text-center font-bold leading-tight'>
+                        <motion.h1
+                            initial={{
+                                y: -50,
+                                opacity: 0
+                            }}
+                            whileInView={{
+                                y: 0,
+                                opacity: 1
+                            }}
+                            transition={{
+                                duration: 0.5,
+                                delay: 0.6,
+
+                            }}
+                            className='flex items-center gap-5 text-white text-[80px] lg:text-[80px] text-center font-bold leading-tight'>
                             <span className='text-[#9981df] dark:text-[#6532FF]'>Kalidash</span>
                             <span className='text-[#9981df] dark:text-[#6532FF]'>Odekare</span>
                             {/* <span className='bg-linear-to-r from-[#ad6cdb] via-[#9a5dc2] to-[#8c50b4] bg-clip-text text-transparent animate-linear'>Kalidash Odekare</span> */}
-                        </h1>
+                        </motion.h1>
                         {/* text-[#f95738] */}
-                        <h3 className='text-[#8d82aa] dark:text-[#686374] text-[20px] lg:text-[20px] text-center w-[65%]'>Building Beautiful, Scalable & User-Centric Web Applications with Modern Frontend Technologies</h3>
+                        <motion.h3
+                            initial={{
+                                y: -50,
+                                opacity: 0
+                            }}
+                            whileInView={{
+                                y: 0,
+                                opacity: 1
+                            }}
+                            transition={{
+                                duration: 0.5,
+                                delay: 0.7,
+
+                            }}
+                            className='text-[#8d82aa] dark:text-[#686374] text-[20px] lg:text-[20px] text-center w-[65%]'>Building Beautiful, Scalable & User-Centric Web Applications with Modern Frontend Technologies</motion.h3>
                         <motion.div
                             initial={{
                                 y: -50,
@@ -50,7 +83,8 @@ const HeroSection = () => {
                             }}
                             transition={{
                                 duration: 0.5,
-                                delay: 0.9
+                                delay: 0.8,
+
                             }}
                             viewport={{ once: true }}
                             className="flex flex-col lg:flex-row gap-4">
@@ -106,43 +140,56 @@ const HeroSection = () => {
                 {/* tech icons */}
                 <motion.div
                     initial={{
-                        y: 0,
-                        opacity: 1,
+                        opacity: 0
                     }}
-                    animate={{
-                        y: 6,
-                        opacity: .7,
+                    whileInView={{
+                        opacity: 1
                     }}
                     transition={{
-                        duration: 1,
-                        repeat: Infinity,
-                        repeatType: "reverse",
-                        ease: "easeInOut",
-                        delay: 5
-                    }}
-                    className='hidden lg:flex absolute top-0 left-20 text-[#EFD81C] text-3xl'>
-                    <FaJs />
-                </motion.div>
-                <motion.div
-                    initial={{
-                        y: 0,
-                        opacity: 1,
-                    }}
-                    animate={{
-                        y: 6,
-                        opacity: .7,
-                    }}
-                    transition={{
-                        duration: 1,
-                        repeat: Infinity,
-                        repeatType: "reverse",
-                        ease: "easeInOut",
-                        delay: 5
-                    }}
-                    className='hidden lg:flex absolute top-0 right-20  p-0 text-[#2F74C0] rounded-full text-4xl'>
-                    <BiLogoTypescript />
-                </motion.div>
+                        duration: 0.5,
+                        delay: 0.8,
 
+                    }}
+                >
+                    <motion.div
+                        initial={{
+                            y: 0,
+                            opacity: 1,
+                        }}
+                        animate={{
+                            y: 6,
+                            opacity: .7,
+                        }}
+                        transition={{
+                            duration: 1,
+                            repeat: Infinity,
+                            repeatType: "reverse",
+                            ease: "easeInOut",
+                            delay: 5
+                        }}
+                        className='hidden lg:flex absolute top-0 left-20 text-[#EFD81C] text-3xl'>
+                        <FaJs />
+                    </motion.div>
+                    <motion.div
+                        initial={{
+                            y: 0,
+                            opacity: 1,
+                        }}
+                        animate={{
+                            y: 6,
+                            opacity: .7,
+                        }}
+                        transition={{
+                            duration: 1,
+                            repeat: Infinity,
+                            repeatType: "reverse",
+                            ease: "easeInOut",
+                            delay: 5
+                        }}
+                        className='hidden lg:flex absolute top-0 right-20  p-0 text-[#2F74C0] rounded-full text-4xl'>
+                        <BiLogoTypescript />
+                    </motion.div>
+                </motion.div>
                 {/* <motion.div
                     initial={{
                         y: 0,
@@ -217,7 +264,19 @@ const HeroSection = () => {
                 </motion.div> */}
             </div>
             {/* Scroll icon animation */}
-            <div>
+            <motion.div
+                initial={{
+                    opacity: 0
+                }}
+                whileInView={{
+                    opacity: 1
+                }}
+                transition={{
+                    duration: 0.5,
+                    delay: 0.8,
+
+                }}
+            >
                 <motion.p
                     initial={{
                         y: 0
@@ -249,7 +308,7 @@ const HeroSection = () => {
                         }}
                         className='bg-[#d8d3d3bb] rounded-xl w-1 h-3'></motion.p>
                 </motion.p>
-            </div>
+            </motion.div>
             {/* background elements */}
             <motion.div
                 initial={{
