@@ -1,5 +1,9 @@
-@keyframes blink {
-    50% {
-        opacity: 0;
-    }
+.bg-grid-pattern {
+    background-image: radial-gradient(rgba(83, 83, 83, 0.2) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.bg-grid-pattern-white {
+    background-image: radial-gradient(rgba(5, 5, 5, 0.2) 1px, transparent 1px);
+    background-size: 20px 20px;
 }

@@ -9,6 +9,7 @@ import "./HeroSection.css"
 // 161f2d
 const HeroSection1 = () => {
 
+    
 
     return (
         <div id="hero" className="-mt-px relative  bg-[#0D1317] dark:bg-white overflow-hidden font-roboto pb-5">
