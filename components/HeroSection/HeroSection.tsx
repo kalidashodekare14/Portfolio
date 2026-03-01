@@ -30,6 +30,7 @@ const HeroSection = () => {
                                 delay: 0.5,
 
                             }}
+                            viewport={{ once: true }}
                             className='relative z-20 flex items-center gap-2 text-[#f7f6f6bb] dark:text-[#8C67FA] text-[18px] border-[0.1px] border-[#3d3d3dbb] p-3 py-1 rounded-3xl'>
                             <div className="relative flex size-2">
                                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#8C67FA] opacity-75"></span>
@@ -51,6 +52,7 @@ const HeroSection = () => {
                                 delay: 0.6,
 
                             }}
+                            viewport={{ once: true }}
                             className='flex items-center gap-5 text-white text-[80px] lg:text-[80px] text-center font-bold leading-tight'>
                             <span className='text-[#9981df] dark:text-[#6532FF]'>Kalidash</span>
                             <span className='text-[#9981df] dark:text-[#6532FF]'>Odekare</span>
@@ -71,6 +73,7 @@ const HeroSection = () => {
                                 delay: 0.7,
 
                             }}
+                            viewport={{ once: true }}
                             className='text-[#8d82aa] dark:text-[#686374] text-[20px] lg:text-[20px] text-center w-[65%]'>Building Beautiful, Scalable & User-Centric Web Applications with Modern Frontend Technologies</motion.h3>
                         <motion.div
                             initial={{
@@ -150,6 +153,7 @@ const HeroSection = () => {
                         delay: 0.8,
 
                     }}
+                    viewport={{ once: true }}
                 >
                     <motion.div
                         initial={{
@@ -276,6 +280,7 @@ const HeroSection = () => {
                     delay: 0.8,
 
                 }}
+                viewport={{ once: true }}
             >
                 <motion.p
                     initial={{
