@@ -15,7 +15,7 @@ const HeroSection = () => {
         <div id='hero' className='-mt-px relative bg-grid-pattern dark:bg-grid-pattern-white lg:min-h-screen bg-[#0D1317] dark:bg-white overflow-hidden font-roboto flex flex-col items-center lg:justify-center pb-5'>
             <div className='relative max-w-7xl p-15 '>
                 <div>
-                    <div className='z-20 flex flex-col items-center gap-6 mt-14 lg:mt-0'>
+                    <div className='z-20 flex flex-col items-center gap-6 mt-14 lg:mt-0 '>
                         <motion.div
                             initial={{
                                 y: -50,
@@ -31,7 +31,7 @@ const HeroSection = () => {
 
                             }}
                             viewport={{ once: true }}
-                            className='relative z-20 flex items-center gap-2 text-[#f7f6f6bb] dark:text-[#8C67FA] text-[18px] border-[0.1px] border-[#3d3d3dbb] p-3 py-1 rounded-3xl'>
+                            className='relative z-20 flex items-center gap-2 text-[#f7f6f6bb]  dark:text-[#8C67FA] text-[18px] border-[0.1px] dark:bg-[#ffffffab] border-[#3d3d3dbb] dark:border-[#c0c0c0bb] p-3 py-1 rounded-3xl'>
                             <div className="relative flex size-2">
                                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#8C67FA] opacity-75"></span>
                                 <span className="relative inline-flex size-2 rounded-full bg-[#8C67FA]"></span>
