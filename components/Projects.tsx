@@ -243,7 +243,7 @@ const Projects = () => {
                             transition={{
                                 duration: 0.2,
                             }}
-                            className="text-white my-10 text-center cursor-pointer border  border-[#7f5ee0] w-40 p-2 rounded-xl">
+                            className="text-[#777777]  my-10 text-center cursor-pointer border  border-[#7f5ee0] w-40 p-2 rounded-xl">
                             <h1>More Projects</h1>
                         </motion.button>
                     </Link>

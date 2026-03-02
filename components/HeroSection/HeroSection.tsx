@@ -266,7 +266,7 @@ const HeroSection = () => {
                     <TbBrandRedux />
                 </motion.div> */}
             </div>
-            {/* Scroll icon animation */}
+            {/* Scroll element animation */}
             <motion.div
                 initial={{
                     opacity: 0
