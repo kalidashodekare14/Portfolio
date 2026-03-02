@@ -295,7 +295,7 @@ const HeroSection = () => {
                         ease: "easeInOut",
                         delay: 6
                     }}
-                    className='flex justify-center items-center border border-[#bbbb] w-7 h-12 rounded-2xl'
+                    className='flex justify-center items-center border border-[#bbbb] dark:border-[#383838bb] w-7 h-12 rounded-2xl'
                 >
                     <motion.p
                         initial={{
@@ -310,7 +310,7 @@ const HeroSection = () => {
                             repeatType: "reverse",
                             ease: "easeInOut"
                         }}
-                        className='bg-[#d8d3d3bb] rounded-xl w-1 h-3'></motion.p>
+                        className='bg-[#d8d3d3bb] dark:bg-[#494949bb] rounded-xl w-1 h-3'></motion.p>
                 </motion.p>
             </motion.div>
             {/* background elements */}
