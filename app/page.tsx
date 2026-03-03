@@ -4,6 +4,7 @@ import ContactMe from "@/components/ContactMe";
 import HeroSection from "@/components/HeroSection/HeroSection";
 // import HeroSection1 from "@/components/HeroSection1/HeroSection1";
 import Projects from "@/components/Projects";
+import Services from "@/components/Services";
 import TechnicalSkill from "@/components/TechnicalSkill";
 import Footer from "@/layout/Footer";
 import Navbar from "@/layout/Navbar";
@@ -17,6 +18,7 @@ export default function Home() {
       {/* <HeroSection1 /> */}
       <AboutMe />
       {/* <Education /> */}
+      <Services />
       <TechnicalSkill />
       <Projects />
       <ContactMe />
