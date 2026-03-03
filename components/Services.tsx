@@ -8,7 +8,7 @@ import { MdDevices } from "react-icons/md";
 
 const Services = () => {
     return (
-        <div id="skills" className="-mt-px relative overflow-hidden bg-[#0D1317] dark:bg-white">
+        <div id="skills" className="-mt-px relative font-rubik overflow-hidden bg-[#0D1317] dark:bg-white">
             <div className="lg:max-w-6xl m-auto">
                 <motion.div
                     initial={{
@@ -56,14 +56,14 @@ const Services = () => {
                             transition={{
                                 duration: 0.3
                             }}
-                            className="text-white border border-[#63519b] rounded-xl p-5 ">
+                            className="text-white dark:text-black border border-[#63519b] rounded-xl p-5 ">
                             <div className="flex items-center gap-3 mb-5">
                                 <div className="text-2xl bg-[#6532FF] p-3 rounded-full">
                                     <FaCode />
                                 </div>
-                                <h3 className="text-xl">Frontend Development</h3>
+                                <h3 className="text-xl dark:text-black">Frontend Development</h3>
                             </div>
-                            <p className="text-[#f1f1f1bb]">Modern and scalable web applications built with React, Next.js, and TypeScript, focusing on clean architecture and smooth user experience.</p>
+                            <p className="text-[#f1f1f1bb] dark:text-[#2b2b2b]">Modern and scalable web applications built with React, Next.js, and TypeScript, focusing on clean architecture and smooth user experience.</p>
                         </motion.div>
                     </motion.div>
                     <motion.div
@@ -97,9 +97,9 @@ const Services = () => {
                                 <div className="text-2xl bg-[#6532FF] p-3 rounded-full">
                                     <FaFileCode />
                                 </div>
-                                <h3 className="text-xl">Clean Code & Scalable Architecture</h3>
+                                <h3 className="text-xl dark:text-black">Clean Code & Scalable Architecture</h3>
                             </div>
-                            <p className="text-[#f1f1f1bb]">Maintainable, reusable, and well-structured code following best practices for long-term scalability and team collaboration.</p>
+                            <p className="text-[#f1f1f1bb] dark:text-[#2b2b2b]">Maintainable, reusable, and well-structured code following best practices for long-term scalability and team collaboration.</p>
                         </motion.div>
                     </motion.div>
                     <motion.div
@@ -133,9 +133,9 @@ const Services = () => {
                                 <div className="text-2xl bg-[#6532FF] p-3 rounded-full">
                                     <MdDevices />
                                 </div>
-                                <h3 className="text-xl">Responsive & Modern UI</h3>
+                                <h3 className="text-xl dark:text-black">Responsive & Modern UI</h3>
                             </div>
-                            <p className="text-[#f1f1f1bb]">Pixel-perfect, mobile-first, and cross-browser compatible interfaces built from design to production.</p>
+                            <p className="text-[#f1f1f1bb] dark:text-[#2b2b2b]">Pixel-perfect, mobile-first, and cross-browser compatible interfaces built from design to production.</p>
                         </motion.div>
                     </motion.div>
                     <motion.div
@@ -169,9 +169,9 @@ const Services = () => {
                                 <div className="text-2xl bg-[#6532FF] p-3 rounded-full">
                                     <GrDocumentPerformance />
                                 </div>
-                                <h3 className="text-xl">Performance & SEO Optimization</h3>
+                                <h3 className="text-xl dark:text-black">Performance & SEO Optimization</h3>
                             </div>
-                            <p className="text-[#f1f1f1bb]">Fast-loading and SEO-friendly applications with optimized assets, code splitting, and improved Lighthouse performance.</p>
+                            <p className="text-[#f1f1f1bb] dark:text-[#2b2b2b]">Fast-loading and SEO-friendly applications with optimized assets, code splitting, and improved Lighthouse performance.</p>
                         </motion.div>
                     </motion.div>
                     <motion.div
@@ -205,9 +205,9 @@ const Services = () => {
                                 <div className="text-2xl bg-[#6532FF] p-3 rounded-full">
                                     <LuDatabaseZap />
                                 </div>
-                                <h3 className="text-xl">API Integration & Backend Connectivity</h3>
+                                <h3 className="text-xl dark:text-black">API Integration & Backend Connectivity</h3>
                             </div>
-                            <p className="text-[#f1f1f1bb]">Secure and efficient integration with REST APIs, authentication systems, and backend services.</p>
+                            <p className="text-[#f1f1f1bb] dark:text-[#2b2b2b]">Secure and efficient integration with REST APIs, authentication systems, and backend services.</p>
                         </motion.div>
                     </motion.div>
                     <motion.div
@@ -241,9 +241,9 @@ const Services = () => {
                                 <div className="text-2xl bg-[#6532FF] p-3 rounded-full">
                                     <FcSupport />
                                 </div>
-                                <h3 className="text-xl">Maintenance & Support</h3>
+                                <h3 className="text-xl dark:text-black">Maintenance & Support</h3>
                             </div>
-                            <p className="text-[#f1f1f1bb]">Ongoing support including bug fixing, refactoring, performance improvements, and feature enhancements.</p>
+                            <p className="text-[#f1f1f1bb] dark:text-[#2b2b2b]">Ongoing support including bug fixing, refactoring, performance improvements, and feature enhancements.</p>
                         </motion.div>
                     </motion.div>
                 </div>
