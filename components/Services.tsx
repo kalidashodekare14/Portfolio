@@ -9,7 +9,7 @@ import { MdDevices } from "react-icons/md";
 const Services = () => {
     return (
         <div id="skills" className="-mt-px relative font-rubik overflow-hidden bg-[#0D1317] dark:bg-white">
-            <div className="lg:max-w-6xl m-auto">
+            <div className="lg:max-w-6xl m-auto mx-5">
                 <motion.div
                     initial={{
                         y: -50,
