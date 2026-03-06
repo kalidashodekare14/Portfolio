@@ -140,7 +140,7 @@ const page = () => {
     console.log(projectData);
 
     return (
-        <div className='bg-[#161E2D] text-white'>
+        <div className='bg-[#161E2D] dark:bg-white text-white'>
             <div className='max-w-5xl m-auto py-10'>
                 <Link href="/" className='flex items-center gap-2 text-[#9045F8] mb-5 hover:underline w-fit'>
                     <div className='mx-5 flex items-center gap-2 text-xl text-[#be5cff] cursor-pointer'>
