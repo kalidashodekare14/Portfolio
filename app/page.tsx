@@ -1,3 +1,4 @@
+
 import AboutMe from "@/components/AboutMe";
 import ContactMe from "@/components/ContactMe";
 // import Education from "@/components/Education";
@@ -10,7 +11,11 @@ import Footer from "@/layout/Footer";
 import Navbar from "@/layout/Navbar";
 
 
+
 export default function Home() {
+
+
+
   return (
     <div>
       <Navbar />

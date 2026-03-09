@@ -13,7 +13,7 @@ import { GrTechnology } from "react-icons/gr";
 const TechnicalSkill = () => {
     return (
         <div id="skills" className="-mt-px relative overflow-hidden bg-[#0D1317] dark:bg-white">
-            <div className="lg:max-w-6xl m-auto">
+            <div className="lg:max-w-6xl m-auto mb-10">
                 <motion.div
                     initial={{
                         y: -50,
