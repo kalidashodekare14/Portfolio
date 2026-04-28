@@ -1,4 +1,3 @@
-
 import AboutMe from "@/components/AboutMe";
 import ContactMe from "@/components/ContactMe";
 // import Education from "@/components/Education";
@@ -10,19 +9,12 @@ import TechnicalSkill from "@/components/TechnicalSkill";
 import Footer from "@/layout/Footer";
 import Navbar from "@/layout/Navbar";
 
-
-
 export default function Home() {
-
-
-
   return (
     <div>
       <Navbar />
       <HeroSection />
-      {/* <HeroSection1 /> */}
       <AboutMe />
-      {/* <Education /> */}
       <Services />
       <TechnicalSkill />
       <Projects />

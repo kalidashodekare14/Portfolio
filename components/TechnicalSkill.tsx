@@ -348,17 +348,6 @@ const TechnicalSkill = () => {
                     }}
                     className="flex flex-col items-center gap-2"
                   >
-                    <div className="flex items-center text-[#c2c2c2] bg-[#3b0e0e] border-2 border-[#CC3534] text-4xl p-3 rounded-2xl">
-                      <RiNpmjsFill />
-                    </div>
-                    <p className="text-[#c7c7c7] dark:text-[#232730]">NPM</p>
-                  </motion.div>
-                  <motion.div
-                    whileHover={{
-                      scale: 1.1,
-                    }}
-                    className="flex flex-col items-center gap-2"
-                  >
                     <div className="flex items-center text-[#c2c2c2] bg-[#072438] border-2 border-[#1E97E8] text-4xl p-3 rounded-2xl">
                       <VscVscode />
                     </div>
