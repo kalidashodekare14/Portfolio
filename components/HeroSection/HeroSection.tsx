@@ -76,8 +76,7 @@ const HeroSection = () => {
               viewport={{ once: true }}
               className="text-[#8d82aa] dark:text-[#686374] text-[20px] lg:text-[20px] text-center lg:w-[65%] w-full"
             >
-              Building Beautiful, Scalable & User-Centric Web Applications with
-              Modern Frontend Technologies
+              Focused on building modern and efficient web applications
             </motion.h3>
             <motion.div
               initial={{
