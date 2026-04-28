@@ -41,7 +41,7 @@ const TechnicalSkill = () => {
           <p className="w-14 border-2 border-[#6532FF]" />
         </motion.div>
         <div className="relative z-20 mx-5 font-rubik ">
-          <div className="flex flex-col lg:flex-row mb-20 lg:mb-0 gap-5 ">
+          <div className="grid xl:grid-cols-3 lg:grid-cols-2 mb-20 lg:mb-0 gap-5 ">
             <motion.div
               initial={{
                 y: -50,
@@ -283,30 +283,6 @@ const TechnicalSkill = () => {
                     }}
                     className="flex flex-col items-center gap-2"
                   >
-                    <div className="flex items-center text-[#c2c2c2] bg-[#072438] border-2 border-[#1E97E8] text-4xl p-3 rounded-2xl">
-                      <VscVscode />
-                    </div>
-                    <p className="text-[#c7c7c7] dark:text-[#232730]">
-                      VS Code
-                    </p>
-                  </motion.div>
-                  <motion.div
-                    whileHover={{
-                      scale: 1.1,
-                    }}
-                    className="flex flex-col items-center gap-2"
-                  >
-                    <div className="flex items-center text-[#c2c2c2] bg-[#3a3d41] border-2 border-[#1A1E22] text-4xl p-3 rounded-2xl">
-                      <FaGithub />
-                    </div>
-                    <p className="text-[#c7c7c7] dark:text-[#232730]">GitHub</p>
-                  </motion.div>
-                  <motion.div
-                    whileHover={{
-                      scale: 1.1,
-                    }}
-                    className="flex flex-col items-center gap-2"
-                  >
                     <div className="flex items-center text-[#c2c2c2] bg-[#502e01] border-2 border-[#F78C00] text-4xl p-3 rounded-2xl">
                       <SiFirebase />
                     </div>
@@ -324,6 +300,82 @@ const TechnicalSkill = () => {
                       <SiRedux />
                     </div>
                     <p className="text-[#c7c7c7] dark:text-[#232730]">Redux</p>
+                  </motion.div>
+                </div>
+              </motion.div>
+            </motion.div>
+            <motion.div
+              initial={{
+                y: -50,
+                opacity: 0,
+              }}
+              whileInView={{
+                y: 0,
+                opacity: 1,
+              }}
+              transition={{
+                duration: 0.5,
+                delay: 0.8,
+              }}
+              viewport={{ once: true }}
+            >
+              <motion.div
+                initial={{
+                  y: 0,
+                }}
+                whileHover={{
+                  y: -8,
+                  boxShadow: "0px 5px 10px #512EB9",
+                }}
+                transition={{
+                  duration: 0.3,
+                }}
+                className="border rounded-2xl border-[#62558b] dark:border-[#757474bb] shadow-2xl  dark:bg-white light:bg-linear-to-r from-[#11151a] via-[#11151a] to-[#0f1316] p-5"
+              >
+                {/* Add your technical skills content here */}
+                <div className="flex items-center text-[#c9c9c9]">
+                  <div className="flex items-center gap-4">
+                    <div className="bg-[#6532FF] p-2 rounded-full">
+                      <GrTechnology className="text-4xl" />
+                    </div>
+                    <p className="text-2xl dark:text-[#282a2e]">Libraries</p>
+                  </div>
+                </div>
+                <div className="flex flex-wrap gap-4 my-5">
+                  <motion.div
+                    whileHover={{
+                      scale: 1.1,
+                    }}
+                    className="flex flex-col items-center gap-2"
+                  >
+                    <div className="flex items-center text-[#c2c2c2] bg-[#3b0e0e] border-2 border-[#CC3534] text-4xl p-3 rounded-2xl">
+                      <RiNpmjsFill />
+                    </div>
+                    <p className="text-[#c7c7c7] dark:text-[#232730]">NPM</p>
+                  </motion.div>
+                  <motion.div
+                    whileHover={{
+                      scale: 1.1,
+                    }}
+                    className="flex flex-col items-center gap-2"
+                  >
+                    <div className="flex items-center text-[#c2c2c2] bg-[#072438] border-2 border-[#1E97E8] text-4xl p-3 rounded-2xl">
+                      <VscVscode />
+                    </div>
+                    <p className="text-[#c7c7c7] dark:text-[#232730]">
+                      VS Code
+                    </p>
+                  </motion.div>
+                  <motion.div
+                    whileHover={{
+                      scale: 1.1,
+                    }}
+                    className="flex flex-col items-center gap-2"
+                  >
+                    <div className="flex items-center text-[#c2c2c2] bg-[#3a3d41] border-2 border-[#1A1E22] text-4xl p-3 rounded-2xl">
+                      <FaGithub />
+                    </div>
+                    <p className="text-[#c7c7c7] dark:text-[#232730]">GitHub</p>
                   </motion.div>
                 </div>
               </motion.div>
