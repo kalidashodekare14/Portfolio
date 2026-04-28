@@ -11,9 +11,9 @@ const HeroSection = () => {
   return (
     <div
       id="hero"
-      className="-mt-px relative bg-grid-pattern dark:bg-grid-pattern-white lg:min-h-screen bg-[#0D1317] dark:bg-white overflow-hidden font-roboto flex flex-col items-center lg:justify-center pb-5"
+      className="-mt-px relative bg-grid-pattern dark:bg-grid-pattern-white xl:h-150 lg:h-140 bg-[#0D1317] dark:bg-white overflow-hidden font-roboto flex flex-col items-center lg:justify-center pb-5"
     >
-      <div className="relative max-w-7xl p-15 ">
+      <div className="relative xl:max-w-7xl lg:max-w-5xl max-w-6xl m-auto p-15 ">
         <div>
           <div className="z-20 flex flex-col items-center gap-6 mt-14 lg:mt-0 ">
             <motion.div

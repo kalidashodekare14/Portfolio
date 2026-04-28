@@ -13,7 +13,7 @@ const AboutMe = () => {
       id="about"
       className="-mt-px relative bg-[#0D1317] overflow-hidden dark:bg-white flex flex-col "
     >
-      <div className="min-h-screen lg:max-w-6xl m-auto pb-10 font-rubik mt-24 ">
+      <div className="xl:h-150 lg:h-150 xl:max-w-7xl lg:max-w-5xl max-w-6xl m-auto pb-10 font-rubik mt-24">
         <div className="text-white flex flex-col-reverse lg:flex-row items-center gap-10 mx-5">
           <div className="lg:w-[60%] space-y-3 z-20">
             <motion.div
