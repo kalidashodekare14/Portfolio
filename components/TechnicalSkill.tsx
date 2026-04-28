@@ -17,7 +17,7 @@ const TechnicalSkill = () => {
       className="-mt-px relative overflow-hidden bg-[#0D1317] dark:bg-white"
     >
       <div
-        className="xl:max-w-7xl lg:max-w-5xl max-w-6xl m-auto mb-10npm run dev
+        className="xl:max-w-7xl lg:max-w-5xl max-w-6xl m-auto mb-20
             "
       >
         <motion.div

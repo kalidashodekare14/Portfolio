@@ -1,10 +1,7 @@
 "use client";
 import { motion } from "motion/react";
-import { FaCode, FaFileCode } from "react-icons/fa";
-import { FcSupport } from "react-icons/fc";
-import { GrDocumentPerformance } from "react-icons/gr";
-import { LuDatabaseZap } from "react-icons/lu";
-import { MdDevices } from "react-icons/md";
+import { FaDatabase, FaLink, FaLock } from "react-icons/fa";
+import { IoColorPalette, IoRocket, IoSettingsSharp } from "react-icons/io5";
 
 const Services = () => {
   return (
@@ -64,16 +61,57 @@ const Services = () => {
             >
               <div className="flex items-center gap-3 mb-5">
                 <div className="text-2xl bg-[#6532FF] p-3 rounded-full">
-                  <FaCode />
+                  <IoRocket />
+                </div>
+                <h3 className="text-xl dark:text-black">
+                  Full Stack Web Development
+                </h3>
+              </div>
+              <p className="text-[#f1f1f1bb] dark:text-[#2b2b2b]">
+                Build scalable and responsive web applications using the MERN
+                stack.
+              </p>
+            </motion.div>
+          </motion.div>
+          <motion.div
+            initial={{
+              y: -50,
+              opacity: 0,
+            }}
+            whileInView={{
+              y: 0,
+              opacity: 1,
+            }}
+            transition={{
+              duration: 0.5,
+              delay: 0.6,
+            }}
+            viewport={{ once: true }}
+          >
+            <motion.div
+              initial={{
+                y: 0,
+              }}
+              whileHover={{
+                y: -8,
+                boxShadow: "0px 5px 10px #512EB9",
+              }}
+              transition={{
+                duration: 0.3,
+              }}
+              className="text-white dark:text-black border border-[#63519b] rounded-xl p-5 "
+            >
+              <div className="flex items-center gap-3 mb-5">
+                <div className="text-2xl bg-[#6532FF] p-3 rounded-full">
+                  <IoColorPalette />
                 </div>
                 <h3 className="text-xl dark:text-black">
                   Frontend Development
                 </h3>
               </div>
               <p className="text-[#f1f1f1bb] dark:text-[#2b2b2b]">
-                Modern and scalable web applications built with React, Next.js,
-                and TypeScript, focusing on clean architecture and smooth user
-                experience.
+                Create clean and interactive user interfaces with React and
+                Next.js.
               </p>
             </motion.div>
           </motion.div>
@@ -107,15 +145,13 @@ const Services = () => {
             >
               <div className="flex items-center gap-3 mb-5">
                 <div className="text-2xl bg-[#6532FF] p-3 rounded-full">
-                  <FaFileCode />
+                  <IoSettingsSharp />
                 </div>
-                <h3 className="text-xl dark:text-black">
-                  Clean Code & Scalable Architecture
-                </h3>
+                <h3 className="text-xl dark:text-black">Backend Development</h3>
               </div>
               <p className="text-[#f1f1f1bb] dark:text-[#2b2b2b]">
-                Maintainable, reusable, and well-structured code following best
-                practices for long-term scalability and team collaboration.
+                Develop secure APIs and server-side logic using Node.js and
+                Express.
               </p>
             </motion.div>
           </motion.div>
@@ -149,15 +185,12 @@ const Services = () => {
             >
               <div className="flex items-center gap-3 mb-5">
                 <div className="text-2xl bg-[#6532FF] p-3 rounded-full">
-                  <MdDevices />
+                  <FaDatabase />
                 </div>
-                <h3 className="text-xl dark:text-black">
-                  Responsive & Modern UI
-                </h3>
+                <h3 className="text-xl dark:text-black">Database Management</h3>
               </div>
               <p className="text-[#f1f1f1bb] dark:text-[#2b2b2b]">
-                Pixel-perfect, mobile-first, and cross-browser compatible
-                interfaces built from design to production.
+                Design and manage efficient MongoDB databases.
               </p>
             </motion.div>
           </motion.div>
@@ -191,15 +224,14 @@ const Services = () => {
             >
               <div className="flex items-center gap-3 mb-5">
                 <div className="text-2xl bg-[#6532FF] p-3 rounded-full">
-                  <GrDocumentPerformance />
+                  <FaLock />
                 </div>
                 <h3 className="text-xl dark:text-black">
-                  Performance & SEO Optimization
+                  Authentication System
                 </h3>
               </div>
               <p className="text-[#f1f1f1bb] dark:text-[#2b2b2b]">
-                Fast-loading and SEO-friendly applications with optimized
-                assets, code splitting, and improved Lighthouse performance.
+                Implement secure authentication and role-based access control.
               </p>
             </motion.div>
           </motion.div>
@@ -233,57 +265,12 @@ const Services = () => {
             >
               <div className="flex items-center gap-3 mb-5">
                 <div className="text-2xl bg-[#6532FF] p-3 rounded-full">
-                  <LuDatabaseZap />
+                  <FaLink />
                 </div>
-                <h3 className="text-xl dark:text-black">
-                  API Integration & Backend Connectivity
-                </h3>
+                <h3 className="text-xl dark:text-black">API Integration</h3>
               </div>
               <p className="text-[#f1f1f1bb] dark:text-[#2b2b2b]">
-                Secure and efficient integration with REST APIs, authentication
-                systems, and backend services.
-              </p>
-            </motion.div>
-          </motion.div>
-          <motion.div
-            initial={{
-              y: -50,
-              opacity: 0,
-            }}
-            whileInView={{
-              y: 0,
-              opacity: 1,
-            }}
-            transition={{
-              duration: 0.5,
-              delay: 1.02,
-            }}
-            viewport={{ once: true }}
-          >
-            <motion.div
-              initial={{
-                y: 0,
-              }}
-              whileHover={{
-                y: -8,
-                boxShadow: "0px 5px 10px #512EB9",
-              }}
-              transition={{
-                duration: 0.3,
-              }}
-              className="text-white border border-[#63519b] rounded-xl p-5 "
-            >
-              <div className="flex items-center gap-3 mb-5">
-                <div className="text-2xl bg-[#6532FF] p-3 rounded-full">
-                  <FcSupport />
-                </div>
-                <h3 className="text-xl dark:text-black">
-                  Maintenance & Support
-                </h3>
-              </div>
-              <p className="text-[#f1f1f1bb] dark:text-[#2b2b2b]">
-                Ongoing support including bug fixing, refactoring, performance
-                improvements, and feature enhancements.
+                Integrate REST APIs and third-party services smoothly.
               </p>
             </motion.div>
           </motion.div>
