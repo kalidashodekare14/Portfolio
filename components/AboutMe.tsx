@@ -182,10 +182,10 @@ const AboutMe = () => {
               delay: 1.1,
             }}
             viewport={{ once: true }}
-            className="lg:w-[35%] relative z-20"
+            className=" relative z-20"
           >
             <Image
-              className="w-full max-h-1/2 rounded-xl"
+              className="w-100 rounded-xl"
               src={"/about/kalidash.jpg"}
               alt="Kalidash Odekare"
               width={500}
