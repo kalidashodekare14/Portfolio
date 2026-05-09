@@ -3,312 +3,160 @@
 import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
+import { GrTechnology } from "react-icons/gr";
+import { IoLogoGithub } from "react-icons/io5";
+import { RiApps2Line } from "react-icons/ri";
+import { TiExport } from "react-icons/ti";
+
+const projects = [
+  {
+    title: "HelpLink",
+    sub_title: "MERN Stack Disaster Relief Application",
+    image: "/project/helplink.png",
+    link: "/projects/1",
+    tech: ["Next.js", "TypeScript", "Tailwind", "Node.js", "Express"],
+  },
+  {
+    title: "Adoply",
+    sub_title: "MERN Stack Pet Adoption Application",
+    image: "/project/adoply.png",
+    link: "/projects/2",
+    tech: ["Next.js", "Tailwind", "Node.js", "Express", "MongoDB"],
+  },
+  {
+    title: "HealthCare",
+    sub_title: "Doctor Appointment System",
+    image: "/project/healthcare.png",
+    link: "/projects/3",
+    tech: ["Next.js", "Tailwind", "Node.js", "Express", "MongoDB"],
+  },
+];
+
+/* ===== VARIANTS ===== */
+const card = {
+  rest: { y: 0, scale: 1 },
+  hover: { y: -6, scale: 1.01 },
+};
+
+const image = {
+  rest: { scale: 1 },
+  hover: { scale: 1.08 },
+};
 
 const Projects = () => {
   return (
-    <div
-      id="projects"
-      className="-mt-px relative overflow-hidden bg-[#0D1317] dark:bg-white  flex flex-col justify-center items-center"
-    >
-      <div className="xl:h-210 xl:max-w-7xl lg:max-w-5xl max-w-6xl m-auto font-rubik py-5 relative z-20">
-        <motion.div
-          initial={{
-            y: -50,
-            opacity: 0,
-          }}
-          whileInView={{
-            y: 0,
-            opacity: 1,
-          }}
-          transition={{
-            duration: 0.5,
-            delay: 0.5,
-          }}
-          viewport={{ once: true }}
-          className="flex items-center gap-2 text-xl py-14"
-        >
-          <p className="w-14 border-2 border-[#6532FF]" />
-          <p className="text-white dark:text-[#000000bb]">Projects</p>
-          <p className="w-14 border-2 border-[#6532FF]" />
-        </motion.div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-5">
+    <div className="relative bg-[#0D1317] dark:bg-white py-20 flex flex-col items-center">
+      {/* TITLE */}
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.25 }}
+        className="text-center mb-12"
+      >
+        <h2 className="text-3xl font-bold text-white dark:text-black">
+          Projects
+        </h2>
+        <div className="w-20 h-1 bg-[#6532FF] mx-auto mt-2 rounded-full" />
+      </motion.div>
+
+      {/* GRID */}
+      <div className="max-w-6xl w-full grid md:grid-cols-2 lg:grid-cols-3 gap-8 px-5">
+        {projects.map((p, i) => (
           <motion.div
-            initial={{
-              y: -50,
-              opacity: 0,
-            }}
-            whileInView={{
-              y: 0,
-              opacity: 1,
-            }}
+            key={i}
+            variants={card}
+            initial="rest"
+            whileInView="rest"
+            whileHover="hover"
+            viewport={{ once: true, amount: 0.2 }}
             transition={{
-              duration: 0.5,
-              delay: 0.7,
+              duration: 0.25,
+              ease: [0.25, 0.1, 0.25, 1],
             }}
-            viewport={{ once: true }}
+            className="group bg-[#0e141f] dark:bg-white border border-white/10 rounded-2xl shadow-lg overflow-hidden"
           >
-            <motion.div
-              whileHover={{
-                scale: 1.02,
-                boxShadow: "0px 10px 20px #512EB9",
-              }}
-              transition={{
-                duration: 0.2,
-              }}
-              className="text-white rounded-2xl bg-[#0e141f] dark:bg-white border border-[#bbbb] shadow-lg"
-            >
-              <Image
-                className="w-full h-52 rounded-t-2xl"
-                src="/project/adoply.png"
-                alt="HelpLink"
-                width={500}
-                height={400}
-              />
-              <div className="px-5 my-4 space-y-3">
-                <h2 className="text-3xl text-[#dadada] dark:text-[#363d4b]">
-                  Adoply
-                </h2>
-                <p className="text-[#b9b9b9] font-medium dark:text-[#4c566a]">
-                  Adoptly is a team-based MERN stack pet adoption platform
-                  featuring smart search and filtering, secure Firebase
-                  authentication, and role-based...
-                </p>
-                <div className="flex flex-wrap gap-3">
-                  <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
-                    <p className="font-medium text-[15px]">Next.js</p>
-                  </div>
-                  <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
-                    <p className="font-medium text-[15px]">Tailwind CSS</p>
-                  </div>
-                  <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
-                    <p className="font-medium text-[15px]">Node.js</p>
-                  </div>
-                  <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
-                    <p className="font-medium text-[15px]">Express.js</p>
-                  </div>
-                  <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
-                    <p className="font-medium text-[15px]">Mongodb.js</p>
-                  </div>
-                </div>
-                <Link href="/projects/2">
-                  <motion.button
-                    whileHover={{
-                      scale: 1.05,
-                      boxShadow: "0px 5px 15px #4e27c2",
-                      cursor: "pointer",
-                    }}
-                    transition={{
-                      duration: 0.2,
-                    }}
-                    className="bg-[#401fa1] px-5 py-3 mt-5 rounded-3xl font-semibold cursor-pointer text-[#cacaca]"
+            {/* IMAGE */}
+            <div className="overflow-hidden">
+              <motion.div
+                variants={image}
+                transition={{
+                  duration: 1.5,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+              >
+                <Image
+                  src={p.image}
+                  alt={p.title}
+                  width={500}
+                  height={400}
+                  className="w-full h-52 object-cover"
+                />
+              </motion.div>
+            </div>
+
+            {/* CONTENT */}
+            <div className="p-5 space-y-3">
+              <h2 className="text-xl font-semibold text-white dark:text-gray-800">
+                {p.title}
+              </h2>
+
+              <div className="text-[15px] text-gray-400 dark:text-gray-600 leading-relaxed flex items-center gap-2">
+                <span>
+                  <RiApps2Line />
+                </span>
+                <span>{p.sub_title}</span>
+              </div>
+              <div className="text-white flex items-center gap-2">
+                <GrTechnology />
+                <p className="font-semibold">Tech Stack</p>
+              </div>
+              <div className="w-full h-[0.2px] bg-[#535252bb]"></div>
+              {/* TECH */}
+              <div className="flex flex-wrap gap-2">
+                {p.tech.map((t, idx) => (
+                  <span
+                    key={idx}
+                    className="text-xs px-3 py-1 rounded-full bg-white/10 dark:bg-black/5 border border-white/10 text-gray-300 dark:text-gray-600"
                   >
-                    <span>Show Project</span>
+                    {t}
+                  </span>
+                ))}
+              </div>
+              <div className="flex items-center gap-5">
+                {/* BUTTON */}
+                <Link href={p.link}>
+                  <motion.button
+                    whileHover={{ scale: 1.03 }}
+                    transition={{ duration: 0.2 }}
+                    className="w-48 mt-3 py-2 rounded-xl bg-[#4e27c2] hover:bg-[#5a32d6] text-white"
+                  >
+                    View Details
                   </motion.button>
                 </Link>
-              </div>
-            </motion.div>
-          </motion.div>
-          <motion.div
-            initial={{
-              y: -50,
-              opacity: 0,
-            }}
-            whileInView={{
-              y: 0,
-              opacity: 1,
-            }}
-            transition={{
-              duration: 0.5,
-              delay: 0.6,
-            }}
-            viewport={{ once: true }}
-          >
-            <motion.div
-              whileHover={{
-                scale: 1.02,
-                boxShadow: "0px 10px 20px #512EB9",
-              }}
-              transition={{
-                duration: 0.2,
-              }}
-              className="text-white rounded-2xl bg-[#0e141f] dark:bg-white border border-[#bbbb] shadow-lg"
-            >
-              <Image
-                className="w-full h-52 rounded-t-2xl"
-                src="/project/helplink.png"
-                alt="HelpLink"
-                width={500}
-                height={400}
-              />
-              <div className="px-5 my-4 space-y-3">
-                <h2 className="text-3xl text-[#dadada] dark:text-[#363d4b]">
-                  HelpLink
-                </h2>
-                <p className="text-[#b9b9b9] font-medium dark:text-[#4c566a]">
-                  A digital relief platform built with MERN stack to bridge the
-                  gap between donors and underprivileged communities during
-                  disasters in Bangladesh.
-                </p>
-                <div className="flex flex-wrap gap-3">
-                  <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
-                    <p className="font-medium text-[15px]">Next.js</p>
-                  </div>
-                  <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
-                    <p className="font-medium text-[15px]">TypeScript</p>
-                  </div>
-                  <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
-                    <p className="font-medium text-[15px]">Tailwind CSS</p>
-                  </div>
-                  <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
-                    <p className="font-medium text-[15px]">Node.js</p>
-                  </div>
-                  <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
-                    <p className="font-medium text-[15px]">Express.js</p>
-                  </div>
-                  <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
-                    <p className="font-medium text-[15px]">MongoDB.js</p>
-                  </div>
+                <div className="min-w-10 h-10 flex justify-center items-center text-[#b4b4b4] bg-[#272C36] text-2xl border rounded-full cursor-pointer hover:border-[#4e27c2] hover:bg-[#2e1d5f] duration-300">
+                  <TiExport />
                 </div>
-                <Link href="/projects/1">
-                  <motion.button
-                    whileHover={{
-                      scale: 1.05,
-                      boxShadow: "0px 5px 30px #4e27c2",
-                      cursor: "pointer",
-                    }}
-                    transition={{
-                      duration: 0.2,
-                    }}
-                    className="bg-[#401fa1] mt-5 px-5 py-3 rounded-3xl font-semibold cursor-pointer text-[#cacaca]"
-                  >
-                    <span>Show Project</span>
-                  </motion.button>
-                </Link>
-              </div>
-            </motion.div>
-          </motion.div>
-          <motion.div
-            initial={{
-              y: -50,
-              opacity: 0,
-            }}
-            whileInView={{
-              y: 0,
-              opacity: 1,
-            }}
-            transition={{
-              duration: 0.5,
-              delay: 0.8,
-            }}
-            viewport={{ once: true }}
-          >
-            <motion.div
-              whileHover={{
-                scale: 1.02,
-                boxShadow: "0px 10px 20px #512EB9",
-              }}
-              transition={{
-                duration: 0.2,
-              }}
-              className="text-white rounded-2xl bg-[#0e141f] dark:bg-white border border-[#bbbb] shadow-lg"
-            >
-              <Image
-                className="w-full h-52 rounded-t-2xl"
-                src="/project/healthcare.png"
-                alt="HelpLink"
-                width={500}
-                height={400}
-              />
-              <div className="px-5 my-4 space-y-3">
-                <h2 className="text-3xl text-[#dadada] dark:text-[#363d4b]">
-                  HealthCare
-                </h2>
-                <p className="text-[#b9b9b9] font-medium dark:text-[#4c566a]">
-                  The Healthcare project is a patient-focused platform that
-                  enables easy online doctor appointment booking, secure
-                  payments, and access to professional...
-                </p>
-                <div className="flex flex-wrap gap-3">
-                  <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
-                    <p className="font-medium text-[15px] text-[#cacaca] dark:text-[#354461]">
-                      Next.js
-                    </p>
-                  </div>
-                  <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
-                    <p className="font-medium text-[15px] text-[#cacaca] dark:text-[#354461]">
-                      Tailwind CSS
-                    </p>
-                  </div>
-                  <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
-                    <p className="font-medium text-[15px] text-[#cacaca] dark:text-[#354461]">
-                      Node.js
-                    </p>
-                  </div>
-                  <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
-                    <p className="font-medium text-[15px] text-[#cacaca] dark:text-[#354461]">
-                      Express.js
-                    </p>
-                  </div>
-                  <div className="text-[#d4d3d3] dark:text-[#354461] bg-[#452d8d] dark:bg-[rgb(205,189,255)]  px-2 py-1 rounded-xl">
-                    <p className="font-medium text-[15px] text-[#cacaca] dark:text-[#354461]">
-                      Mongodb.js
-                    </p>
-                  </div>
+                <div className="min-w-10 h-10 flex justify-center items-center text-[#b4b4b4] bg-[#272C36] text-2xl border rounded-full cursor-pointer hover:border-[#4e27c2] hover:bg-[#2e1d5f] duration-300">
+                  <IoLogoGithub />
                 </div>
-                <Link href="/projects/3">
-                  <motion.button
-                    whileHover={{
-                      scale: 1.05,
-                      boxShadow: "0px 5px 15px #4e27c2",
-                      cursor: "pointer",
-                    }}
-                    transition={{
-                      duration: 0.2,
-                    }}
-                    className="bg-[#401fa1] mt-5 px-5 py-3 rounded-3xl font-semibold cursor-pointer text-[#cacaca]"
-                  >
-                    <span>Show Project</span>
-                  </motion.button>
-                </Link>
               </div>
-            </motion.div>
+            </div>
           </motion.div>
-        </div>
-        <motion.div
-          initial={{
-            y: -50,
-            opacity: 0,
-          }}
-          whileInView={{
-            y: 0,
-            opacity: 1,
-          }}
-          transition={{
-            duration: 0.5,
-            delay: 0.9,
-          }}
-          viewport={{ once: true }}
-          className="flex justify-center items-center"
-        >
-          <Link href={"/projects"}>
-            <motion.button
-              whileHover={{
-                scale: 1.05,
-                backgroundColor: "#291a55",
-              }}
-              transition={{
-                duration: 0.2,
-              }}
-              className="text-[#777777]  my-10 text-center cursor-pointer border  border-[#7f5ee0] w-40 p-2 rounded-xl"
-            >
-              <h1>More Projects</h1>
-            </motion.button>
-          </Link>
-        </motion.div>
+        ))}
       </div>
-      <motion.div className="z-10 absolute top-0 left-10 w-60 h-50 rounded-full bg-[#6532FF] opacity-50 blur-[140px]"></motion.div>
-      <motion.div className="z-10 absolute top-50 left-[40%] w-80 h-80 rounded-full bg-[#6532FF] opacity-20 blur-[160px]"></motion.div>
-      <motion.div className="z-10 absolute -bottom-20 left-0 w-50 h-50 rounded-full bg-[#6532FF] opacity-50 blur-[140px]"></motion.div>
+
+      {/* MORE */}
+      <Link href="/projects">
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          className="mt-12 px-6 py-2 border border-[#7f5ee0] text-gray-400 rounded-xl"
+        >
+          More Projects
+        </motion.button>
+      </Link>
+
+      {/* GLOW */}
+      <div className="absolute top-0 left-10 w-60 h-60 bg-[#6532FF] opacity-20 blur-[120px]" />
     </div>
   );
 };

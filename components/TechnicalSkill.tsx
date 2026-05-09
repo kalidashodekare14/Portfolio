@@ -41,7 +41,9 @@ const TechnicalSkill = () => {
           <p className="w-14 border-2 border-[#6532FF]" />
         </motion.div>
         <div className="relative z-20 mx-5 font-rubik ">
+          {/* Main div */}
           <div className="grid xl:grid-cols-3 lg:grid-cols-2 mb-20 lg:mb-0 gap-5 ">
+            {/* Frontend */}
             <motion.div
               initial={{
                 y: -50,
@@ -58,19 +60,22 @@ const TechnicalSkill = () => {
               viewport={{ once: true }}
             >
               <motion.div
-                initial={{
-                  y: 0,
-                }}
+                initial={{ y: 0 }}
                 whileHover={{
-                  y: -8,
-                  boxShadow: "0px 5px 10px #512EB9",
+                  y: -6,
+                  scale: 1.0,
+                  boxShadow: "0px 10px 30px rgba(81, 46, 185, 0.25)",
+                  border: "1px solid #62558b",
                 }}
                 transition={{
-                  duration: 0.3,
+                  type: "spring",
+                  stiffness: 300,
+                  damping: 25,
+                  mass: 0.8,
                 }}
-                className="border rounded-2xl border-[#62558b] dark:border-[#757474bb] shadow-2xl  dark:bg-white light:bg-linear-to-r from-[#11151a] via-[#11151a] to-[#0f1316] p-5"
+                className="border rounded-2xl border-[#5a5a5a] dark:border-[#757474bb] shadow-2xl dark:bg-white light:bg-linear-to-r from-[#11151a] via-[#11151a] to-[#0f1316] p-5"
               >
-                {/* Add your technical skills content here */}
+                {/* technical skills content */}
                 <div className="flex items-center text-[#c9c9c9]">
                   <div className="flex items-center gap-4">
                     <div className="bg-[#6532FF] p-2 rounded-full">
@@ -81,10 +86,15 @@ const TechnicalSkill = () => {
                 </div>
                 <div className="flex flex-wrap gap-4 my-5">
                   <motion.div
-                    whileHover={{
-                      scale: 1.1,
+                    initial={{
+                      y: 0,
                     }}
-                    className="flex flex-col items-center gap-2"
+                    whileHover={{ y: -4 }}
+                    transition={{
+                      duration: 0.22,
+                      ease: "easeOut",
+                    }}
+                    className="flex flex-col items-center gap-2 "
                   >
                     <div className="flex items-center text-[#c2c2c2] bg-[#275866] border-2 border-[#5ED3F3] text-4xl p-3 rounded-2xl">
                       <FaReact />
@@ -92,8 +102,13 @@ const TechnicalSkill = () => {
                     <p className="text-[#c7c7c7] dark:text-[#232730]">React</p>
                   </motion.div>
                   <motion.div
-                    whileHover={{
-                      scale: 1.1,
+                    initial={{
+                      y: 0,
+                    }}
+                    whileHover={{ y: -4 }}
+                    transition={{
+                      duration: 0.22,
+                      ease: "easeOut",
                     }}
                     className="flex flex-col items-center gap-2"
                   >
@@ -105,8 +120,13 @@ const TechnicalSkill = () => {
                     </p>
                   </motion.div>
                   <motion.div
-                    whileHover={{
-                      scale: 1.1,
+                    initial={{
+                      y: 0,
+                    }}
+                    whileHover={{ y: -4 }}
+                    transition={{
+                      duration: 0.22,
+                      ease: "easeOut",
                     }}
                     className="flex flex-col items-center gap-2"
                   >
@@ -118,8 +138,13 @@ const TechnicalSkill = () => {
                     </p>
                   </motion.div>
                   <motion.div
-                    whileHover={{
-                      scale: 1.1,
+                    initial={{
+                      y: 0,
+                    }}
+                    whileHover={{ y: -4 }}
+                    transition={{
+                      duration: 0.22,
+                      ease: "easeOut",
                     }}
                     className="flex flex-col items-center gap-2"
                   >
@@ -133,6 +158,7 @@ const TechnicalSkill = () => {
                 </div>
               </motion.div>
             </motion.div>
+            {/* Backend */}
             <motion.div
               initial={{
                 y: -50,
@@ -149,17 +175,18 @@ const TechnicalSkill = () => {
               viewport={{ once: true }}
             >
               <motion.div
-                initial={{
-                  y: 0,
-                }}
+                initial={{ y: 0 }}
                 whileHover={{
-                  y: -8,
-                  boxShadow: "0px 5px 10px #512EB9",
+                  y: -6,
+                  scale: 1.0,
+                  boxShadow: "0px 10px 30px rgba(81, 46, 185, 0.25)",
+                  border: "1px solid #62558b",
                 }}
                 transition={{
-                  duration: 0.3,
+                  duration: 0.25,
+                  ease: "easeInOut",
                 }}
-                className="border rounded-2xl border-[#62558b] dark:border-[#757474bb] shadow-2xl  dark:bg-white light:bg-linear-to-r from-[#11151a] via-[#11151a] to-[#0f1316] p-5"
+                className="border rounded-2xl border-[#5a5a5a] dark:border-[#757474bb] shadow-2xl dark:bg-white light:bg-linear-to-r from-[#11151a] via-[#11151a] to-[#0f1316] p-5"
               >
                 {/* Add your technical skills content here */}
                 <div className="flex items-center text-[#c9c9c9]">
@@ -172,8 +199,13 @@ const TechnicalSkill = () => {
                 </div>
                 <div className="flex flex-wrap gap-4 my-5">
                   <motion.div
-                    whileHover={{
-                      scale: 1.1,
+                    initial={{
+                      y: 0,
+                    }}
+                    whileHover={{ y: -4 }}
+                    transition={{
+                      duration: 0.22,
+                      ease: "easeOut",
                     }}
                     className="flex flex-col items-center gap-2"
                   >
@@ -185,8 +217,13 @@ const TechnicalSkill = () => {
                     </p>
                   </motion.div>
                   <motion.div
-                    whileHover={{
-                      scale: 1.1,
+                    initial={{
+                      y: 0,
+                    }}
+                    whileHover={{ y: -4 }}
+                    transition={{
+                      duration: 0.22,
+                      ease: "easeOut",
                     }}
                     className="flex flex-col items-center gap-2"
                   >
@@ -198,8 +235,13 @@ const TechnicalSkill = () => {
                     </p>
                   </motion.div>
                   <motion.div
-                    whileHover={{
-                      scale: 1.1,
+                    initial={{
+                      y: 0,
+                    }}
+                    whileHover={{ y: -4 }}
+                    transition={{
+                      duration: 0.22,
+                      ease: "easeOut",
                     }}
                     className="flex flex-col items-center gap-2"
                   >
@@ -211,8 +253,13 @@ const TechnicalSkill = () => {
                     </p>
                   </motion.div>
                   <motion.div
-                    whileHover={{
-                      scale: 1.1,
+                    initial={{
+                      y: 0,
+                    }}
+                    whileHover={{ y: -4 }}
+                    transition={{
+                      duration: 0.22,
+                      ease: "easeOut",
                     }}
                     className="flex flex-col items-center gap-2"
                   >
@@ -226,6 +273,7 @@ const TechnicalSkill = () => {
                 </div>
               </motion.div>
             </motion.div>
+            {/* Technologies & Tools */}
             <motion.div
               initial={{
                 y: -50,
@@ -242,17 +290,18 @@ const TechnicalSkill = () => {
               viewport={{ once: true }}
             >
               <motion.div
-                initial={{
-                  y: 0,
-                }}
+                initial={{ y: 0 }}
                 whileHover={{
-                  y: -8,
-                  boxShadow: "0px 5px 10px #512EB9",
+                  y: -6,
+                  scale: 1.0,
+                  boxShadow: "0px 10px 30px rgba(81, 46, 185, 0.25)",
+                  border: "1px solid #62558b",
                 }}
                 transition={{
-                  duration: 0.3,
+                  duration: 0.25,
+                  ease: "easeInOut",
                 }}
-                className="border rounded-2xl border-[#62558b] dark:border-[#757474bb] shadow-2xl  dark:bg-white light:bg-linear-to-r from-[#11151a] via-[#11151a] to-[#0f1316] p-5"
+                className="border rounded-2xl border-[#5a5a5a] dark:border-[#757474bb] shadow-2xl dark:bg-white light:bg-linear-to-r from-[#11151a] via-[#11151a] to-[#0f1316] p-5"
               >
                 {/* Add your technical skills content here */}
                 <div className="flex items-center text-[#c9c9c9]">
@@ -267,8 +316,13 @@ const TechnicalSkill = () => {
                 </div>
                 <div className="flex flex-wrap gap-4 my-5">
                   <motion.div
-                    whileHover={{
-                      scale: 1.1,
+                    initial={{
+                      y: 0,
+                    }}
+                    whileHover={{ y: -4 }}
+                    transition={{
+                      duration: 0.22,
+                      ease: "easeOut",
                     }}
                     className="flex flex-col items-center gap-2"
                   >
@@ -278,8 +332,13 @@ const TechnicalSkill = () => {
                     <p className="text-[#c7c7c7] dark:text-[#232730]">NPM</p>
                   </motion.div>
                   <motion.div
-                    whileHover={{
-                      scale: 1.1,
+                    initial={{
+                      y: 0,
+                    }}
+                    whileHover={{ y: -4 }}
+                    transition={{
+                      duration: 0.22,
+                      ease: "easeOut",
                     }}
                     className="flex flex-col items-center gap-2"
                   >
@@ -291,8 +350,13 @@ const TechnicalSkill = () => {
                     </p>
                   </motion.div>
                   <motion.div
-                    whileHover={{
-                      scale: 1.1,
+                    initial={{
+                      y: 0,
+                    }}
+                    whileHover={{ y: -4 }}
+                    transition={{
+                      duration: 0.22,
+                      ease: "easeOut",
                     }}
                     className="flex flex-col items-center gap-2"
                   >
@@ -304,6 +368,7 @@ const TechnicalSkill = () => {
                 </div>
               </motion.div>
             </motion.div>
+            {/* Libraries */}
             <motion.div
               initial={{
                 y: -50,
@@ -320,17 +385,18 @@ const TechnicalSkill = () => {
               viewport={{ once: true }}
             >
               <motion.div
-                initial={{
-                  y: 0,
-                }}
+                initial={{ y: 0 }}
                 whileHover={{
-                  y: -8,
-                  boxShadow: "0px 5px 10px #512EB9",
+                  y: -6,
+                  scale: 1.0,
+                  boxShadow: "0px 10px 30px rgba(81, 46, 185, 0.25)",
+                  border: "1px solid #62558b",
                 }}
                 transition={{
-                  duration: 0.3,
+                  duration: 0.25,
+                  ease: "easeInOut",
                 }}
-                className="border rounded-2xl border-[#62558b] dark:border-[#757474bb] shadow-2xl  dark:bg-white light:bg-linear-to-r from-[#11151a] via-[#11151a] to-[#0f1316] p-5"
+                className="border rounded-2xl border-[#5a5a5a] dark:border-[#757474bb] shadow-2xl dark:bg-white light:bg-linear-to-r from-[#11151a] via-[#11151a] to-[#0f1316] p-5"
               >
                 {/* Add your technical skills content here */}
                 <div className="flex items-center text-[#c9c9c9]">
@@ -343,8 +409,13 @@ const TechnicalSkill = () => {
                 </div>
                 <div className="flex flex-wrap gap-4 my-5">
                   <motion.div
-                    whileHover={{
-                      scale: 1.1,
+                    initial={{
+                      y: 0,
+                    }}
+                    whileHover={{ y: -4 }}
+                    transition={{
+                      duration: 0.22,
+                      ease: "easeOut",
                     }}
                     className="flex flex-col items-center gap-2"
                   >
@@ -356,8 +427,13 @@ const TechnicalSkill = () => {
                     </p>
                   </motion.div>
                   <motion.div
-                    whileHover={{
-                      scale: 1.1,
+                    initial={{
+                      y: 0,
+                    }}
+                    whileHover={{ y: -4 }}
+                    transition={{
+                      duration: 0.22,
+                      ease: "easeOut",
                     }}
                     className="flex flex-col items-center gap-2"
                   >
