@@ -139,12 +139,17 @@ const Projects = () => {
                     View Details
                   </motion.button>
                 </Link>
+                <Link  href={p.liveLInk} target="_blank">
                 <div className="min-w-10 h-10 flex justify-center items-center text-[#b4b4b4] bg-[#272C36] text-2xl border rounded-full cursor-pointer hover:border-[#4e27c2] hover:bg-[#2e1d5f] duration-300">
                   <TiExport />
                 </div>
-                <div className="min-w-10 h-10 flex justify-center items-center text-[#b4b4b4] bg-[#272C36] text-2xl border rounded-full cursor-pointer hover:border-[#4e27c2] hover:bg-[#2e1d5f] duration-300">
+                </Link>
+                <Link href={p.githubLink} target="_blank">
+                 <div className="min-w-10 h-10 flex justify-center items-center text-[#b4b4b4] bg-[#272C36] text-2xl border rounded-full cursor-pointer hover:border-[#4e27c2] hover:bg-[#2e1d5f] duration-300">
                   <IoLogoGithub />
                 </div>
+                </Link>
+               
               </div>
             </div>
           </motion.div>
