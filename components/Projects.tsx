@@ -14,6 +14,8 @@ const projects = [
     sub_title: "MERN Stack Disaster Relief Application",
     image: "/project/helplink.png",
     link: "/projects/1",
+    liveLInk: "https://helplink-frontend.vercel.app",
+    githubLink: "https://github.com/kalidashodekare14/HelpLink_Frontend",
     tech: ["Next.js", "TypeScript", "Tailwind", "Node.js", "Express"],
   },
   {
@@ -21,6 +23,8 @@ const projects = [
     sub_title: "MERN Stack Pet Adoption Application",
     image: "/project/adoply.png",
     link: "/projects/2",
+    liveLInk: "https://adoptly-team-project.vercel.app",
+    githubLink: "https://github.com/Mehedi86/adoptly-team-project",
     tech: ["Next.js", "Tailwind", "Node.js", "Express", "MongoDB"],
   },
   {
@@ -28,6 +32,8 @@ const projects = [
     sub_title: "Doctor Appointment System",
     image: "/project/healthcare.png",
     link: "/projects/3",
+    liveLInk: "https://health-care14.vercel.app",
+    githubLink: "https://github.com/kalidashodekare14/HealthCare",
     tech: ["Next.js", "Tailwind", "Node.js", "Express", "MongoDB"],
   },
 ];
@@ -45,7 +51,7 @@ const image = {
 
 const Projects = () => {
   return (
-    <div className="relative bg-[#0D1317] dark:bg-white py-20 flex flex-col items-center">
+    <section id="projects" className="relative bg-[#0D1317] dark:bg-white py-20 flex flex-col items-center">
       {/* TITLE */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
@@ -157,7 +163,7 @@ const Projects = () => {
 
       {/* GLOW */}
       <div className="absolute top-0 left-10 w-60 h-60 bg-[#6532FF] opacity-20 blur-[120px]" />
-    </div>
+    </section>
   );
 };
 
