@@ -3,6 +3,8 @@ import emailjs from "@emailjs/browser";
 import { motion } from "motion/react";
 import { useRef } from "react";
 import Swal from "sweetalert2";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 
 const ContactMe = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -90,8 +92,8 @@ const ContactMe = () => {
             <div className="flex items-center gap-5">
               <div className="w-full space-y-2">
                 <p className="text-[#cfcfcf] dark:text-[#363d4b]">Full Name</p>
-                <input
-                  className="input w-full font-medium focus:outline-[#4e27c2] text-white dark:text-black bg-[#1E2939] dark:bg-white"
+                <Input
+                  className="w-full font-medium focus-visible:outline-[#4e27c2] focus-visible:ring-0 text-white dark:text-black bg-[#1E2939] dark:bg-white border-0"
                   type="text"
                   name="user_name"
                   placeholder="Name"
@@ -101,8 +103,8 @@ const ContactMe = () => {
                 <p className="text-[#cfcfcf] dark:text-[#363d4b]">
                   Email Address
                 </p>
-                <input
-                  className="input w-full font-medium focus:outline-[#4e27c2] text-white dark:text-black bg-[#1E2939] dark:bg-white"
+                <Input
+                  className="w-full font-medium focus-visible:outline-[#4e27c2] focus-visible:ring-0 text-white dark:text-black bg-[#1E2939] dark:bg-white border-0"
                   type="email"
                   name="user_email"
                   placeholder="Email"
@@ -111,8 +113,8 @@ const ContactMe = () => {
             </div>
             <div className="w-full space-y-2">
               <p className="text-[#cfcfcf] dark:text-[#363d4b]">Message</p>
-              <textarea
-                className="textarea h-32 w-full font-medium focus:outline-[#4e27c2] text-white dark:text-black bg-[#1E2939] dark:bg-white"
+              <Textarea
+                className="h-32 w-full font-medium focus-visible:outline-[#4e27c2] focus-visible:ring-0 text-white dark:text-black bg-[#1E2939] dark:bg-white border-0 resize-none"
                 name="message"
                 placeholder="Message"
               />
